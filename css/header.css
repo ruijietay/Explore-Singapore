@@ -13,30 +13,27 @@
         color: #DEE7EF;
         text-decoration:none;
         text-transform: uppercase;
-        margin:0 auto;
+        
 
     }
-header{
-    margin-top:10px;
-    background-image:url(../media/walk.jpg);
-    background-size:100%;
-    margin-left:-10px;
-    margin-right:-10px;
-}
-#push{
-    margin-top:38px;
-}
-/*body {
-    background-image: url(../media/walk.jpg);
-}*/
-    /*header{
-        background-image:url(../media/walk.jpg);
-    }*/
-/*header {
-    background-image: url(../images/braches5.jpg);
+
+header {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/walking.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
     background-size: 100%;
     text-align: center;
     color: white;
     padding: 20px;
-    margin-bottom: 80px;
-    background-attachment: fixed; /*to create image that doesnt scroll down with the page*/
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.big{
+    font-size:150px;
+    font-family:'Bebas Neue';
+    letter-spacing:20px;
+    border:15px solid white;
+    width:900px;
+    margin:150px auto 100px auto;
+}
