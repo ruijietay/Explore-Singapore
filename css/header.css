@@ -6,7 +6,7 @@
     left:0;
     text-align:center;
 }
-    nav a {
+    nav >a {
         padding: 10px;
         background-color: #022D41;
         display: inline-block;
@@ -16,6 +16,19 @@
         margin:0 auto;
 
     }
+header{
+    margin-top:10px;
+    background-image:url(../media/walk.jpg);
+    background-size:100%;
+    margin-left:-10px;
+    margin-right:-10px;
+}
+#push{
+    margin-top:38px;
+}
+/*body {
+    background-image: url(../media/walk.jpg);
+}*/
     /*header{
         background-image:url(../media/walk.jpg);
     }*/
