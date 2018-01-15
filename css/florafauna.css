@@ -1,7 +1,16 @@
-﻿h1 {
+﻿.h1 {
     margin: 38px;
     text-align: center;
     font-size: 60px;
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/jpg/supertree.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 body {
     background: #ff848b;
