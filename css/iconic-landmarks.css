@@ -1,0 +1,17 @@
+﻿h1 {
+    font-family: 'Bebas Neue';
+    border: 15px solid white;
+    width: 900px;
+    margin: auto;
+}
+
+.col-right {
+    width: 35%;
+    float: left;
+}
+
+.col-left {
+    width: 65%;
+    float: left;
+}
+
