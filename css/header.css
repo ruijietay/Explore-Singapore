@@ -25,7 +25,7 @@ a:hover {
 }
 
 header {
-    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/walking.jpg);
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/jpg/walking.jpg);
     background-size: 100%;
     background-attachment: fixed;
     background-size: 100%;
