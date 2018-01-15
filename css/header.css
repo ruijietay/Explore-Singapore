@@ -6,16 +6,15 @@
     left:0;
     text-align:center;
 }
-    nav >a {
-        padding: 10px;
-        background-color: #022D41;
-        display: inline-block;
-        color: #DEE7EF;
-        text-decoration:none;
-        text-transform: uppercase;
-        
 
-    }
+nav > a {
+    padding: 10px;
+    background-color: #022D41;
+    display: inline-block;
+    color: #DEE7EF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 header {
     background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/walking.jpg);
