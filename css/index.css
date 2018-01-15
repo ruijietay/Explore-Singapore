@@ -150,3 +150,7 @@ tr td a:visited {
     margin: 250px auto 200px auto;
     padding: 20px;
 }
+
+table, tr, td{
+    margin:0 auto;
+}
