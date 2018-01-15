@@ -72,7 +72,6 @@ span {
     background-size: cover;
     padding: 200px 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
     #iconic a p {
@@ -87,6 +86,7 @@ span {
         text-align: center;
         margin-top: -50px;
     }
+
 #florafauna {
     background-image: linear-gradient(rgba(26,166,183, 0.35), rgba(26,166,183, 0.35)), url(../media/jpg/f&f.jpg);
     background-size: cover;
@@ -106,6 +106,7 @@ span {
         text-align: center;
         margin-top: -50px;
     }
+
 #artsandculture {
     background-image: linear-gradient(rgba(218,236,243, 0.4), rgba(218,236,243, 0.4)), url(../media/jpg/culture2.jpg);
     background-size: cover;
@@ -129,11 +130,11 @@ span {
 tr td a:visited {
     color: white;
 }
+
 .header {
     background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/jpg/walking.jpg);
     background-size: 100%;
     background-attachment: fixed;
-    background-size: 100%;
     text-align: center;
     color: white;
     padding: 20px;
@@ -151,6 +152,139 @@ tr td a:visited {
     padding: 20px;
 }
 
-table, tr, td{
-    margin:0 auto;
+table, tr, td {
+    margin: 100px auto 0 auto;
+    border-spacing: 20px;
+}
+
+hr {
+    border-color: #9CAAC6;
+    width: 60%;
+}
+
+.button {
+    background-color: #022D41;
+    border: none;
+    color: white;
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+}
+
+    .button:hover {
+        background-color: #9CAAC6;
+    }
+
+#review {
+    background: linear-gradient(rgba(218,236,243, 0.6), rgba(218,236,243, 0.6)), url(../media/jpg/footer.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.footer {
+    /*float:right;
+    text-align:left;
+    margin-right:120px;
+    margin-top:-230px;*/
+    text-align: center;
+}
+
+    .footer p {
+        font-size: 25px;
+        color: #022D41;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    margin: 5px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+    .fa-facebook:hover {
+        background-color: #28447E;
+    }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+    .fa-linkedin:hover {
+        background-color: #045F89;
+    }
+
+.fa-instagram {
+    background: #f40083;
+    color: white;
+}
+
+    .fa-instagram:hover {
+        background-color: #C3036A;
+    }
+#contactus {
+    background-color: #022D41;
+    background-size: 100%;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align:center;
+}
+
+#telephone{
+    width:30px;
+    height:30px;
+    margin-right:20px;
+    animation-name:rotating;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform:rotate(10deg);
+    }
+    50%{
+        transform:rotate(0deg);
+    }
+    75%{
+        transform:rotate(-10deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+
+#contacting{
+    font-size:30px;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.moveleft{
+    margin-left:10px;
 }
