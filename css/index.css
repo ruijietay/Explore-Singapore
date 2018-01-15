@@ -7,11 +7,12 @@
 /*section{
     margin-left:200px;
 }*/
+/*ANIMATION for JOURNEY*/
 span {
     color: #9CAAC6;
     animation-name: colorchange;
-    animation-duration:10s;
-    animation-iteration-count:infinite;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes colorchange {
@@ -32,16 +33,120 @@ span {
     }
 }
 
-    .intro {
-        /*float:right;
+.intro {
+    /*float:right;
     text-align:left;
     margin-right:120px;
     margin-top:-230px;*/
-        text-align: center;
-    }
+    text-align: center;
+}
 
     .intro p {
         font-size: 25px;
         color: dimgrey;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
+#thrill {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/jpg/uss.jpg);
+    background-size: cover;
+    padding: 200px 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    #thrill a p {
+        font-size: 80px;
+        color: white;
+        text-decoration: overline;
+    }
+
+    #thrill .two {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin-top: -50px;
+    }
+
+#iconic {
+    background-image: linear-gradient(rgba(254,66,77, 0.35), rgba(254,66,77, 0.35)), url(../media/jpg/iconic.jpg);
+    background-size: cover;
+    padding: 200px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+    #iconic a p {
+        font-size: 80px;
+        color: white;
+        text-decoration: overline;
+    }
+
+    #iconic .two {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin-top: -50px;
+    }
+#florafauna {
+    background-image: linear-gradient(rgba(26,166,183, 0.35), rgba(26,166,183, 0.35)), url(../media/jpg/f&f.jpg);
+    background-size: cover;
+    padding: 200px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    #florafauna a p {
+        font-size: 80px;
+        color: white;
+        text-decoration: overline;
+    }
+
+    #florafauna .two {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin-top: -50px;
+    }
+#artsandculture {
+    background-image: linear-gradient(rgba(218,236,243, 0.4), rgba(218,236,243, 0.4)), url(../media/jpg/culture2.jpg);
+    background-size: cover;
+    padding: 200px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    #artsandculture a p {
+        font-size: 80px;
+        color: white;
+        text-decoration: overline;
+    }
+
+    #artsandculture .two {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin-top: -50px;
+    }
+
+tr td a:visited {
+    color: white;
+}
+.header {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/jpg/walking.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+}

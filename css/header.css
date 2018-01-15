@@ -1,47 +1,25 @@
-﻿nav{
-    background-color:#022D41;
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    text-align:center;
+﻿nav {
+    background-color: #022D41;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
 }
-    nav >a {
+
+    nav > a {
         padding: 10px;
-        margin-right:20px;
-        margin-left:20px;
+        margin-right: 20px;
+        margin-left: 20px;
         background-color: #022D41;
         display: inline-block;
         color: #DEE7EF;
-        text-decoration:none;
+        text-decoration: none;
         text-transform: uppercase;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size:20px;
-        
-
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
     }
+
 a:hover {
     background-color: #1AA6B7;
-}
-
-header {
-    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/walking.jpg);
-    background-size: 100%;
-    background-attachment: fixed;
-    background-size: 100%;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-.big {
-    font-size: 100px;
-    font-family: serif;
-    letter-spacing: 20px;
-    border: 15px solid white;
-    width: 850px;
-    margin: 250px auto 200px auto;
-    padding:20px;
 }
