@@ -129,3 +129,24 @@ span {
 tr td a:visited {
     color: white;
 }
+.header {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/jpg/walking.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+}
