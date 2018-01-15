@@ -8,14 +8,20 @@
 }
     nav >a {
         padding: 10px;
+        margin-right:20px;
+        margin-left:20px;
         background-color: #022D41;
         display: inline-block;
         color: #DEE7EF;
         text-decoration:none;
         text-transform: uppercase;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         
 
     }
+a:hover {
+    background-color: #1AA6B7;
+}
 
 header {
     background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url(../media/walking.jpg);
@@ -30,11 +36,11 @@ header {
 }
 
 .big {
-    font-size: 120px;
+    font-size: 100px;
     font-family: serif;
     letter-spacing: 20px;
     border: 15px solid white;
     width: 850px;
-    margin: 150px auto 100px auto;
-    padding:10px;
+    margin: 250px auto 200px auto;
+    padding:20px;
 }

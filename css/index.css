@@ -1,3 +1,47 @@
-﻿body
-{
+﻿.big2 {
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*text-align:left;*/
+    text-align: center;
 }
+/*section{
+    margin-left:200px;
+}*/
+span {
+    color: #9CAAC6;
+    animation-name: colorchange;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: #9CAAC6;
+    }
+
+    25% {
+        color: #FE424D;
+    }
+
+    50% {
+        color: #9CAAC6;
+    }
+
+    100% {
+        color: #FE424D;
+    }
+}
+
+    .intro {
+        /*float:right;
+    text-align:left;
+    margin-right:120px;
+    margin-top:-230px;*/
+        text-align: center;
+    }
+
+    .intro p {
+        font-size: 25px;
+        color: dimgrey;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
