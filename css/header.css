@@ -4,6 +4,7 @@
     position:fixed;
     top:0;
     left:0;
+    text-align:center;
 }
     nav a {
         padding: 10px;
@@ -12,4 +13,17 @@
         color: #DEE7EF;
         text-decoration:none;
         text-transform: uppercase;
+        margin:0 auto;
+
     }
+    /*header{
+        background-image:url(../media/walk.jpg);
+    }*/
+/*header {
+    background-image: url(../images/braches5.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 80px;
+    background-attachment: fixed; /*to create image that doesnt scroll down with the page*/
