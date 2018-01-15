@@ -1,3 +1,11 @@
-﻿body
-{
+﻿nav{
+    background-color:#022D41;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+nav a{
+    padding:10px;
+    background-color:#022D41;
 }
