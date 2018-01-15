@@ -1,4 +1,12 @@
-﻿/*
+﻿html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
 #title {
     padding: 20px;
     min-width: 1024px; background: #DAECF3;
@@ -24,14 +32,21 @@
     font-family: serif;
     letter-spacing: 20px;
     border: 15px solid white;
-    width: auto;
+    width: 850px;
     min-width: 500px;
     margin: 250px auto 200px auto;
     padding: 20px;
 }
 
 #arts {
+    padding: 20px;
     background-color: #DEE7EF;
-    margin: 0;
     min-width: 600px;
+    width: 100%;
+    margin-left: -8px;
+}
+
+.col-narrow{
+    padding: 0px 20px 0px 20px;
+    width: 30%;
 }
