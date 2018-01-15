@@ -5,7 +5,11 @@
     top:0;
     left:0;
 }
-nav a{
-    padding:10px;
-    background-color:#022D41;
-}
+    nav a {
+        padding: 10px;
+        background-color: #022D41;
+        display: inline-block;
+        color: #DEE7EF;
+        text-decoration:none;
+        text-transform: uppercase;
+    }
