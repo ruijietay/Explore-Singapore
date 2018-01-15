@@ -29,11 +29,12 @@ header {
     margin-right: -10px;
 }
 
-.big{
-    font-size:150px;
-    font-family:'Bebas Neue';
-    letter-spacing:20px;
-    border:15px solid white;
-    width:900px;
-    margin:150px auto 100px auto;
+.big {
+    font-size: 120px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    margin: 150px auto 100px auto;
+    padding:10px;
 }
