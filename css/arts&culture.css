@@ -1,3 +1,37 @@
-﻿.title{
-    background: 
+﻿/*
+#title {
+    padding: 20px;
+    min-width: 1024px; background: #DAECF3;
+    width: 100%; height: auto;
+    margin-left: -10px; margin-right: -10px;
+} 
+*/
+#title {
+    padding: 50px;
+    background: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url("../media/jpg/Art Science Museum.jpg") no-repeat fixed;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    margin-left: -10px;
+    margin-right: -10px;
+    min-width: 600px;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: auto;
+    min-width: 500px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+}
+
+#arts {
+    background-color: #DEE7EF;
+    margin: 0;
+    min-width: 600px;
 }
