@@ -55,31 +55,33 @@
 .track {
     border: 8px solid black;
     margin-top: -5px;
-    z-index:2;/*so that cart appears infront of the spinning cup*/
-    position:relative;
+    z-index: -50; /*so that cart appears infront of the spinning cup*/
+    position: relative;
 }
 
 /*cart cup animation*/
 
-#rcart{
-    animation-name:movingcart;
-    animation-duration:5s;
-    animation-iteration-count:infinite;
-    animation-direction:alternate-reverse;
-    position:relative;
-    z-index:-100;
+#rcart {
+    animation-name: movingcart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
+    z-index: -100;
 }
 
-@keyframes movingcart{
+@keyframes movingcart {
     0% {
         left: 0;
     }
+
     50% {
         left: 1400px;
         transform: rotateY(360deg);
     }
-    100%{
-        left:0;
+
+    100% {
+        left: 0;
     }
 }
 
@@ -87,25 +89,58 @@
     font-size: 25px;
     color: dimgrey;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align:center;
+    text-align: center;
 }
 
 
 /*Universal Studios Singapore*/
 .universalstud {
-    background-image: linear-gradient(rgba(2, 45, 65, 0.8), rgba(255,255,255, 0.7)), url(../media/jpg/ussmerrygoround.jpg);
+    background-image: linear-gradient(rgba(2, 45, 65, 0.9), rgba(255,255,255, 0.8)), url(../media/jpg/ussmerrygoround.jpg);
     background-size: 100%;
     background-attachment: fixed;
     padding: 20px;
     margin-left: -10px;
     margin-right: -10px;
-    margin-top:-10px;
+    margin-top: -10px;
 }
-
+/*USS image*/
 .imgdes {
-   margin-top: 5%;
-    margin-left: 10%;
     width: 600px;
     height: 450px;
+    margin-left: 15%;
+    border: 3px solid dimgrey;
+    opacity:0.9;
 }
 
+
+/*USS writeup-----------------------------------------------------------------------------------------------------------------------*/
+.title1 {
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.font2 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.marginr {
+    margin-left: 10%;
+}
+
+table, tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-family:'Franklin Gothic';
+    padding:5px;
+    margin-top:5%;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
