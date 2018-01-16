@@ -3,11 +3,22 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="css/onload.css" />
     <title></title>
 </head>
 <body>
-    <p>hello</p>
-    <button onclick="location.href='index.html'">Start</button>
-
+    <main w3-include-html="header.html"></main>
+    <script>
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+    <div id="stacking">
+        <img class="bottom" src="media/jpg/iconic.jpg" alt="iconic" />
+        <img class="top" src="media/jpg/supertree.jpg" alt="supertree" />
+        <img class="bottom" src="media/jpg/uss.jpg" alt="uss">
+        <img class="top" src="media/jpg/culture2.jpg" alt="culture" />
+        <div class="text">Tourist Attractions<br />In Singapore</div>
+        <button class="button" onclick="location.href='index.html'">Start Exploring!</button>
+    </div>
 </body>
 </html>

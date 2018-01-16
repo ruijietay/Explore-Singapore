@@ -51,12 +51,15 @@
     }
 }
 
+/*Horizontal line*/
 .track {
-    border: 12px solid black;
+    border: 8px solid black;
     margin-top: -5px;
-    z-index:2;
+    z-index:2;/*so that cart appears infront of the spinning cup*/
     position:relative;
 }
+
+/*cart cup animation*/
 
 #rcart{
     animation-name:movingcart;
