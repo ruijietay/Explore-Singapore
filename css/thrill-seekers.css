@@ -95,7 +95,7 @@
 
 /*Universal Studios Singapore*/
 .universalstud {
-    background-image: linear-gradient(rgba(2, 45, 65, 0.9), rgba(255,255,255, 0.8)), url(../media/jpg/ussmerrygoround.jpg);
+    background-image: linear-gradient(rgba(2, 45, 65, 0.95), rgba(255,255,255, 0.8)), url(../media/jpg/ussmerrygoround.jpg);
     background-size: 100%;
     background-attachment: fixed;
     padding: 20px;
@@ -106,7 +106,7 @@
 /*USS image*/
 .imgdes {
     width: 600px;
-    height: 450px;
+    height: 500px;
     margin-left: 15%;
     border: 3px solid dimgrey;
     opacity:0.9;
@@ -120,6 +120,10 @@
     text-align: left;
     margin-left: 10%;
     margin-top: 5%;
+}
+.title1 a{
+    text-decoration:none;
+    color:black;
 }
 
 .font2 {
@@ -143,4 +147,47 @@ table, tr, td {
     padding:5px;
     margin-top:5%;
 }
+#blacktable{
+    background-color:dimgrey;
+}
+.colortable {
+    background-color: #DAECF3;
+}
+caption{
+    text-align:left;
+}
+
+.cite1{
+    margin-left:15%;
+}
+
 /*----------------------------------------------------------------------------------------------------------------------------------*/
+/*zipline*/
+.cable {
+    margin-top:0;
+}
+#ziplineperson{
+    width:100px;
+    height:100px;
+    margin-top:-1.4%;
+    animation: ziplining 3s infinite;
+    position:relative;
+    transform:rotate(-10deg);
+    
+}
+
+@keyframes ziplining{
+    from{left:-100px;}
+    to{left:1700px;}
+}
+
+/*.megazip {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.95), rgba(255,255,255, 0.8)), url(../media/jpg/megaadventure.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}*/
+
+

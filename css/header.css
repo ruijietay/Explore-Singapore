@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     text-align: center;
+    z-index:1000;
 }
 
     nav > a {
@@ -18,6 +19,8 @@
         text-transform: uppercase;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 20px;
+        z-index:1000;
+        position:relative;/*made this so that images dont go on top of the nav panel*/
     }
 
 a:hover {
