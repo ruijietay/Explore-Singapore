@@ -18,3 +18,63 @@
     margin: 250px auto 200px auto;
     padding: 20px;
 }
+
+.big2 {
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*text-align:left;*/
+    text-align: center;
+}
+
+    .big2 span {
+        color: #ffd1e8;
+        animation-name: colorchange;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes colorchange {
+    0% {
+        color: #ffd1e8;
+    }
+
+    25% {
+        color: #9CAAC6;
+    }
+
+    50% {
+        color: #ffd1e8;
+    }
+
+    100% {
+        color: #9CAAC6;
+    }
+}
+
+.track {
+    border: 12px solid black;
+    margin-top: -5px;
+    z-index:2;
+    position:relative;
+}
+
+#rcart{
+    animation-name:movingcart;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate-reverse;
+    position:relative;
+}
+
+@keyframes movingcart{
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 1400px;
+        transform: rotateY(360deg);
+    }
+    100%{
+        left:0;
+    }
+}
