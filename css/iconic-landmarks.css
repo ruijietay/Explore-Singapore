@@ -83,7 +83,7 @@ body {
 
 .introduction {
     text-align: justify;
-    background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/Jewel_1.jpg);
+    background-image: linear-gradient(rgba(218,236,243, 0.65), rgba(255,255,255, 0.7)), url(../media/jpg/Singapore_Skyline.jpg);
     background-size: 100%;
     background-attachment: fixed;
     padding: 20px;
@@ -92,10 +92,35 @@ body {
     margin-top: -10px;
 }
 
-.introduction p {
+.introduction>p {
     font-size: 25px;
-    color: white;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#island {
+    width: 80px;
+    animation-name: shake;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 #attraction1 {
