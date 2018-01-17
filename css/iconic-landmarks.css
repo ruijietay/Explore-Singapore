@@ -1,17 +1,103 @@
-﻿h1 {
-    font-family: 'Bebas Neue';
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/merlion-park.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
     border: 15px solid white;
-    width: 900px;
-    margin: auto;
+    width: 850px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
 }
 
-.col-right {
-    width: 35%;
-    float: left;
+.section-wrap {
+    max-width: 60%;
+    margin: 0 auto;
 }
 
-.col-left {
+.big2 {
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*text-align:left;*/
+    text-align: center;
+}
+
+#beautiful {
+    color: hotpink;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: hotpink;
+    }
+
+    50% {
+        color: deeppink;
+    }
+
+    100% {
+        color: hotpink;
+    }
+}
+
+#islandcity {
+    color: red;
+}
+
+/*.col-left {
     width: 65%;
     float: left;
 }
 
+.col-right {
+    width: 33%;
+    float: left;
+    padding-bottom: 20px;
+}*/
+
+.introduction {
+    text-align: justify;
+    background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/Jewel_1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.introduction p {
+    font-size: 25px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#attraction1 {
+    clear: both;
+}
