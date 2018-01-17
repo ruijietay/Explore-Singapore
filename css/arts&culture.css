@@ -1,4 +1,4 @@
-﻿
+﻿/* Box Model Fix */
 html {
     box-sizing: border-box;
 }
@@ -37,17 +37,29 @@ html {
     min-width: 600px;
     width: 100%;
     margin-left: -8px;
+    overflow: auto;
+}
+
+.art-section{
+    margin-left: 220px;
+    border: solid black;
+    padding: 20px;
+    height: 450px;
+    width: 300px;
 }
 
 .col-narrow {
     display: inline-block;
-    padding: 0px 20px 0px 300px;
+    padding: 0px 20px 0px 20px;
     width: 40%;
+    float: left;
 }
 
 .col-wide {
     display: inline-block;
     width: 59%;
+    float: left;
+    border: solid black;
 }
 
 .col-narrow h2 {
@@ -68,6 +80,8 @@ html {
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
+    height: 450px;
+    width: 800px;
     position: relative;
     margin: auto;
 }
@@ -110,7 +124,7 @@ html {
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: 50px;
     width: 100%;
     text-align: center;
 }
@@ -125,6 +139,12 @@ html {
 }
 
 /* The dots/bullets/indicators */
+.buttons{
+    position: absolute;
+    left: 314px;
+    bottom: 8px;
+}
+
 .dot {
     cursor: pointer;
     height: 15px;
