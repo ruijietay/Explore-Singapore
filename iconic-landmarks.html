@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 
@@ -12,34 +13,38 @@
 <body>
     <main w3-include-html="header.html"></main>
     <script>
-//code for inserting navigation panel
+        //code for inserting navigation panel
         w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
     </script>
 
-    <section>
-        <h1>Iconic Landmarks in Singapore</h1>
+    <section class="header">
         <div>
-            <figure>
-                <img class="introduction col-right" src="./media/jpg/Jewel_1.jpg" alt="Jewel @ Changi Airport" />
-                <img class="introduction col-right" src="./media/jpg/Jewel_2.jpg" alt="Jewel @ Changi Airport" />
-                <figcaption>
-                    The Jewel at Changi Airport
-                    <cite>http://www.jewelchangiairport.com/</cite>
-                </figcaption>
-            </figure>
+            <h1 class="big">Iconic Landmarks</h1>
+        </div>
+    </section>
 
-            <h2>Introduction</h2>
+    <section>
+        <p class="big2">
+            Explore <span id="beautiful">beautiful</span> landmarks in <br /> our <span id="islandcity">
+                island city
+            </span>.
+        </p>
+    </section>
 
-            <p class="introduction col-left">
+    <hr />
+
+    <section class="introduction">
+        <div class="section-wrap">
+            <p>
                 As Singapore continues to grow economically,
                 the government has more captial on hand to build more
                 iconic landmarks in our island city. One example would be
                 The Jewel at Changi Airport, a retail destination which features
-                state-of-the-art facilities that makes it eco-friednly. The said architecture
+                state-of-the-art facilities that makes it eco-friendly. The said architecture
                 is schedule for opening in 2019.
             </p>
 
-            <p class="introduction col-left">
+            <!--<p>
                 However, like the Leaning Tower of Pisa or Great Wall of China,
                 Singapore also comes with it's set of unique landmarks which are not
                 known to many. Examples include the Portsdown Water Tank or the Bukit Timah
@@ -47,11 +52,29 @@
                 an opportunity to take a trip down memory lane (and not forgetting those
                 aesthetic Instagram posts!)
             </p>
+            -->
 
-            <p class="introduction">
+            <p>
                 Without further ado, let me introuce some must-visit landmarks in Singapore!
             </p>
         </div>
+
+        <!--
+            <figure>
+            <img class="col-right" src="./media/jpg/Jewel_1.jpg" alt="Jewel @ Changi Airport" />
+            <img class="col-right" src="./media/jpg/Jewel_2.jpg" alt="Jewel @ Changi Airport" />
+            <figcaption class="col-right">
+                The Jewel at Changi Airport
+                <cite>http://www.jewelchangiairport.com/</cite>
+            </figcaption>
+        </figure>
+        -->
     </section>
+
+    <hr />
+
+    <
+
+
 </body>
 </html>
