@@ -8,7 +8,7 @@
     z-index:1000;
 }
 
-    nav > a {
+    header1 a {
         padding: 25px;
         margin-right: 20px;
         margin-left: 20px;
@@ -23,6 +23,6 @@
         position:relative;/*made this so that images dont go on top of the nav panel*/
     }
 
-a:hover {
+#header1 a:hover {
     background-color: #1AA6B7;
 }

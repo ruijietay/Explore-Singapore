@@ -94,8 +94,8 @@
 
 
 /*Universal Studios Singapore*/
-.universalstud {
-    background-image: linear-gradient(rgba(218,236,243, 0.65), rgba(255,255,255, 0.7)), url(../media/jpg/thrilluss.jpg);
+.thrilling {
+    background-image: linear-gradient(rgba(218,236,243, 0.8), rgba(255,255,255, 0.8)), url(../media/jpg/try.jpg);
     background-size: 100%;
     background-attachment: fixed;
     padding: 20px;
@@ -106,9 +106,9 @@
 /*USS image*/
 .imgdes {
     width: 650px;
-    height: 400px;
+    height: 450px;
     margin-left: 15%;
-    opacity:0.9;
+    opacity: 0.9;
 }
 
 
@@ -120,10 +120,32 @@
     margin-left: 10%;
     margin-top: 5%;
 }
-.title1 a{
-    text-decoration:none;
-    color:black;
+
+    .title1 a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .title1 a:hover {
+            background-color: none;
+        }
+/*right*/
+.title2 {
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 5%;
 }
+
+    .title2 a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .title2 a:hover {
+            background-color: none;
+        }
 
 .font2 {
     font-size: 20px;
@@ -138,6 +160,13 @@
 .marginr {
     margin-left: 10%;
 }
+.marginrr{
+    margin-right:20%;
+}/*havent decide*/
+
+ .margintop{
+     margin-top:10%;
+ }
 
 table, tr, td {
     border: 2px solid black;
@@ -147,16 +176,17 @@ table, tr, td {
     margin-top: 5%;
     background-color: white;
 }
-#blacktable{
-    background-color:lightgray;
+
+#blacktable {
+    background-color: lightgray;
 }
 
-caption{
-    text-align:left;
+caption {
+    text-align: left;
 }
 
-.cite1{
-    margin-left:15%;
+.cite1 {
+    margin-left: 15%;
 }
 
 .darkertable {
@@ -166,21 +196,26 @@ caption{
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 /*zipline*/
 .cable {
-    margin-top:0;
-}
-#ziplineperson{
-    width:100px;
-    height:100px;
-    margin-top:-1.4%;
-    animation: ziplining 3s infinite;
-    position:relative;
-    transform:rotate(-10deg);
-    
+    margin-top: 0;
 }
 
-@keyframes ziplining{
-    from{left:-100px;}
-    to{left:1700px;}
+#ziplineperson {
+    width: 100px;
+    height: 100px;
+    margin-top: -1.4%;
+    animation: ziplining 3s infinite;
+    position: relative;
+    transform: rotate(-10deg);
+}
+
+@keyframes ziplining {
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 1700px;
+    }
 }
 
 /*.megazip {
