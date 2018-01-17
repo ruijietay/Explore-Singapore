@@ -95,7 +95,7 @@
 
 /*Universal Studios Singapore*/
 .thrilling {
-    background-image: linear-gradient(rgba(218,236,243, 0.8), rgba(255,255,255, 0.8)), url(../media/jpg/try.jpg);
+    background-image: linear-gradient(rgba(186,185,185, 0.85), rgba(255,255,255, 0.8)), url(../media/jpg/try.jpg);
     background-size: 100%;
     background-attachment: fixed;
     padding: 20px;
@@ -180,6 +180,21 @@
     background-color: white;
     font-size:12px;
 }
+    .usstable td {
+        background: linear-gradient(#E1E4E5,white);
+    }
+.usstable tr:hover td { /*hover effect on table*/
+    background: #B2DCEC; /* Background colour */
+    color: #339; /* Font colour */
+}
+.usstable a{
+    color:black;
+    text-decoration:none;
+}
+.usstable a:hover{
+    color:floralwhite;/*hover over links*/
+    text-decoration:underline;
+}
 
 #blacktable {
     background-color: lightgray;
@@ -194,15 +209,16 @@ caption {
 }
 
 .darkertable {
-    background-color: #DAECF3;
+    background-color: #022D41;
+    color:white;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 /*zipline*/
 .cable {
-    margin-top: 0;
+    margin-top: -1.5%;
     border:2px solid black;
-    opacity:0.2;
+    opacity:0.1;
 }
 
 #ziplineperson {
@@ -236,19 +252,21 @@ caption {
 /*zipline location box*/
 #ziplocation{
     background-color:white;
+    opacity:0.8;
     border-radius:5px;
     position:absolute;
-    margin-top:-70%;
+    margin-top:-45%;
     width:400px;
     padding:30px;
     margin-left:8%;
-
 }
+
 .locationleft{
     float:left;
 }
 #ziplocation img{
     margin-left:5%;
+   
 }
 
 #ziplocation a{
@@ -257,5 +275,72 @@ caption {
 #ziplocation a:hover{
     background-color:antiquewhite;
 }
+.zippingthrough {
+    background-image: linear-gradient(rgba(231,255,235, 0.6), rgba(255,255,255, 0.8)), url(../media/jpg/megazip2.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
 
+.megatable{
+    margin-left:25%;
+    margin-top:5%;
+    border-radius:10px;
+    
+}
+    .megatable table, .megatable tr, .megatable td {
+        font-size: 15px;
+        padding: 5px;
+        border-collapse: collapse;
+    }
 
+        .megatable tr:first-child th {
+            background: #022D41;
+            color:white;
+        }
+    .megatable td {
+        border-top: 1px solid white;
+        background: linear-gradient(#DAECF3, azure); /* Two-colour gradient*/
+    }
+.megatable th{
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+        /*Wetmaze-----------------------------------------------------------------------------------------------------------------------*/
+        .wetmaze {
+            background-image: linear-gradient(rgba(218,236,243, 0.8), rgba(255,255,255, 0.8)), url(../media/jpg/wetmaze.jpg);
+            background-size: 100%;
+            background-attachment: fixed;
+            padding: 20px;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-top: -10px;
+        }
+.waves {
+    margin-top:-1%;
+    border:2px solid black;
+    opacity:0.1;
+}
+
+#jetskiing {
+    width: 100px;
+    height: 100px;
+    animation: jetskiing 3s infinite;
+    position: relative;
+}
+
+@keyframes jetskiing {
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 1700px;
+    }
+}
+.boxxx {
+    margin-top: -7.7%;
+}
