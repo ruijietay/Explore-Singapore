@@ -3,9 +3,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="css/arts&culture.css" />
-    <script src="js/arts & culture.js" defer></script>
+    <link rel="stylesheet" href="css/Arts & Culture.css" />
     <title>Arts & Culture - Tourist Attractions in Singapore</title>
 </head>
 <body>
@@ -15,71 +15,69 @@
         w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
     </script>
 
+    <!-- Header -->
     <header id="title">
         <h1 class="big">Arts & Culture</h1>
     </header>
 
-    <section id="arts">
-        <div class="col-narrow">
-            <div class="art-section">
-                <figure>
-                    <img src="media/icons/woman-portrait.png" alt="Arts logo" title="Icons made by www.flaticon.com is licensed by CC 3.0 BY" width="70" />
-                </figure>
-                <h2>Arts</h2>
-                <p class="art-description">
-                    Home to world-class museums, galleries, performance and exhibition venues,
-                    Singapore has a vibrant arts scene with multiple local and international
-                    performances throughout the year.
-                </p>
-            </div>         
-        </div>
-        <div class="col-wide">
-            <div class="arts-slideshow">
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
-
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="media/jpg/Victoria Theater Day.jpg" style="width:100%">
-                        <div class="text">Caption Text</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="media/jpg/national gallery.jpg" style="width:100%">
-                        <div class="text">Caption Two</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="media/jpg/esplanade.jpg" style="width:100%">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <!-- The dots/circles -->
-                    <div class="buttons" style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                </div>
-            </div>         
+    <section id="description">
+        <h2 id="description-header">
+            Immerse youself in Singapore's arts scene and<br />experience her heritage and history
+        </h2>
+        <hr id="description-hr" />
+        <div id="description-body">
+            <p>
+                Wish to explore the vibrant art scene in Singapore? Interested in catching world-class performances in stunning venues?
+                Hoping to dive deeper into Singapore's rich culture and heritage?
+            </p>
+            <p>These are some places you cannot miss!</p>
         </div>
     </section>
-    <section>
-        <h2>Culture</h2>
-        <p>
-            Despite being deemed as a modern city-state, Singapore is home to
-            various historical buildings and places of worship which exhibits
-            out rich culter and exemplifies our multicultural and multireligious
-            heritage.
-        </p>
+
+    <!-- Arts -->
+    <section id="arts-section">
+        <h1 id="arts-header" class="alignment">Arts</h1>
+
+        <div class="w3-row-padding w3-padding-16 alignment translucent-box" id="arts-display">
+            <div class="w3-third">
+                <img src="media/jpg/Victoria Theatre Day.jpg" alt="Victoria Theatre & Concert Hall" class="grid">
+                <h3>Victoria Theatre & Concert Hall</h3>
+                <p>Catch world-class performances in one of Singapore's most reconisable and oldest performing arts venue</p>
+            </div>
+            <div class="w3-third">
+                <img src="media/jpg/national gallery.jpg" alt="National Gallery Singapore" class="grid">
+                <h3>National Gallery Singapore</h3>
+                <p>Discover the world's largest collection of modern Southeast Asian art within one of Singapore's most significant buildings</p>
+            </div>
+            <div class="w3-third">
+                <img src="media/jpg/esplanade.jpg" alt="Esplanade" class="grid">
+                <h3>Esplanade</h3>
+                <p>Catch a non-stop line-up of world-class performances at Singapore’s premier arts centre, situated along the scenic Marina Bay.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Culture -->
+    <section id="culture-section">
+        <h1 id="culture-header" class="alignment">Culture</h1>
+
+        <div class="w3-row-padding w3-padding-16 alignment translucent-box" id="arts-display">
+            <div class="w3-third">
+                <img src="media/jpg/" alt="Little India" class="grid">
+                <h3>Little India</h3>
+                <p>Explore the buzzing historic area that shows off the best of Singapore's Indian community from vibrant culture to icredible shopping</p>
+            </div>
+            <div class="w3-third">
+                <img src="media/jpg/" alt="Chinatown" class="grid">
+                <h3>Chinatown</h3>
+                <p>Learn more about chinese heritage through Singapore's historic Chinatown, filled with traditional shops and markets as well as cool stores and cafes</p>
+            </div>
+            <div class="w3-third">
+                <img src="media/jpg/" alt="Kampung Glam" class="grid">
+                <h3>Kampung Glam</h3>
+                <p>Experience malay culture and discover Kampung Glam's rich history, living traditions, excellent eateries and trendy shops in this vibrant neighboorhood</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
