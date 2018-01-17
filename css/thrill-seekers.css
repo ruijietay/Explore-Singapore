@@ -105,8 +105,8 @@
 }
 /*USS image*/
 .imgdes {
-    width: 650px;
-    height: 450px;
+    width: 500px;
+    height: 350px;
     margin-left: 15%;
     opacity: 0.9;
 }
@@ -114,7 +114,7 @@
 
 /*USS writeup-----------------------------------------------------------------------------------------------------------------------*/
 .title1 {
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
     margin-left: 10%;
@@ -131,7 +131,7 @@
         }
 /*right*/
 .title2 {
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: right;
     margin-right: 10%;
@@ -148,7 +148,7 @@
         }
 
 .font2 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
@@ -161,20 +161,24 @@
     margin-left: 10%;
 }
 .marginrr{
-    margin-right:20%;
+    margin-left:7%;
 }/*havent decide*/
 
  .margintop{
      margin-top:10%;
  }
+ iframe{
+     margin-left:10%;
+ }
 
-table, tr, td {
+.usstable, tr, td {
     border: 2px solid black;
     border-collapse: collapse;
     font-family: 'Franklin Gothic';
     padding: 5px;
     margin-top: 5%;
     background-color: white;
+    font-size:12px;
 }
 
 #blacktable {
@@ -197,6 +201,8 @@ caption {
 /*zipline*/
 .cable {
     margin-top: 0;
+    border:2px solid black;
+    opacity:0.2;
 }
 
 #ziplineperson {
@@ -226,5 +232,30 @@ caption {
     margin-left: -10px;
     margin-right: -10px;
 }*/
+
+/*zipline location box*/
+#ziplocation{
+    background-color:white;
+    border-radius:5px;
+    position:absolute;
+    margin-top:-70%;
+    width:400px;
+    padding:30px;
+    margin-left:8%;
+
+}
+.locationleft{
+    float:left;
+}
+#ziplocation img{
+    margin-left:5%;
+}
+
+#ziplocation a{
+    color:black;
+}
+#ziplocation a:hover{
+    background-color:antiquewhite;
+}
 
 
