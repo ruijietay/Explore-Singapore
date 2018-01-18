@@ -95,18 +95,18 @@
 
 /*Universal Studios Singapore*/
 .thrilling {
-    background-image: linear-gradient(rgba(218,236,243, 0.8), rgba(255,255,255, 0.8)), url(../media/jpg/try.jpg);
+    background-image: linear-gradient(rgba(186,185,185, 0.85), rgba(255,255,255, 0.8)), url(../media/jpg/try.jpg);
     background-size: 100%;
     background-attachment: fixed;
     padding: 20px;
     margin-left: -10px;
     margin-right: -10px;
-    margin-top: -10px;
+    margin-top: -10px;/*background*/
 }
 /*USS image*/
 .imgdes {
-    width: 650px;
-    height: 450px;
+    width: 500px;
+    height: 350px;
     margin-left: 15%;
     opacity: 0.9;
 }
@@ -114,7 +114,7 @@
 
 /*USS writeup-----------------------------------------------------------------------------------------------------------------------*/
 .title1 {
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
     margin-left: 10%;
@@ -131,7 +131,7 @@
         }
 /*right*/
 .title2 {
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: right;
     margin-right: 10%;
@@ -148,7 +148,7 @@
         }
 
 .font2 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
@@ -160,22 +160,48 @@
 .marginr {
     margin-left: 10%;
 }
-.marginrr{
-    margin-right:20%;
-}/*havent decide*/
 
- .margintop{
-     margin-top:10%;
- }
+.marginrr {
+    margin-left: 7%;
+}
+/*havent decide*/
 
-table, tr, td {
+.margintop {
+    margin-top: 10%;
+}
+
+iframe {
+    margin-left: 10%;
+}
+
+.usstable, tr, td {
     border: 2px solid black;
     border-collapse: collapse;
     font-family: 'Franklin Gothic';
     padding: 5px;
     margin-top: 5%;
     background-color: white;
+    font-size: 12px;
 }
+
+    .usstable td {
+        background: linear-gradient(#E1E4E5,white);
+    }
+
+    .usstable tr:hover td { /*hover effect on table*/
+        background: #B2DCEC; /* Background colour */
+        color: #339; /* Font colour */
+    }
+
+    .usstable a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .usstable a:hover {
+            color: floralwhite; /*hover over links*/
+            text-decoration: underline;
+        }
 
 #blacktable {
     background-color: lightgray;
@@ -190,13 +216,16 @@ caption {
 }
 
 .darkertable {
-    background-color: #DAECF3;
+    background-color: #022D41;
+    color: white;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
 /*zipline*/
 .cable {
-    margin-top: 0;
+    margin-top: -1.5%;
+    border: 2px solid black;
+    opacity: 0.1;
 }
 
 #ziplineperson {
@@ -227,4 +256,144 @@ caption {
     margin-right: -10px;
 }*/
 
+.zippingthrough {
+    background-image: linear-gradient(rgba(231,255,235, 0.6), rgba(255,255,255, 0.8)), url(../media/jpg/megazip2.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
 
+.megatable {
+    margin-left: 25%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+    .megatable table, .megatable tr, .megatable td {
+        font-size: 15px;
+        padding: 5px;
+        border-collapse: collapse;
+    }
+
+        .megatable tr:first-child th {
+            background: #022D41;
+            color: white;
+        }
+
+    .megatable td {
+        border-top: 1px solid white;
+        background: linear-gradient(#DAECF3, azure); /* Two-colour gradient*/
+    }
+
+    .megatable th {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+/*Wetmaze-----------------------------------------------------------------------------------------------------------------------*/
+.wetmaze {
+    background-image: linear-gradient(rgba(218,236,243, 0.8), rgba(255,255,255, 0.8)), url(../media/jpg/wetmaze.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.waves {
+    margin-top: -1%;
+    border: 2px solid black;
+    opacity: 0.1;
+}
+
+#jetskiing {
+    width: 100px;
+    height: 100px;
+    animation: jetskiing 3s infinite;
+    position: relative;
+}
+
+@keyframes jetskiing {
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 1700px;
+    }
+}
+
+.boxxx {
+    margin-top: -7.7%;
+}
+
+.advcovpic {
+    width: 500px;
+    height: 350px;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.9;
+    transition: width 2s, height 4s;
+}
+
+.advcovpic:hover{
+    width:700px;
+    height:500px;
+}
+
+/*Table*/
+.advcovtable, tr, th, td {
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family: 'Franklin Gothic';
+    padding: 5px;
+    margin-top: 5%;
+    background-color: white;
+    font-size: 12px;
+}
+    .advcovtable th {
+        background-color: #F9B247;
+    }
+    .advcovtable td {
+        background: linear-gradient(#FDDDAC,white);
+    }
+
+.title3 {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin:100px auto 60px auto; /*align to center*/
+    display:block;
+}
+
+    .title3 a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .title3 a:hover {
+            background-color: none;
+        }
+
+
+.advcovcontent{
+    display:block;
+    margin:0 auto;
+}
+
+.font3 {
+    font-size:20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.middle{
+    display:block;
+    width:500px;
+    height:200px;
+    margin:0 auto;
+}
