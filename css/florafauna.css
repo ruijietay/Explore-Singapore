@@ -7,7 +7,7 @@
     background-attachment: fixed;
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 50px;
     margin-left: -10px;
     margin-right: -20px;
     min-width: 950px;
@@ -28,13 +28,13 @@
     background-attachment: fixed;
     text-align: center;
     color: black;
-    padding: 20px;
+    padding: 50px;
     margin-left: -10px;
-    margin-right: -10px;
+    margin-right: -20px;
     min-width: 950px;
 }
 
-#heading {
+.heading {
     font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -43,7 +43,7 @@
     transition-duration: 3s;
     transition-timing-function: ease-in-out;
 }
-#heading:hover {
+.heading:hover {
     color: purple;
     font-size: 70px;
 }
@@ -53,40 +53,37 @@
 }
 #intro {
     background-color: #DEE7EF;
-    padding: 20px;
-    min-width: 600px;
-    width: 100%;
-    margin-left: -8px;
+    padding: 50px;
+    /*margin-left: -8px;*/
+    margin-left: -10px;
+    margin-right: -20px;
+    min-width: 950px;
 }
-#subheading{
+.subheading{
     font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align:center;
+    padding: 5px;
 }
 #flower {
     width: 100px;
     height: 100px;
-    margin-top: 60px;
-    margin-right: 1100px;
     animation-name: flower;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     transition: 5s ease-in-out;
+    float:left;
 }
-/*@keyframes flower {
-    0%, 100% {
-        transform: rotate(360deg);
-    }
-}*/
-#flower2{
+
+#flower2 {
     width: 100px;
     height: 100px;
-    margin-top: 10px;
-    margin-left: 1100px;
-    animation-name: flower2;
+    /*margin-top: -75%;*/
+    animation-name: flower;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     transition: 5s ease-in-out;
+    float: right;
 }
 
 @keyframes flower {
@@ -114,12 +111,18 @@
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #9CAAC6;
-    margin: 5px;
+    margin: -15px;
 }
 #GBTB-pic{
     width:700px;
     height:550px;
     
+}
+.Botanic-desc {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #9CAAC6;
+    margin: -20px;
 }
 /*Description*/
 .content-wrap {
@@ -138,17 +141,86 @@ div.gallery {
     float: left;
 }
 
-    div.gallery:hover {
-        border: 1px solid #777;
-    }
+/*div.gallery:hover {
+    border: 1px solid #777;
+ */
 
-    div.gallery img {
-        width: 200px;
-        height: 150px;
-        align-content: center;
-    }
+div.gallery img {
+    width: 200px;
+    height: 150px;
+    align-content: center;
+}
 
 div.desc {
     padding: 15px;
     text-align: center;
+}
+#butterfly {
+    width: 100px;
+    height: 100px;
+    /*margin-left: 1100px;*/
+    animation-name: butterfly;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes butterfly{
+    0% {
+        margin-left: 1300px;
+    }
+    100% {
+        margin-left: -1500px;
+    }
+
+} 
+
+/* Fauna */
+#fauna {
+    background-image: url(../media/jpg/bg.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 50px;
+    margin-left: -10px;
+    margin-right: -20px;
+    min-width: 950px;
+}
+
+/* To Remove underline for linked text */
+#BotanicGarden a{
+    text-decoration:none;
+    color:rebeccapurple;
+}
+#Gardens-by-The-Bay a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+#SingaporeZoo a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+#Zoo-Desc {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #9CAAC6;
+    margin: -15px;
+}
+/* For Table */
+table {
+    border-spacing: 80 px;
+    text-align: center;
+    table-layout: fixed;
+    border: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
 }
