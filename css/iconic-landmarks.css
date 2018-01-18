@@ -9,7 +9,6 @@ html {
 
 body {
     background-color: lightblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header {
@@ -19,8 +18,6 @@ body {
     text-align: center;
     color: white;
     padding: 20px;
-    margin-left: -10px;
-    margin-right: -10px;
 }
 
 .big {
@@ -41,7 +38,6 @@ body {
 .big2 {
     font-size: 70px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /*text-align:left;*/
     text-align: center;
 }
 
@@ -70,20 +66,8 @@ body {
     color: red;
 }
 
-/*.col-left {
-    width: 65%;
-    float: left;
-}
-
-.col-right {
-    width: 33%;
-    float: left;
-    padding-bottom: 20px;
-}*/
-
 .introduction {
     text-align: justify;
-    background-image: linear-gradient(rgba(218,236,243, 0.65), rgba(255,255,255, 0.7)), url(../media/jpg/Singapore_Skyline.jpg);
     background-size: 100%;
     background-attachment: fixed;
     padding: 20px;
@@ -92,8 +76,8 @@ body {
     margin-top: -10px;
 }
 
-.introduction>p {
-    font-size: 25px;
+.introduction+p {
+    font-size: 30px;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -123,6 +107,71 @@ body {
     }
 }
 
-#attraction1 {
-    clear: both;
+hr {
+    width: 850px;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto;
+    border: none;
+}
+
+.introparagraph {
+    font-size: 20px;
+}
+
+#iconic {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0,0,0, 0.6)), url(../media/jpg/Singapore_Skyline.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.translucent {
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    width: 850px;
+}
+
+h2 {
+    width: 850px;
+    margin: auto;
+    color: white;
+    text-align: left;
+    font-size: 40px;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+h3 {
+    height: 65px;
+}
+
+.thumbdesc {
+    text-align: justify;
+}
+
+#exotic {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0,0,0, 0.6)), url(../media/jpg/jetty.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#seperator {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
 }
