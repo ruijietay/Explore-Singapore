@@ -1,4 +1,13 @@
-﻿/*Global*/
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Global*/
 .alignment {
     max-width: 70%;
     margin: 0 auto;

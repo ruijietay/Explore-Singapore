@@ -1,0 +1,30 @@
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#title {
+    padding: 50px;
+    background: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/jpg/Victoria Theatre Day.jpg") no-repeat fixed;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.big {
+    font-size: 90px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    min-width: 500px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+    font-weight: bold;
+}
