@@ -1,0 +1,160 @@
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Global*/
+.alignment {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/*Header*/
+#title {
+    padding: 50px;
+    background: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/jpg/Victoria Theatre Day.jpg") no-repeat fixed;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.big {
+    font-size: 90px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    min-width: 500px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/*Body*/
+#main-body {
+    clear: both;
+}
+
+#about {
+    clear: both;
+    overflow: hidden;
+}
+
+.description-container:before,
+.description-container:after {
+    content: "";
+    display: table;
+}
+
+.description-container:after {
+    clear: both;
+}
+
+.description-container {
+    clear: both;
+    *zoom: 1;
+    margin: 20px auto;
+}
+
+.description-alignment-left {
+    padding-right: 40px;
+    width: 70%;
+    float: left;
+    text-align: justify;
+}
+
+.description-image {
+    width: 40%;
+    float: right;
+    margin: 0;
+    padding: 10px;
+}
+
+.description-subheader{
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.description-image img {
+    width: 100%;
+}
+
+.description-image cite {
+    text-align: left;
+    font-size: 0.7em;
+}
+
+.section-left {
+    padding-right: 20px;
+    width: 60%;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+/*Sidebar*/
+.sidebar-alignment-right{
+    padding-right: 40px;
+    width: 30%;
+    float: right;
+}
+
+.sidebar-info {
+    margin-top: 80px;
+    padding: 10px;
+    background-color: #DEE7EF;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.sidebar-icon {
+    margin: 0;
+    margin-top: 20px;
+    width: 10%;
+    float: left;
+}
+
+.sidebar-description{
+    margin: 0;
+    width: 90%;
+    float: right;
+}
+
+.sidebar-hr {
+    width: 110%;
+    height: 2px;
+    margin: 0 auto 0 -10px;
+    background-color: #FFFFFF;
+    clear: both;
+}
+
+.sidebar-link{
+    text-decoration: none;
+}
+.sidebar-link:hover {
+    text-decoration: underline;
+}
+
+/*Map*/
+#map {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    border-radius: 25px;
+}
+
+/*Form*/
+#form{
+    border: solid;
+    margin-top: 50px;
+    clear: both;
+}
