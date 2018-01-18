@@ -10,10 +10,14 @@
     font-size: 70px;
     color: mintcream;
 }
-.section-break {
-    margin: -20px -10px;
-    height: 30px;
+.section-break-hr {
+    height: 3px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
     background-color: #DEE7EF;
+    overflow: auto;
 }
 .grid-description {
 }
@@ -26,9 +30,6 @@
     background-size: cover;
     text-align: center;
     color: white;
-    margin-left: -10px;
-    margin-right: -10px;
-    min-width: 950px;
 }
 
 .big {
@@ -46,9 +47,6 @@
     text-align: justify;
     background-color: #DEE7EF;
     padding: 20px;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
 }
 
 #description-header{
@@ -78,9 +76,6 @@
     background-size: 100%;
     background-attachment: fixed;
     background-size: cover;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -20px;
     padding: 30px;
 }
 
@@ -106,12 +101,32 @@ div > p{
     background-size: 100%;
     background-attachment: fixed;
     background-size: cover;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -20px;
     padding: 30px;
 }
 
 .culture-grid-title{
     height: 50px;
+}
+
+/*Media Query*/
+
+/*Adjust title border when under 950px*/
+@media screen and (max-width: 949px) {
+    .big {
+        font-size: 100px;
+        font-family: serif;
+        letter-spacing: 20px;
+        border: 15px solid white;
+        width: auto;
+        min-width: 500px;
+        margin: 250px auto 200px auto;
+        padding: 20px;
+    }
+}
+
+/*For Mobile Resolution and smaller*/
+@media screen and (max-width: 768px){
+    body{
+        font-size: 0.7em;
+    }
 }
