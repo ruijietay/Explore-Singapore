@@ -41,6 +41,7 @@
     min-width: 500px;
     margin: 250px auto 200px auto;
     padding: 20px;
+    font-weight: bold;
 }
 
 #description {
@@ -121,12 +122,5 @@ div > p{
         min-width: 500px;
         margin: 250px auto 200px auto;
         padding: 20px;
-    }
-}
-
-/*For Mobile Resolution and smaller*/
-@media screen and (max-width: 768px){
-    body{
-        font-size: 0.7em;
     }
 }
