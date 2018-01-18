@@ -41,14 +41,14 @@
 }
 
 #description-header{
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 50px;
 }
 
 #description-hr {
     width: 40%;
-    height: 3px;
+    height: 2px;
     background-color: #191970;
     border: none;
     margin: 0 auto;
@@ -57,7 +57,7 @@
 #description-body {
     max-width: 70%;
     margin: 50px auto;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #arts-section {
