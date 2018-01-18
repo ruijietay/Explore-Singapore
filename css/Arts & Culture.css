@@ -6,6 +6,17 @@
 .translucent-box {
     background-color: rgba(222,231,239,0.7);
 }
+.section-header {
+    font-size: 70px;
+    color: mintcream;
+}
+.section-break {
+    margin: -20px -10px;
+    height: 30px;
+    background-color: #DEE7EF;
+}
+.grid-description {
+}
 
 #title {
     padding: 50px;
@@ -60,8 +71,10 @@
     font-size: 20px;
 }
 
+/*Arts Section*/
+
 #arts-section {
-    background: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url("../media/jpg/Museum-background.jpg") no-repeat fixed;
+    background: linear-gradient(rgba(2, 45, 65, 0.5), rgba(0, 0, 0, 0.5)), url("../media/jpg/Museum-background.jpg") no-repeat fixed;
     background-size: 100%;
     background-attachment: fixed;
     background-size: cover;
@@ -71,15 +84,34 @@
     padding: 30px;
 }
 
-#arts-header{
-    font-size: 70px;
-    color: mintcream;
-}
-
 #arts-display{
     text-align: center;
 }
 
+.art-grid-title{
+    height: 80px;
+}
+
 .grid{
     width: 100%;
+}
+
+div > p{
+    text-align: justify;
+}
+
+/* Culture Section */
+#culture-section {
+    background: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url("../media/jpg/Culture-Background.jpg") no-repeat fixed;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -20px;
+    padding: 30px;
+}
+
+.culture-grid-title{
+    height: 50px;
 }
