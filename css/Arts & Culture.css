@@ -88,7 +88,7 @@
     text-align: center;
 }
 
-.grid-title{
+.art-grid-title{
     height: 80px;
 }
 
@@ -110,4 +110,8 @@ div > p{
     margin-right: -10px;
     margin-top: -20px;
     padding: 30px;
+}
+
+.culture-grid-title{
+    height: 50px;
 }
