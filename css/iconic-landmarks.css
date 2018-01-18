@@ -134,11 +134,11 @@ hr {
     padding-top: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     margin: auto;
-    width: 850px;
+    width: 80%;
 }
 
 h2 {
-    width: 850px;
+    width: 80%;
     margin: auto;
     color: white;
     text-align: left;

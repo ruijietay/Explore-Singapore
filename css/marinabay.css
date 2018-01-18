@@ -1,0 +1,57 @@
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.header {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/mbs.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+}
+
+.section-wrap {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.introparagraph {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.mbs {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0,0,0, 0.6)), url(../media/jpg/mbs_laser.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.translucent {
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    width: 80%;
+}
