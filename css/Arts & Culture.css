@@ -28,8 +28,6 @@ html {
     background-color: #DEE7EF;
     overflow: auto;
 }
-.grid-description {
-}
 
 #title {
     padding: 50px;
@@ -79,8 +77,20 @@ html {
     font-size: 20px;
 }
 
-/*Arts Section*/
+/*Grid general*/
+.grid-section{
+    text-decoration: none;
+}
 
+    .grid-section:hover {
+        color: #191970
+    }
+
+.grid-description {
+    color: #000000 !important;
+}
+
+/*Arts Section*/
 #arts-section {
     background: linear-gradient(rgba(2, 45, 65, 0.5), rgba(0, 0, 0, 0.5)), url("../media/jpg/Museum-background.jpg") no-repeat fixed;
     background-size: 100%;

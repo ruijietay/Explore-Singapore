@@ -13,6 +13,11 @@ html {
     margin: 0 auto;
 }
 
+body {
+    min-width: 1080px;
+    overflow-x: scroll;
+}
+
 /*Header*/
 #title {
     padding: 50px;
@@ -73,34 +78,39 @@ html {
     width: 40%;
     float: right;
     margin: 0;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
 }
 
-.description-subheader{
+    .description-image img {
+        width: 100%;
+    }
+
+    .description-image cite {
+        text-align: left;
+        font-size: 0.7em;
+    }
+
+.description-subheader {
     font-weight: bold;
     margin-top: 20px;
     text-align: left;
 }
 
-.description-image img {
-    width: 100%;
-}
-
-.description-image cite {
-    text-align: left;
-    font-size: 0.7em;
-}
-
 .section-left {
-    padding-right: 20px;
+    padding: 0 20px 0 0;
     width: 60%;
     float: left;
     clear: both;
     overflow: hidden;
 }
 
+.half {
+    clear: both;
+    overflow: hidden;
+}
+
 /*Sidebar*/
-.sidebar-alignment-right{
+.sidebar-alignment-right {
     padding-right: 40px;
     width: 30%;
     float: right;
@@ -121,15 +131,15 @@ html {
     float: left;
 }
 
-.sidebar-description{
+.sidebar-description {
     margin: 0;
     width: 80%;
     float: right;
 }
 
-.sidebar-description > h3{
-    margin-top: 18px;
-}
+    .sidebar-description > h3 {
+        margin-top: 18px;
+    }
 
 .sidebar-hr {
     width: 110%;
@@ -139,12 +149,13 @@ html {
     clear: both;
 }
 
-.sidebar-link{
+.sidebar-link {
     text-decoration: none;
 }
-.sidebar-link:hover {
-    text-decoration: underline;
-}
+
+    .sidebar-link:hover {
+        text-decoration: underline;
+    }
 
 /*Map*/
 #map {
@@ -157,8 +168,106 @@ html {
 }
 
 /*Form*/
-#form{
-    border: solid;
+#form {
     margin-top: 50px;
     clear: both;
+}
+
+.form-container {
+    width: 100%;
+    margin: 2em auto;
+    overflow: hidden;
+    background: rgba(255,255,255,1);
+    border-radius: 10px;
+}
+
+.form-message, .form-contact, .form-name, .form-footer, .form-header, textarea {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.form-header {
+    height: auto;
+    background: rgba(0,0,0,.05);
+    padding-left: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+    .form-header > h1 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: rgba(51,51,51,.4);
+    }
+
+
+.form-first, .form-last {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0 0 0 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    height: 50px;
+}
+
+.form-last {
+    width: 50%;
+    border-left: 0;
+}
+
+.form-email {
+    height: 50px;
+    width: 100%;
+    padding: 0 0 0 20px;
+    border-top: 0;
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 20px 0 0 20px;
+}
+
+.form-footer {
+    height: 49px;
+    border-radius: 0 0 5px 5px;
+    padding-left: 0;
+    padding-right: 20px;
+    background-color: rgba(0,0,0,.05);
+}
+
+button {
+    height: 32px;
+    background: #DEE7EF;
+    border-radius: 5px;
+    border: 0;
+    margin: 7px 0;
+    color: rgba(0,0,0,1);
+    float: right;
+    padding: 0 20px 0 20px;
+    border-bottom: 3px solid #9CAAC6;
+    transition: all linear .2s;
+}
+
+    button:hover {
+        background: #9CAAC6;
+    }
+
+    button:focus {
+        outline: none;
+    }   
+
+.form-first:focus, .form-last:focus, .form-email:focus, textarea:focus {
+    outline: none;
+    background: rgba(52, 152, 219,.1);
+    color: rgba(51,51,51,.7);
 }

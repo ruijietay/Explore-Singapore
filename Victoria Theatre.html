@@ -22,59 +22,61 @@
             <section id="about">
                 <h1 style="font-weight: bold">About</h1>
 
-                <div class="section-left">
-                    <p>
-                        The Victoria Theatre & Victoria Concert Hall was established in 1862.
-                        It now remains as a national monument of Singapore and is one of Singapore's
-                        oldest performing arts venue. The building, containing a 614-seat Theatre and a
-                        673-seat Concert Hall, is located in the heart of Singapore's city centre.
-                    </p>
-                    <p>
-                        The Victoria Theatre & Concert Hall has played a role in Singapore's history for over 150 years.
-                        It continues to be an exciting platform, supporting the growth of Singapore's arts industry.
-                    </p>
+                <!-- First Half -->
+                <div class="half">
+                    <div class="section-left">
+                        <p>
+                            The Victoria Theatre & Victoria Concert Hall was established in 1862.
+                            It now remains as a national monument of Singapore and is one of Singapore's
+                            oldest performing arts venue. The building, containing a 614-seat Theatre and a
+                            673-seat Concert Hall, is located in the heart of Singapore's city centre.
+                        </p>
+                        <p>
+                            The Victoria Theatre & Concert Hall has played a role in Singapore's history for over 150 years.
+                            It continues to be an exciting platform, supporting the growth of Singapore's arts industry.
+                        </p>
+                    </div>
+                    <figure class="description-image">
+                        <img src="media/jpg/Victoria Theatre(2).jpg" alt="Victoria Theatre & Concert Hall" />
+                        <cite>Image taken from https://goo.gl/rcnV1x</cite>
+                    </figure>
                 </div>
-                <figure class="description-image">
-                    <img src="media/jpg/Victoria Theatre(2).jpg" alt="Victoria Theatre & Concert Hall" />
-                    <cite>Image taken from https://goo.gl/rcnV1x</cite>
-                </figure>
 
-                <div class="section-left">
-                    <h3 class="description-subheader">Restored to its original neo-classical 1905 structure</h3>
+                <h3 class="description-subheader">Restored to its original neo-classical 1905 structure</h3>
 
-                    <p>
-                        Having undergone a 4-year refurbishment in 2010 which totaled to an amount of $158 million,
-                        the Victoria Theatre & Victoria Concert Hall saw new state-of-the-art facilities and amenities.
-                        Additionally, two smaller rooms for music, dance and theatre rehearsals was added.
-                    </p>
+                <div class="half">
+                    <div class="section-left">
+                        <p>
+                            Having undergone a 4-year refurbishment in 2010 which totaled to an amount of $158 million,
+                            the Victoria Theatre & Victoria Concert Hall saw new state-of-the-art facilities and amenities.
+                            Additionally, two smaller rooms for music, dance and theatre rehearsals was added.
+                        </p>
+                    </div>
+                    <figure class="description-image">
+                        <img src="media/jpg/Victoria Theatre Inner.jpg" alt="Victoria Concert Hall performance" />
+                        <cite>Photo by Tay Rui-Jie</cite>
+                    </figure>
                 </div>
-                <figure class="description-image">
-                    <img src="media/jpg/Victoria Theatre Inner.jpg" alt="Victoria Concert Hall performance" />
-                    <cite>Photo by Tay Rui-Jie</cite>
-                </figure>
             </section>
 
             <!-- Contact Us -->
-            <form id="form">
-                <header>Contact Us</header>
-
-                <p>
-                    <label>Name:</label>
-                    <input type="text" placeholder="Enter name" />
-                </p>
-                <p>
-                    <label>Email: </label>
-                    <input type="email" name="Email" />
-                </p>
-                <p>
-                    <label>Message:</label>
-                    <textarea name="Message" rows="3" cols="30"></textarea>
-                </p>
-
-                <p>
-                    <input name="Submit" type="submit" value="Submit" />
-                    <input name="Reset" type="reset" value="Reset" />
-                </p>
+            <form class="form-container">
+                <header class="form-header">
+                    <h1>Send us a suggestion!</h1>
+                </header>
+                <div class="form-name">
+                    <input class="form-first" type="text" placeholder="First Name" required />
+                    <input class="form-last" type="text" placeholder="Last Name" />
+                </div>
+                <div class="form-contact">
+                    <input class="form-email" type="text" placeholder="E-mail Address" required />
+                </div>
+                <div class="form-message">
+                    <textarea placeholder="Your Sugggestions Here!" required></textarea>
+                </div>
+                <footer class="form-footer">
+                    <button>Send Suggestion</button>
+                </footer>
             </form>
         </section>
 
@@ -115,7 +117,7 @@
                 </div>
             </section>
 
-            <div id="map">Hello World</div>
+            <div id="map"></div>
         </aside>
     </section>
 

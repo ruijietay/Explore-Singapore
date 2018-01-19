@@ -76,11 +76,11 @@ body {
     margin-top: -10px;
 }
 
-.introduction+p {
-    font-size: 30px;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    .introduction + p {
+        font-size: 30px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
 #island {
     width: 80px;
