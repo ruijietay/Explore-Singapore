@@ -127,6 +127,37 @@ iframe {
     text-align: center;
 }
 
+/*Ticketing*/
+caption{
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+table, tr, td, th {
+    border: solid 1px;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+.exception{
+    border: none !important;
+}
+
+tr:not(.exception){
+    height: 50px;
+}
+
+.ticketing-small {
+    font-size: 0.53em;
+}
+
+.ticketing-medium{
+    font-size: 0.8em;
+}
+
 /*Sidebar*/
 .sidebar-alignment-right {
     padding-right: 40px;
