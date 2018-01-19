@@ -1,3 +1,280 @@
-﻿body
-{
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Global*/
+.alignment {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+html {
+    overflow-x: scroll;
+}
+
+body {
+    min-width: 1080px;
+}
+
+/*Header*/
+#title {
+    padding: 50px;
+    background: linear-gradient(rgba(2, 45, 65, 0.6), rgba(0, 0, 0, 0.6)), url("../../media/jpg/National Gallery Stairs.jpg") no-repeat fixed;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    min-width: 500px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/*Body*/
+#main-body {
+    clear: both;
+}
+
+#about {
+    clear: both;
+    overflow: hidden;
+}
+
+.description-container:before,
+.description-container:after {
+    content: "";
+    display: table;
+}
+
+.description-container:after {
+    clear: both;
+}
+
+.description-container {
+    clear: both;
+    *zoom: 1;
+    margin: 20px auto;
+}
+
+.description-alignment-left {
+    padding-right: 40px;
+    width: 70%;
+    float: left;
+    text-align: justify;
+}
+
+.description-image {
+    width: 40%;
+    float: right;
+    margin: 0;
+    padding: 20px 10px 10px 10px;
+}
+
+    .description-image img {
+        width: 100%;
+    }
+
+    .description-image cite {
+        text-align: left;
+        font-size: 0.7em;
+    }
+
+#LM{
+    font-style: italic;
+}
+
+.description-subheader {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.section-left {
+    padding: 0 20px 0 0;
+    width: 60%;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+.half {
+    clear: both;
+    overflow: hidden;
+}
+
+/*Sidebar*/
+.sidebar-alignment-right {
+    padding-right: 40px;
+    width: 30%;
+    float: right;
+}
+
+.sidebar-info {
+    margin-top: 80px;
+    padding: 10px;
+    background-color: #D0F0C0;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.sidebar-icon {
+    margin: 0;
+    margin-top: 20px;
+    width: 10%;
+    float: left;
+}
+
+.sidebar-description {
+    margin: 0;
+    width: 80%;
+    float: right;
+}
+
+    .sidebar-description > h3 {
+        margin-top: 18px;
+    }
+
+.sidebar-hr {
+    width: 110%;
+    height: 2px;
+    margin: 0 auto 0 -10px;
+    background-color: #FFFFFF;
+    clear: both;
+}
+
+.sidebar-link {
+    text-decoration: none;
+}
+
+    .sidebar-link:hover {
+        text-decoration: underline;
+    }
+
+/*Map*/
+#map {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    border-radius: 25px;
+}
+
+/*Form*/
+#form {
+    margin-top: 50px;
+    clear: both;
+}
+
+.form-container {
+    width: 100%;
+    margin: 2em auto;
+    overflow: hidden;
+    background: rgba(255,255,255,1);
+    border-radius: 10px;
+}
+
+.form-message, .form-contact, .form-name, .form-footer, .form-header, textarea {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.form-header {
+    height: auto;
+    background: rgba(0,0,0,.05);
+    padding-left: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+    .form-header > h1 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: rgba(51,51,51,.4);
+    }
+
+
+.form-first, .form-last {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0 0 0 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    height: 50px;
+}
+
+.form-last {
+    width: 50%;
+    border-left: 0;
+}
+
+.form-email {
+    height: 50px;
+    width: 100%;
+    padding: 0 0 0 20px;
+    border-top: 0;
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 20px 0 0 20px;
+}
+
+.form-footer {
+    height: 49px;
+    border-radius: 0 0 5px 5px;
+    padding-left: 0;
+    padding-right: 20px;
+    background-color: rgba(0,0,0,.05);
+}
+
+button {
+    height: 32px;
+    background: #D0F0C0;
+    border-radius: 5px;
+    border: 0;
+    margin: 7px 0;
+    color: rgba(0,0,0,1);
+    float: right;
+    padding: 0 20px 0 20px;
+    border-bottom: 3px solid #00A572;
+    transition: all linear .2s;
+}
+
+    button:hover {
+        background: #00A572;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+.form-first:focus, .form-last:focus, .form-email:focus, textarea:focus {
+    outline: none;
+    background: rgba(208,240,192,.7);
+    color: rgba(51,51,51,.7);
 }

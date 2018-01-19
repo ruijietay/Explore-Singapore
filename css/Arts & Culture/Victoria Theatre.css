@@ -15,7 +15,10 @@ html {
 
 body {
     min-width: 1080px;
-    overflow-x: scroll;
+}
+
+.boldtext{
+    font-weight: bold;
 }
 
 /*Header*/
@@ -106,6 +109,50 @@ body {
 
 .half {
     clear: both;
+    overflow: hidden;
+}
+
+/*Events*/
+.ticket-button{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .ticket-button:hover {
+        color: #191970;
+    }
+
+.time-box{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.add-icon{
+    float: right;
+}
+
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #FAFAFA;
     overflow: hidden;
 }
 
@@ -245,7 +292,7 @@ textarea {
     background-color: rgba(0,0,0,.05);
 }
 
-button {
+.form-button {
     height: 32px;
     background: #DEE7EF;
     border-radius: 5px;
@@ -258,11 +305,11 @@ button {
     transition: all linear .2s;
 }
 
-    button:hover {
+    .form-button:hover {
         background: #9CAAC6;
     }
 
-    button:focus {
+    .form-button:focus {
         outline: none;
     }   
 
