@@ -532,17 +532,13 @@ legend {
         font-size: 25px;
         font-weight: bold;
     }
-#confirmplace{
-    display:block;
-    margin:5% auto;
-    text-align:center
-}
 
-.formtableuss {
-    margin-left:15%;
+
+#formtableuss {
+    margin-left:5%;
     text-align:center;
 }
-.formtableuss caption{
+#formtableuss caption{
     text-align:center;
     font-weight:bold;
     font-size:25px;
@@ -550,12 +546,12 @@ legend {
     margin-top:5%;
 }
 
-.formtablemap{
-    margin-left:30%;
+#formtablemap{
+    margin-left:20%;
     text-align:center;
 }
 
-.formtablemap caption {
+#formtablemap caption {
     text-align: center;
     font-weight: bold;
     font-size: 25px;
@@ -563,12 +559,12 @@ legend {
     margin-top:5%;
 }
 
-.formtableacw {
-    margin-left: 15%;
+#formtableacw {
+    margin-left: 5%;
     text-align: center;
 }
 
-    .formtableacw caption {
+    #formtableacw caption {
         text-align: center;
         font-weight: bold;
         font-size: 25px;
@@ -625,5 +621,28 @@ legend {
 }
 .cardinformation label{
     margin-right:20px;
+}
+
+.expiry{
+    text-align:center;
+    display:block;
+    margin:0 auto;
+}
+
+.totalprice{
+    text-align:center;
+    display:block;
+    margin:0 auto;
+    font-size:25px;
+}
+
+.lastbutton{
+    display:block;
+    margin:0 auto;
+    text-align:center;
+}
+
+.firstfieldset table,td,tr{
+    padding:20px;
 }
 

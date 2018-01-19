@@ -11,7 +11,7 @@
     <script src="js/thrill-seekers.js"></script>
     <title>Thrill-Seekers</title>
 </head>
-<body>
+<body onload="todaydate()">
     <main w3-include-html="header.html"></main>
     <script>
         //code for inserting navigation panel
@@ -324,19 +324,16 @@
                         <legend>Purchase Your Tickets</legend>
                         <div class="selectplace">
                             <p>Please select the place:</p>
-                            <input type="checkbox" name="Place" value="USS" id="ticketuss" required />Universal Studios Singapore
-                            <input type="checkbox" name="Place" value="Park" id="ticketpark" />Mega Adventure Park
-                            <input type="checkbox" name="Place" value="Waterpark" id="ticketwater" />Adventure Cove Waterpark
+                            <input type="checkbox" name="Place" value="USS" id="ticketuss" required onclick="choosenticket(); unchoosenticket();" />Universal Studios Singapore
+                            <input type="checkbox" name="Place" value="Park" id="ticketpark" required onclick="choosenticket(); unchoosenticket();" />Mega Adventure Park
+                            <input type="checkbox" name="Place" value="Waterpark" id="ticketwater" required onclick="choosenticket(); unchoosenticket();" />Adventure Cove Waterpark
                         </div>
                         <div class="dateofvisit">
                             <span>Date of visit:</span><br />
-                            <input type="date" name="DateVisit" placeholder="mm/dd/yy" /> <!--make min attribute to today-->
-                        </div>
-                        <div>
-                            <button class="button" id="confirmplace">Confirm Place</button>
+                            <input id="DateVisit" type="date" name="DateVisit" placeholder="dd/mm/yyyy" /> <!--make min attribute to today-->
                         </div>
                         <!--USS-->
-                        <div class="formtableuss">
+                        <div id="formtableuss" hidden>
                             <!--BY DEFAULT ALL TABLE HIDDEN UNLESS YOU CHECK-->
                             <table>
                                 <caption>Universal Studios Singapore</caption>
@@ -357,15 +354,15 @@
                                     </td>
                                     <td>
                                         $76<br />
-                                        <input type="number" min="1" max="100" name="1dayAdult" value="1" id="1dayAdult" />
+                                        <input type="number" min="1" max="100" name="1dayAdult" id="1dayAdult" />
                                     </td>
                                     <td>
                                         $56<br />
-                                        <input type="number" min="1" max="100" name="1dayChild" value="1" id="1dayChild" />
+                                        <input type="number" min="1" max="100" name="1dayChild" id="1dayChild" />
                                     </td>
                                     <td>
                                         $38<br />
-                                        <input type="number" min="1" max="100" name="1daySenior" value="1" id="1daySenior" />
+                                        <input type="number" min="1" max="100" name="1daySenior" id="1daySenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -378,11 +375,11 @@
                                     </td>
                                     <td>
                                         $72<br />
-                                        <input type="number" min="1" max="100" name="singaporean1dayAdult" value="1" id="singaporean1dayAdult" />
+                                        <input type="number" min="1" max="100" name="singaporean1dayAdult" id="singaporean1dayAdult" />
                                     </td>
                                     <td>
                                         $53<br />
-                                        <input type="number" min="1" max="100" name="singaporean1dayChild" value="1" id="singaporean1dayChild" />
+                                        <input type="number" min="1" max="100" name="singaporean1dayChild" id="singaporean1dayChild" />
                                     </td>
                                     <td>Not Available</td>
                                 </tr>
@@ -394,15 +391,15 @@
                                     </td>
                                     <td>
                                         $188<br />
-                                        <input type="number" min="1" max="100" name="annualpassAdult" value="1" id="annualpassAdult" />
+                                        <input type="number" min="1" max="100" name="annualpassAdult" id="annualpassAdult" />
                                     </td>
                                     <td>
                                         $158<br />
-                                        <input type="number" min="1" max="100" name="annualpassChild" value="1" id="annualpassChild" />
+                                        <input type="number" min="1" max="100" name="annualpassChild" id="annualpassChild" />
                                     </td>
                                     <td>
                                         $158<br />
-                                        <input type="number" min="1" max="100" name="annualpassSenior" value="1" id="annualpassSenior" />
+                                        <input type="number" min="1" max="100" name="annualpassSenior" id="annualpassSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -415,15 +412,15 @@
                                     </td>
                                     <td>
                                         $318<br />
-                                        <input type="number" min="1" max="100" name="annualpassExpAdult" value="1" id="annualpassExpAdult" />
+                                        <input type="number" min="1" max="100" name="annualpassExpAdult" id="annualpassExpAdult" />
                                     </td>
                                     <td>
                                         $288<br />
-                                        <input type="number" min="1" max="100" name="annualpassExpChild" value="1" id="annualpassExpChild" />
+                                        <input type="number" min="1" max="100" name="annualpassExpChild" id="annualpassExpChild" />
                                     </td>
                                     <td>
                                         $288<br />
-                                        <input type="number" min="1" max="100" name="annualpassExpSenior" value="1" id="annualpassExpSenior" />
+                                        <input type="number" min="1" max="100" name="annualpassExpSenior" id="annualpassExpSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -434,15 +431,15 @@
                                     </td>
                                     <td>
                                         $98<br />
-                                        <input type="number" min="1" max="100" name="seasonpassAdult" value="1" id="seasonpassAdult" />
+                                        <input type="number" min="1" max="100" name="seasonpassAdult" id="seasonpassAdult" />
                                     </td>
                                     <td>
                                         $88<br />
-                                        <input type="number" min="1" max="100" name="seasonpassChild" value="1" id="seasonpassChild" />
+                                        <input type="number" min="1" max="100" name="seasonpassChild" id="seasonpassChild" />
                                     </td>
                                     <td>
                                         $88<br />
-                                        <input type="number" min="1" max="100" name="seasonpassSenior" value="1" id="seasonpassSenior" />
+                                        <input type="number" min="1" max="100" name="seasonpassSenior" id="seasonpassSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -455,15 +452,15 @@
                                     </td>
                                     <td>
                                         $198<br />
-                                        <input type="number" min="1" max="100" name="seasonpassExpAdult" value="1" id="seasonpassExpAdult" />
+                                        <input type="number" min="1" max="100" name="seasonpassExpAdult" id="seasonpassExpAdult" />
                                     </td>
                                     <td>
                                         $188<br />
-                                        <input type="number" min="1" max="100" name="seasonpassExpChild" value="1" id="seasonpassExpChild" />
+                                        <input type="number" min="1" max="100" name="seasonpassExpChild" id="seasonpassExpChild" />
                                     </td>
                                     <td>
                                         $188<br />
-                                        <input type="number" min="1" max="100" name="seasonpassExpSenior" value="1" id="seasonpassExpSenior" />
+                                        <input type="number" min="1" max="100" name="seasonpassExpSenior" id="seasonpassExpSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -475,7 +472,7 @@
                                     </td>
                                     <td colspan="3">
                                         $88<br />
-                                        <input type="number" min="1" max="100" name="studentseasonpass" value="1" id="studentseasonpass" />
+                                        <input type="number" min="1" max="100" name="studentseasonpass" id="studentseasonpass" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -489,17 +486,21 @@
                                     </td>
                                     <td colspan="3">
                                         $188<br />
-                                        <input type="number" min="1" max="100" name="studentseasonpassExp" value="1" id="studentseasonpassExp" />
+                                        <input type="number" min="1" max="100" name="studentseasonpassExp" id="studentseasonpassExp" />
                                     </td>
                                 </tr>
                             </table>
                         </div>
                         <!--MegaAdvPark-->
-                        <div class="formtablemap">
+                        <div id="formtablemap" hidden>
                             <table>
                                 <caption>Mega Adventure Park</caption>
                                 <tr>
-                                    <td>Activity</td>
+                                    <td>
+                                        Activity<br />
+                                        (MegaWall currently<br />
+                                        not available)
+                                    </td>
                                     <td>Description</td>
                                     <td>Price</td>
                                 </tr>
@@ -508,7 +509,7 @@
                                     <td>450m Zipwire</td>
                                     <td>
                                         $50<br />
-                                        <input type="number" min="1" max="100" name="megazip" value="1" id="megazipTABLE" />
+                                        <input type="number" min="1" max="100" name="megazip" id="megazipTABLE" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -516,7 +517,7 @@
                                     <td>5m to 15m</td>
                                     <td>
                                         $45<br />
-                                        <input type="number" min="1" max="100" name="megaclimb" value="1" id="megaclimbTABLE" />
+                                        <input type="number" min="1" max="100" name="megaclimb" id="megaclimbTABLE" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -524,7 +525,7 @@
                                     <td>15m High</td>
                                     <td>
                                         $25<br />
-                                        <input type="number" min="1" max="100" name="megajump" value="1" id="megajumpTABLE" />
+                                        <input type="number" min="1" max="100" name="megajump" id="megajumpTABLE" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -532,13 +533,13 @@
                                     <td>Bungee Trampoline</td>
                                     <td>
                                         $15<br />
-                                        <input type="number" min="1" max="100" name="megabounce" value="1" id="megabounceTABLE" />
+                                        <input type="number" min="1" max="100" name="megabounce" id="megabounceTABLE" />
                                     </td>
                                 </tr>
                             </table>
                         </div>
                         <!--ADVENTURE COVE WATERPARK-->
-                        <div class="formtableacw">
+                        <div id="formtableacw" hidden>
                             <table>
                                 <caption>Adventure Cove Waterpark</caption>
                                 <tr>
@@ -556,15 +557,15 @@
                                     </td>
                                     <td>
                                         $38<br />
-                                        <input type="number" min="1" max="100" name="acwonedayticketAdult" value="1" id="acwonedayticketAdult" />
+                                        <input type="number" min="1" max="100" name="acwonedayticketAdult" id="acwonedayticketAdult" />
                                     </td>
                                     <td>
                                         $30<br />
-                                        <input type="number" min="1" max="100" name="acwonedayticketChild" value="1" id="acwonedayticketChild" />
+                                        <input type="number" min="1" max="100" name="acwonedayticketChild" id="acwonedayticketChild" />
                                     </td>
                                     <td>
                                         $30<br />
-                                        <input type="number" min="1" max="100" name="acwonedayticketSenior" value="1" id="acwonedayticketSenior" />
+                                        <input type="number" min="1" max="100" name="acwonedayticketSenior" id="acwonedayticketSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -576,15 +577,15 @@
                                     </td>
                                     <td>
                                         $32<br />
-                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketAdult" value="1" id="acwsingaporeonedayticketAdult" />
+                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketAdult" id="acwsingaporeonedayticketAdult" />
                                     </td>
                                     <td>
                                         $24<br />
-                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketChild" value="1" id="acwsingaporeonedayticketChild" />
+                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketChild" id="acwsingaporeonedayticketChild" />
                                     </td>
                                     <td>
                                         $24<br />
-                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketSenior" value="1" id="acwsingaporeonedayticketSenior" />
+                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketSenior" id="acwsingaporeonedayticketSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -595,15 +596,15 @@
                                     </td>
                                     <td>
                                         $98<br />
-                                        <input type="number" min="1" max="100" name="acwattractionsannualpassAdult" value="1" id="acwattractionsannualpassAdult" />
+                                        <input type="number" min="1" max="100" name="acwattractionsannualpassAdult" id="acwattractionsannualpassAdult" />
                                     </td>
                                     <td>
                                         $68<br />
-                                        <input type="number" min="1" max="100" name="acwattractionsannualpassChild" value="1" id="acwattractionsannualpassChild" />
+                                        <input type="number" min="1" max="100" name="acwattractionsannualpassChild" id="acwattractionsannualpassChild" />
                                     </td>
                                     <td>
                                         $68<br />
-                                        <input type="number" min="1" max="100" name="acwattractionsannualpassSenior" value="1" id="acwattractionsannualpassSenior" />
+                                        <input type="number" min="1" max="100" name="acwattractionsannualpassSenior" id="acwattractionsannualpassSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -613,16 +614,16 @@
                                         unlimited admissions.
                                     </td>
                                     <td>
-                                        $68
-                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassAdult" value="1" id="acwattractionsseasonpassAdult" />
+                                        $68<br />
+                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassAdult" id="acwattractionsseasonpassAdult" />
                                     </td>
                                     <td>
-                                        $58
-                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassChild" value="1" id="acwattractionsseasonpassChild" />
+                                        $58<br />
+                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassChild" id="acwattractionsseasonpassChild" />
                                     </td>
                                     <td>
-                                        $58
-                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassSenior" value="1" id="acwattractionsseasonpassSenior" />
+                                        $58<br />
+                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassSenior" id="acwattractionsseasonpassSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -634,7 +635,7 @@
                                     </td>
                                     <td colspan="3">
                                         $58<br />
-                                        <input type="number" min="1" max="100" name="acwattractionsstudentseasonpass" value="1" id="acwattractionsstudentseasonpass" />
+                                        <input type="number" min="1" max="100" name="acwattractionsstudentseasonpass" id="acwattractionsstudentseasonpass" />
                                     </td>
                                 </tr>
                             </table>
@@ -663,37 +664,36 @@
                             <!--Visa--><p class="pleasepay">Please select one payment method:</p>
                             <div class="visacard">
                                 <img src="media/png/visa.png" alt="visa" width="200" height="150" />
-                                <input type="radio" name="payment" value="visa" required/>
+                                <input type="radio" name="payment" value="visa" id="visapayment" required onclick="Visacard()" />
                             </div>
                             <div class="mastercard">
                                 <img src="media/png/mastercard.png" alt="mastercard" width="200" height="150" />
-                                <input type="radio" name="payment" value="mastercard" />
+                                <input type="radio" name="payment" value="mastercard" id="mastercardpayment" onclick="Mastercard()" />
                             </div>
                             <div class="cardinformation">
                                 <label for="cardno">Card No:*</label>
-                                <input type="number" maxlength="13" id="cardno" required />
+                                <input type="text" maxlength="16" id="cardno" placeholder="Enter your card number" required />
                                 <label for="cvv">CVV:*</label>
-                                <input type="number" maxlength="3" id="cvv" required />
+                                <input type="text" maxlength="3" placeholder="Enter cvv number" id="cvv" required />
                             </div>
-                            <div>
+                            <div class="expiry">
                                 <p>
                                     Expiry:
-                                    <input type="date" name="Date" placeholder="mm/dd/yy" />
+                                    <input type="date" id="expirydate" name="Date" placeholder="dd/mm/yyyy" />
                                 </p><!--Later put attribute min to today's date-->
                             </div>
                         </div>
-                        <div>
+                        <div class="totalprice">
                             <p>Total:</p>
                             <p id="totalprice"></p>
                         </div>
-                        <div>
-                            <button id="confirmorder">Confirm Order</button>
+                        <div class="lastbutton">
+                            <button class="button" id="confirmorder" onclick="CalculateAllTickets()">Confirm Order</button>
                         </div>
                     </fieldset>
                 </form>
             </div>
         </section>
-
     </section>
 </body>
 </html>
