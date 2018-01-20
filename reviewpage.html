@@ -3,9 +3,59 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <meta name="author" content="Musfirah" />
+    <meta name="description" content="Review Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reviewpage.css" />
+    <title>Review Page</title>
 </head>
 <body>
+    <main w3-include-html="header.html"></main>
+    <script>
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+    <section class="background">
+        <form class="myReview" onsubmit="alert('Thank you for your response!')"><!--on submitting the form, alert.-->
+            <div>
+                <fieldset>
+                    <legend>Leave A Review!</legend>
+                    <div>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" required />
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" required />
+                    </div>
+                    <div>
+                        <p>
+                            <b>Gender:</b>
+                            <input type="radio" name="gender" value="Male" />Male
+                            <input type="radio" name="gender" value="Female" required />Female
+                        </p>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required/>
+                    </div>
+                    <div>
+                        <label for="comments">Comments:</label>
+                        <textarea rows="4" cols="50" id="comments" maxlength="200" placeholder="Leave your comments here" required></textarea>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="backgroundrating">
+                <fieldset class="rating">
+                    <legend>Please rate:</legend>
+                    <input required type="radio" id="star5" name="rating" value="5" /><label for="star5" title="I'm satisfied.'" >5</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good!">4</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Average">3</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Not that bad">2</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Can be better">1</label>
+                </fieldset>
+            </div>
+            <button type="submit" id="submitbutton">Submit Review</button>
+        </form>
+    </section>
 
 </body>
 </html>

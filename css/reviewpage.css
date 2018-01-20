@@ -1,0 +1,128 @@
+﻿body {
+    background: linear-gradient(rgba(218,236,243, 0.8), rgba(255,255,255, 0.8)), url(../media/jpg/order.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow: hidden;
+}
+
+#submitbutton {
+    background-color: #022D41;
+    border: none;
+    color: white;
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+}
+
+    #submitbutton:hover {
+        background-color: #9CAAC6;
+        cursor: pointer;
+    }
+
+@media only screen and (max-width: 900px) {
+    .myReview {
+        margin: 5% auto;
+        display: block;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        background-color: white;
+        width: 300px;
+        padding: 10px;
+    }
+    legend{
+        font-size:15px;
+    }
+    body{
+        overflow:auto;
+    }
+    .background{
+        overflow:auto;
+        margin-top:90%;
+        font-size:12px;
+    }
+}
+
+.myReview {
+    margin: 5% auto;
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: white;
+    width: 700px;
+    padding: 30px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+legend {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #022D41;
+    font-size: 30px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.backgroundrating {
+    background-color: white;
+}
+
+.rating:not(:checked) > input { /*for all input*/
+    position: absolute;
+    top: -9999px;
+    clip: rect(0,0,0,0); /*clipped to nothing*/
+}
+
+.rating:not(:checked) > label {
+    width: 1rem;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 100%;
+    line-height: 1.2;
+    color: lightgrey; /*colour of not checked*/
+}
+
+    .rating:not(:checked) > label:before {
+        content: '★ ';
+    }
+
+.rating > input:checked ~ label {
+    color: #FFCE00; /*gold yellow. If clicked/checked, then the star will turn gold yellow*/
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #FFCE00; /*gold yellow. This time, it's hovering only, not clicking*/
+}
+
+.rating > input:checked + label:hover, /*selects all input checked under rating,selects all label elements that are placed immediately after input checked?*/
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label, /*Selects every <label> element that comes before by a <input> element*/
+.rating > label:hover ~ input:checked ~ label {
+    color: #EEAA00; /*abit orange*/
+}
+
+.rating > label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}

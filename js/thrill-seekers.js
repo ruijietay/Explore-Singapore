@@ -1,5 +1,4 @@
-/*ticketchoice*/
-
+/*set input type date to today's date*/
 function todaydate() {
     var date = new Date();
     document.getElementById("DateVisit").valueAsDate = date;
@@ -205,14 +204,7 @@ function ACWall() {
     var total = acwonedayticket() + acwonedayticketsingapore() + acwannualpass() + acwseasonpass() + acwstudentpass();
     return total;
 }
-
-/*FINAL TOTAL VALUE*/
-function CalculateAllTickets() {
-    var total = USSall() + MAPall() + ACWall();
-    alert(total);
-}
-
-/*card payment*/
+/*card payment validation----------------------------------------------------------------------------------------------------------------*/
 function Visacard() {
     document.getElementById("cardno").setAttribute("pattern", "[4][0-9]{15}");
     document.getElementById("cardno").setAttribute("placeholder", "4"); //starts with 4 for Visa
@@ -222,3 +214,54 @@ function Mastercard() {
     document.getElementById("cardno").setAttribute("pattern", "[5][0-9]{15}");
     document.getElementById("cardno").setAttribute("placeholder", "5"); //starts with 5 for Mastercard
 }
+
+/*FINAL TOTAL VALUE*/
+function CalculateAllTickets() {
+    var total = USSall() + MAPall() + ACWall();
+    document.getElementById("displayprice").innerHTML = "$" + total;
+    return total;/*display price on popupscreen*/
+}
+
+/*Form PopUp---------------------------------------------------------------------------------------------------------*/
+function haveoverlay() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function turnoffoverlay() {
+    document.getElementById("overlay").style.display = "none";
+} /*element with id "overlay" will have a style of att display set to none; (display:none;)*/
+
+/*Form Validation?---------------------------------------------------------------------------------------------*/
+function thankYou() {
+    if (CalculateAllTickets() == 0) {
+        alert("You did not purchase anything.");
+    }
+}/*When customer tries to click confirm order when cart is empty, that happens*/
+
+function myForm() {
+    if (CalculateAllTickets() > 0) {
+        document.getElementById("confirmationbutton").setAttribute("form", "myForm");
+    }
+}/*This means if calculate all ticket is the same as zero dollars, then you cannot submit the form since customer did not buy anything*/
+
+
+/*------------------------------------------------------------Show suggested route-------------------------------------------------*/
+/*USS*/
+function showRoute() {
+    var popup = document.getElementById("lastcontent");
+    popup.classList.toggle("show");
+}/*popup for location uss suggested route*/
+
+/*Mega Adv Park*/
+function showRoute2() {
+    var popup = document.getElementById("lastcontent2");
+    popup.classList.toggle("show");
+}/*popup for location uss suggested route*/
+
+/*Adventure Cove Waterpark*/
+function showRoute3() {
+    var popup = document.getElementById("lastcontent3");
+    popup.classList.toggle("show");
+}/*popup for location uss suggested route*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
