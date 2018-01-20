@@ -111,7 +111,7 @@ html {
     width: 100%;
 }
 
-div > p{
+.grid-section > p{
     text-align: justify;
 }
 
