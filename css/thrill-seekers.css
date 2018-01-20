@@ -130,7 +130,7 @@
 
         .title1 a:hover {
             background-color: none;
-            cursor: pointer;
+            cursor:pointer;
         }
 /*right*/
 .title2 {
@@ -148,7 +148,7 @@
 
         .title2 a:hover {
             background-color: none;
-            cursor: pointer;
+            cursor:pointer;
         }
 
 .inline {
@@ -203,7 +203,7 @@ iframe {
         .usstable a:hover {
             color: floralwhite; /*hover over links*/
             text-decoration: underline;
-            cursor: pointer;
+            cursor:pointer;
         }
 
 
@@ -338,7 +338,7 @@ caption {
 
         .title3 a:hover {
             background-color: none;
-            cursor: pointer;
+            cursor:pointer;
         }
 
 .floating {
@@ -417,7 +417,7 @@ caption {
 
     .button:hover {
         background-color: #9CAAC6;
-        cursor: pointer;
+        cursor:pointer;
     }
 /*background*/
 .fillinform {
@@ -634,7 +634,7 @@ legend {
     .closebuttonpopup:hover {
         color: white;
         background-color: #ADD6E5;
-        cursor: pointer;
+        cursor:pointer;
     }
 
 .totalordertext {
@@ -696,11 +696,10 @@ legend {
     text-decoration: underline;
     text-decoration-color: #9CAAC6;
 }
-
-    .triprating:hover {
-        color: #9CAAC6;
-        cursor: pointer;
-    }
+.triprating:hover{
+    color:#9CAAC6;
+    cursor:pointer;
+}
 
 .location12 {
     background-color: #224251;
@@ -738,7 +737,7 @@ legend {
     .suggestedroute:hover {
         color: #9CAAC6;
         text-decoration: underline;
-        cursor: pointer;
+        cursor:pointer;
     }
 
 .suggestedroute {
