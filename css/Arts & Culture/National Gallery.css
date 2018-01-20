@@ -9,14 +9,16 @@ html {
 
 /*Global*/
 .alignment {
-    max-width: 70%;
+    width: 1220px;
     margin: 0 auto;
 }
+
 html {
-    overflow-x: scroll;
+    overflow-x: auto;
 }
+
 body {
-    min-width: 1080px;
+    min-width: 1500px;
 }
 
 /*Header*/
@@ -122,13 +124,13 @@ iframe {
     margin-top: 20px;
 }
 
-.video > h3{
-    font-style: italic;
-    text-align: center;
-}
+    .video > h3 {
+        font-style: italic;
+        text-align: center;
+    }
 
 /*Ticketing*/
-caption{
+caption {
     font-size: 2em;
     text-align: left;
     margin-bottom: 10px;
@@ -142,11 +144,19 @@ table, tr, td, th {
     text-align: center;
 }
 
-.exception{
+.th-col {
+    width: 200px;
+}
+
+.th-col-split {
+    width: 100px;
+}
+
+.exception {
     border: none !important;
 }
 
-tr:not(.exception){
+tr:not(.exception) {
     height: 50px;
 }
 
@@ -154,8 +164,25 @@ tr:not(.exception){
     font-size: 0.53em;
 }
 
-.ticketing-medium{
+.ticketing-medium {
     font-size: 0.8em;
+}
+
+.gallery-insiders{
+    color: dodgerblue;
+    border-color: black;
+}
+
+.book-button{
+    text-decoration: none;
+    font-weight: 400;
+    color: dodgerblue;
+    padding: 5px;
+    border: solid 1.5px;
+}
+
+.purchase {
+    min-width: 130px;
 }
 
 /*Sidebar*/

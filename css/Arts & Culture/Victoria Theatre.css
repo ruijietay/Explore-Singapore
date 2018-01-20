@@ -9,16 +9,16 @@ html {
 
 /*Global*/
 .alignment {
-    max-width: 70%;
+    width: 1220px;
     margin: 0 auto;
 }
 
-body {
-    min-width: 1080px;
+html {
+    overflow-x: auto;
 }
 
-.boldtext{
-    font-weight: bold;
+body {
+    min-width: 1500px;
 }
 
 /*Header*/
