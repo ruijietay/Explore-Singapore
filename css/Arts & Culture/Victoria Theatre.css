@@ -113,7 +113,7 @@ body {
 }
 
 /*Events*/
-.ticket-button{
+.ticket-button {
     text-decoration: none;
     font-weight: bold;
 }
@@ -122,7 +122,7 @@ body {
         color: #191970;
     }
 
-.time-box{
+.time-box {
     display: inline-block;
     vertical-align: top;
     margin: 0;
@@ -141,22 +141,24 @@ body {
     transition: 0.4s;
 }
 
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
 .add-icon{
     float: right;
 }
-
-    .active, .accordion:hover {
-        background-color: #ccc;
-    }
 
 .panel {
     padding: 0 18px;
     display: none;
     background-color: #FAFAFA;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-.events-panel-left{
+.events-panel-left {
     margin: 0;
     float: left;
     width: 50%;
@@ -164,13 +166,13 @@ body {
     padding-right: 20px;
 }
 
-.events-panel-left > img{
-    width: 100%;
-}
+    .events-panel-left > img {
+        width: 100%;
+    }
 
-.events-panel-left > cite{
-    font-size: 10px;
-}
+    .events-panel-left > cite {
+        font-size: 10px;
+    }
 
 .events-panel-right {
     margin: 0;
@@ -336,7 +338,7 @@ textarea {
 
     .form-button:focus {
         outline: none;
-    }   
+    }
 
 .form-first:focus, .form-last:focus, .form-email:focus, textarea:focus {
     outline: none;
