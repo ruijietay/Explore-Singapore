@@ -20,6 +20,9 @@ html {
 body {
     min-width: 1500px;
 }
+.boldtext{
+    font-weight: bold;
+}
 
 /*Header*/
 #title {
