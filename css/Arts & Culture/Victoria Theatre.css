@@ -20,6 +20,7 @@ html {
 body {
     min-width: 1500px;
 }
+
 .boldtext{
     font-weight: bold;
 }
@@ -132,7 +133,7 @@ body {
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: #DEE7EF;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -144,9 +145,9 @@ body {
     transition: 0.4s;
 }
 
-.active, .accordion:hover {
-    background-color: #ccc;
-}
+    .active, .accordion:hover {
+        background-color: #39B7CD;
+    }
 
 .add-icon{
     float: right;

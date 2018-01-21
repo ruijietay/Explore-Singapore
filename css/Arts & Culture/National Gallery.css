@@ -8,6 +8,7 @@ html {
 }
 
 /*Global*/
+
 .alignment {
     width: 1220px;
     margin: 0 auto;
@@ -346,7 +347,7 @@ textarea {
     background-color: rgba(0,0,0,.05);
 }
 
-button {
+.form-button {
     height: 32px;
     background: #D0F0C0;
     border-radius: 5px;
@@ -359,11 +360,11 @@ button {
     transition: all linear .2s;
 }
 
-    button:hover {
+    .form-button:hover {
         background: #00A572;
     }
 
-    button:focus {
+    .form-button:focus {
         outline: none;
     }
 

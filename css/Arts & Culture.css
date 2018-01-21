@@ -8,20 +8,30 @@ html {
 }
 
 /*Global*/
+html {
+    overflow-x: auto;
+}
+
+body {
+    min-width: 1640px;
+}
 
 .alignment {
     max-width: 70%;
     margin: 0 auto;
 }
+
 .translucent-box {
     background-color: rgba(222,231,239,0.7);
 }
+
 .section-header {
     font-size: 70px;
     color: mintcream;
 }
+
 .section-break-hr {
-    height: 3px;
+    height: 5px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -59,13 +69,19 @@ html {
 }
 
 #description-header{
-    font-size: 50px;
+    width: 70%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.immerse {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #191970;
 }
 
 #description-hr {
-    width: 40%;
+    width: 35%;
     height: 2px;
     background-color: #191970;
     border: none;
@@ -79,7 +95,7 @@ html {
 }
 
 /*Grid general*/
-.grid-section{
+.grid-section {
     text-decoration: none;
 }
 
@@ -100,19 +116,19 @@ html {
     padding: 30px;
 }
 
-#arts-display{
+#arts-display {
     text-align: center;
 }
 
-.art-grid-title{
+.art-grid-title {
     height: 80px;
 }
 
-.grid{
+.grid {
     width: 100%;
 }
 
-.grid-section > p{
+.grid-section > p {
     text-align: justify;
 }
 
@@ -125,7 +141,7 @@ html {
     padding: 30px;
 }
 
-.culture-grid-title{
+.culture-grid-title {
     height: 50px;
 }
 
