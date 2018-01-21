@@ -1023,15 +1023,15 @@ legend {
 }
 
 .authorimage {
-    display: inline-block;
+    float: left;
+    margin-left: 10%;
 }
 
     .authorimage img {
-        width: 250px;
-        height: 220px;
+        width: 300px;
+        height: 280px;
         border-radius: 50%;
         border: 5px solid #DEE7EF;
-        margin-right: 100px;
     }
 
 .contentcontact {
