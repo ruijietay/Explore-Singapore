@@ -3,7 +3,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/header.css" type="text/css"/>
+    <link rel="stylesheet" href="css/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/W3.css">
     <script src="https://use.fontawesome.com/6e47fdd73a.js"></script>
     <meta name="author" content="Musfirah Pamela RuiJie Ryan" />
     <meta name="description" content="Header applied" />
@@ -12,22 +13,49 @@
 </head>
 <body>
     <header>
-    <!--
-    COLOR SCHEME:
-    #022D41: Dark Blue
-    #1AA6B7: Turquoise
-    #ffd1e8: Pink
-    #DAECF3: Pale Blue
-    #9CAAC6: Purpleish Blue
-    #DEE7EF: Pale Purpleish Blue
-    -->
-        <nav id="header1">
-            <a href="index.html">Home</a>
-            <a href="thrill-seekers.html">Thrill-Seekers</a>
-            <a href="iconic-landmarks.html">Iconic Landmarks</a>
-            <a href="FloraAndFauna.html">Flora & Fauna</a>
-            <a href="Arts & Culture.html">Arts & Culture</a>
+        <!--
+        COLOR SCHEME:
+        #022D41: Dark Blue
+        #1AA6B7: Turquoise
+        #ffd1e8: Pink
+        #DAECF3: Pale Blue
+        #9CAAC6: Purpleish Blue
+        #DEE7EF: Pale Purpleish Blue
+        -->
+        <nav>
+            <div class="table">
+                <ul class="main-dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="thrill-seekers.html">Thrill-Seekers</a></li>
+                    <li><a href="iconic-landmarks.html">Iconic Landmarks</a></li>
+                    <li><a href="FloraAndFauna.html">Flora & Fauna</a></li>
+                    <li>
+                        <a href="Arts & Culture.html">Arts & Culture</a>
+                        <span class="dropBottom"></span>
+                        <ul>
+                            <li>
+                                <a class="arts" href="Arts & Culture.html#arts-section">Arts</a>
+                                <span class="dropRight"></span>
+                                <ul class="third-dropdown">
+                                    <li><a href="Victoria Theatre.html">Victoria Theatre & Concert Hall</a></li>
+                                    <li><a href="National Gallery.html">National Gallery Singapore</a></li>
+                                    <li><a href="Esplanade.html">Esplanade</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="culture" href="Arts & Culture.html#culture-section">Culture</a>
+                                <span class="dropRight"></span>
+                                <ul class="third-dropdown">
+                                    <li><a href="Little India.html">Little India</a></li>
+                                    <li><a href="Chinatown.html">Chinatown</a></li>
+                                    <li><a href="Kampong Glam.html">Kampong Glam</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header> 
+    </header>
 </body>
 </html>
