@@ -3,11 +3,9 @@
 <img src="media/jpg/uss.jpg" alt="uss"/ >
 <img src="media/jpg/culture2.jpg" alt="culture2"/ >*/
 
-body {
-    overflow: hidden;/*no scroll so background image fits perfectly*/
+html {
+    overflow: hidden; /*no scroll so background image fits perfectly*/
 }
-
-
 /*ANIMATION FADE IN AND FADE OUT*/
 #stacking img {
     animation-name:fades;
