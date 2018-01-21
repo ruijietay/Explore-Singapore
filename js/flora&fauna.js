@@ -17,7 +17,7 @@ function showSlides() {
 
 // Check to see if there is any empty field
 function check_empty() {
-    if (document.getElementById('iName').value == "" || document.getElementById('iEmail').value == "" || document.getElementById('iMessage').value == "") {
+    if (document.getElementById("iName").value == "" || document.getElementById("iEmail").value == "" || document.getElementById("iMessage").value == "") {
         alert("Fill All Fields !");
     } else {
         document.getElementById('form').submit();
