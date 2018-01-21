@@ -30,3 +30,7 @@ function initMap() {
     })(wavesmarker));
 
 }
+
+function thankyou() {
+    alert("Thank you for your feedback!")
+}

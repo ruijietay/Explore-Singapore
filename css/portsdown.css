@@ -1,0 +1,55 @@
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f3e8ff;
+}
+
+.header {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/portsdown1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+}
+
+.section-wrap {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.paragraph {
+    font-size: 20px;
+    text-align: justify;
+}
+
+hr {
+    width: 850px;
+    background-color: black;
+    height: 3px;
+    margin: 50px auto;
+    clear: both;
+    border: 0;
+    padding: 0;
+}
