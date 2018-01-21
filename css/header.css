@@ -15,13 +15,13 @@
     margin: 0 auto;
 }
 
-ul {
+.UL {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-    ul ul {
+    .UL .UL2 {
         opacity: 0;
         position: absolute;
         top: 160%;
@@ -30,39 +30,39 @@ ul {
         -webkit-transition: all .4s ease;
     }
 
-        ul ul ul {
+        .UL .UL2 .UL3 {
             top: 0%;
             left: 160%;
         }
 
-        ul ul li:hover > ul {
+        .UL .UL2 li:hover > .UL3 {
             top: 0%;
             left: 102%;
             opacity: 1;
             visibility: visible;
         }
 
-    ul li:hover > ul {
+    .UL li:hover > .UL2 {
         opacity: 1;
         top: 100%;
         visibility: visible;
     }
 
-    ul li {
+    .UL li {
         float: left;
         position: relative;
     }
 
-    ul ul li {
+    .UL .UL2 li {
         float: none;
     }
 
-    ul li {
+    .UL li {
         background-color: #022D41;
         cursor: pointer;
     }
 
-    ul a {
+    .UL a {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         background-color: #022D41;
         text-decoration: none;
@@ -77,11 +77,11 @@ ul {
         text-align: center;
     }
 
-    ul li:hover {
+    .UL li:hover {
         background-color: #1AA6B7;
     }
 
-    ul li a:hover {
+    .UL li a:hover {
         background-color: #1AA6B7;
     }
 
@@ -91,8 +91,8 @@ ul {
 }
 
 .arts, .culture {
-    margin: 0;
-    width: 100%;
+    margin-top: 0 !important;
+    width: 99%;
     margin-left: 3px;
 }
 
