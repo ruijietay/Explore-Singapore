@@ -92,11 +92,6 @@ body {
         width: 100%;
     }
 
-    .description-image cite {
-        text-align: left;
-        font-size: 0.7em;
-    }
-
 .description-subheader {
     font-weight: bold;
     margin-top: 20px;
@@ -176,6 +171,8 @@ body {
 
     .events-panel-left > cite {
         font-size: 10px;
+        width: 100%;
+        text-align: left;
     }
 
 .events-panel-right {
@@ -193,7 +190,6 @@ body {
 .EE-section{
     overflow: hidden;
 }
-
 
 /*Sidebar*/
 .sidebar-alignment-right {

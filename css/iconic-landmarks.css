@@ -7,9 +7,9 @@ html {
     box-sizing: inherit;
 }
 
-body {
+/*body {
     background-color: lightblue;
-}
+}*/
 
 .header {
     background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/merlion-park.jpg);
@@ -135,6 +135,7 @@ hr {
     background-color: rgba(255, 255, 255, 0.7);
     margin: auto;
     width: 80%;
+    border-radius: 10px;
 }
 
 h2 {
@@ -147,6 +148,7 @@ h2 {
 
 .thumbnail {
     width: 100%;
+    border-radius: 10px;
 }
 
 h3 {

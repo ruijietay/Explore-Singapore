@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="./css/W3.css" />
+    <link rel="stylesheet" href="./css/flyer.css" />
+    <title>Iconic Landmarks in Singapore</title>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7reycL3Tjzz72MkCtm4A3by9J43mAtko&callback=initMap"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script  src="./js/flyer.js"></script>
+</head>
+<body onload="checkDate()">
+    <main w3-include-html="header.html"></main>
+    <script>
+        //code for inserting navigation panel
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+
+    <section class="header">
+        <div>
+            <h1 class="big">Singapore Flyer</h1>
+        </div>
+    </section>
+
+    <div id="sidebar">
+        <a href="https://tickets.singaporeflyer.com/gsf/?showid=10" target="_blank"><h3>Book now!</h3></a>
+    </div>
+
+    <section class="section-wrap">
+        <h1>About</h1>
+        <p class="paragraph">
+            Standing at 165 metres, this giant observation wheel offers 360-degree 
+            city views of Singapore and parts of Malaysia and Indonesia on a clear day. 
+            As Asia’s largest observation wheel, the Singapore Flyer offers a different 
+            visitor experience in the day and night.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>Marvel at spectacular panoramas of the city skyline from the Singapore Flyer.</strong></h2>
+
+        <div class="view">
+            <figure>
+                <img class="viewimg" src="./media/jpg/flyer3.jpg" alt="Signapore Flyer in the day" />
+                <figcaption>Source: www.visitsingapore.com</figcaption>
+
+                <img class="viewimg" src="./media/jpg/flyer4.jpg" alt="Singapore Flyer at night" />
+                <figcaption>Source: www.askideas.com</figcaption>
+            </figure>
+        </div>
+
+        <p class="paragraph viewparagraph">Located at the heart of Marina Bay, prepared to be awed by the magnificent view of the city skyline as
+        you stand 42 stories high. Being Asia's largest ferris wheel, the iconic wheel features 28 fully air-conditioned
+        glass capsules, each able to transport you on a 30-minute journey of stunning day and night scenes.</p>
+
+        <p class="paragraph viewparagraph">From your capsule on top of the world, feast your eyes on iconic and historical landmarks and
+        views from Marina Bay to the Singapore River, such as Raffles Place, Merlion Park, Empress Place
+        and the Padang. With any luck, you’ll be able to spot landmarks up to 45 kilometres away, 
+        like Changi Airport, Sentosa Island and parts of Malaysia and Indonesia.</p>
+
+        <p class="paragraph viewparagraph">The best timem to go for a ride on the <a class="links" href="http://www.singaporeflyer.com/" target="_blank">Singapore Flyer</a> is when dusk falls. The skyscrapers are blanketed
+        by the golden sun and when night falls, the darkness is illuminated by the buildings’ twinkling lights.</p>
+
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>Wine and dine at the world’s first full butler sky dining experience.</strong></h2>
+
+        <div class="view">
+            <figure>
+                <img class="viewimg" src="./media/jpg/flyer5.jpg" alt="Singapore Flyer Wine and Dine" />
+                <figcaption>Source: www.visitsingapore.com</figcaption>
+            </figure>
+        </div>
+
+        <p class="paragraph viewparagraph ">
+            Be it Valetine's day or any other event, bring your loved ones to the Singapore Flyer for a sumptuous meal which
+            includes a four-course menu, personalised butler service, wine pairing options and of course, amazing skyline views.
+            Details of the prices can be seen <a class="links" href="#prices">in the table below.</a> 
+        </p>
+
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>How to get there</h1>
+        <div id="mapsection">
+            <h2><strong>Map of the general area</strong></h2>
+            <div id="map"></div>
+        </div>
+
+        <div class="paragraph viewparagraph">
+            <h2><strong>By Bus:</strong></h2>
+            <p>
+                Take bus 36, 70M, 97, 97e, 106,
+                111, 133, 162M, 502, 502A, 518, 518A,
+                700A, 857 and alight at "Opp The Ritz-Carlton" (Bus Stop ID: 02171)
+            </p>
+
+            <h2><strong>By Train:</strong></h2>
+            <p>
+                Board the Circle Line and alight at Promenade Station (CC4/DT15).
+                Take Exit A and walk 464 metres towards the Singapore Flyer.
+            </p>
+
+            <h2><strong>By Cab:</strong></h2>
+            <p>
+                Address: 30 Raffles Ave, Singapore 039803
+                Use code "tayr644ue" to enjoy SGD$3 off all Uber rides.
+            </p>
+            
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>Opening Hours</h1>
+        <div class="paragraph viewparagraph">
+            <span id="sun">Sunday	8:30AM–10:30PM</span><br />
+            <span id="mon">Monday	8:30AM–10:30PM</span><br />
+            <span id="tue">Tuesday	8:30AM–10:30PM</span><br />
+            <span id="wed">Wednesday	8:30AM–10:30PM</span><br />
+            <span id="thu">Thursday	8:30AM–10:30PM</span><br />
+            <span id="fri">Friday	8:30AM–10:30PM</span><br />
+            <span id="sat">Saturday	8:30AM–10:30PM</span><br />
+        </div>
+    </section>
+
+    <hr />
+
+    <section id="prices" class="section-wrap">
+        <h1>Prices and details</h1>
+        <table>
+            <tr>
+                <th>Dining Type</th>
+                <th>Number of Rotations</th>
+                <th>Menu</th>
+                <th>Price</th>
+                <th>Perks</th>
+                <th>Bookings</th>
+            </tr>
+
+            <tr>
+                <td>Singapore Flyer Sky Dining Flight For Two</td>
+                <td>2 Rotations (approximately 1 hour)</td>
+                <td>
+                    Choice of 4-course Western / Chinese / Vegeterian Menu. Details can be found
+                    <a href="http://www.singaporeflyer.com/wp-content/uploads/2018-PSD-Q1-Menu_011217_V4.pdf" target="_blank">
+                        here.
+                    </a>
+                </td>
+                <td>
+                    SGD$299++
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Priority boarding
+                        </li>
+                        <li>
+                            In-flight host
+                        </li>
+                        <li>
+                            Free entry to journey of dreams (optional post-flight programme)
+                        </li>
+                    </ul>
+                </td>
+                <td class="centralised">
+                    <a href="https://tickets.singaporeflyer.com/gsf/?showid=11" target="_blank" class="booknow">Book now</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Singapore Flyer Sky Dining <strong>Private</strong> Capsule For Two</td>
+                <td>2 Rotations (approximately 1 hour)</td>
+                <td>
+                    Choice of 4-course Western / Chinese / Vegetarian Menu. Details can be found
+                    <a href="http://www.singaporeflyer.com/wp-content/uploads/2018-PSD-Q1-Menu_011217_V4.pdf" target="_blank">
+                        here.
+                    </a>
+                </td>
+                <td>
+                    SGD$1800++
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Priority boarding
+                        </li>
+                        <li>
+                            In-flight host
+                        </li>
+                        <li>
+                            1 bottle of Premium Champagne
+                        </li>
+                        <li>
+                            1 bouquet of roses
+                        </li>
+                        <li>
+                            2 photos and a leatherette folder
+                        </li>
+                        <li>
+                            1 complimentary parking coupon
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    For private bookings, do contact the sales team at
+                    <a href="mailto:sales@singaporeflyer.com" target="_blank">here</a>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Valentine’s Day Singapore Flyer Sky Dining Flight For Two</td>
+                <td>2 Rotations (approximately 1 hour)</td>
+                <td>
+                    4-course Western Valentine's Menu. Details can be found
+                    <a href="http://www.singaporeflyer.com/wp-content/uploads/2018-SF-PSD-Vday-Menu_261217_FA.pdf" target="_blank">
+                        here.
+                    </a>
+                </td>
+                <td>
+                    SGD$399++
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Priority boarding
+                        </li>
+                        <li>
+                            In-flight host
+                        </li>
+                        <li>
+                            2 glasses of champagne or house wine (choice of red or white wine)
+                        </li>
+                        <li>
+                            1 single rose bouquet
+                        </li>
+                        <li>
+                            Free entry to journey of dreams (optional post-flight programme)
+                        </li>
+                    </ul>
+                </td>
+                <td class="centralised">
+                    <a href="https://tickets.singaporeflyer.com/gsf/?showid=11" target="_blank" class="booknow">Book now</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Valentine’s Day Singapore Flyer Sky Dining <strong>Private</strong> Capsule For Two</td>
+                <td>2 Rotations (approximately 1 hour)</td>
+                <td>
+                    4-course Western Valentine's Menu. Details can be found
+                    <a href="http://www.singaporeflyer.com/wp-content/uploads/2018-SF-PSD-Vday-Menu_261217_FA.pdf" target="_blank">
+                        here.
+                    </a>
+                </td>
+                <td>
+                    SGD$2200++
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Priority boarding
+                        </li>
+                        <li>
+                            In-flight host
+                        </li>
+                        <li>
+                            1 bottle of Premium Champagne
+                        </li>
+                        <li>
+                            1 bouquet of roses
+                        </li>
+                        <li>
+                            2 photos and a leatherette folder
+                        </li>
+                        <li>
+                            1 complimentary parking coupon
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    For private bookings, do contact the sales team at
+                    <a href="mailto:sales@singaporeflyer.com" target="_blank">here</a>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr />
+
+</body>
+</html>
