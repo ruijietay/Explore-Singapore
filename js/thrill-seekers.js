@@ -261,7 +261,7 @@ function showRoute2() {
 /*Adventure Cove Waterpark*/
 function showRoute3() {
     var popup = document.getElementById("lastcontent3");
-    popup.classList.toggle("show");
+    popup.classList.toggle("show");  /*classList is useful to add, remove and toggle CSS classes on an element.*/
 }/*popup for location uss suggested route*/
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 /*signupform*/
