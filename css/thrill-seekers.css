@@ -1083,6 +1083,13 @@ legend {
             width:25px;
             height: 25px;
         }
+@media (max-width:1000px){
+    .authorimage {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+    }
+}
 .toparrow {
     display: inline-block;
     margin-left: 5px;
