@@ -1,0 +1,167 @@
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f3e8ff;
+}
+
+/*Moveable sidebar that stays with user*/
+#sidebar {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    right: 1px;
+    width: 100px;
+    height: 100px;
+    transition: all 0.1s;
+    z-index: 1;
+}
+
+#sidebar a {
+    text-decoration: none;
+}
+
+#sidebar:hover {
+    background-color: #cdc4ff;
+}
+
+.header {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/flyer2.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+}
+
+.section-wrap {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.paragraph {
+    font-size: 20px;
+    text-align: justify;
+}
+
+hr {
+    width: 850px;
+    background-color: black;
+    height: 3px;
+    margin: 50px auto;
+    clear: both;
+    border: 0;
+    padding: 0;
+}
+
+.links {
+    color: rebeccapurple;
+
+}
+
+.viewparagraph {
+    width: 60%;
+    float: left;
+    padding-right: 20px;
+}
+
+.view {
+    width: 40%;
+    float: right;
+}
+
+.viewimg {
+    width: 100%;
+    border-radius: 25px;
+    padding: 0px;
+}
+
+figcaption {
+    padding-bottom: 20px;
+}
+
+#sat {
+    padding-bottom: 20px;
+}
+
+#map {
+    height: 400px;
+    border-radius: 25px;
+}
+
+#mapsection {
+    float: right;
+    width: 40%;
+    padding: 0 0 30px 20px;
+}
+
+/*Styling for table*/
+table {
+    clear: both;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-spacing: 0;
+}
+
+th {
+    background-color: #a696ff;
+}
+
+tr:nth-child(odd) {
+    background-color: #cdc4ff;
+}
+
+.centralised {
+    text-align: center;
+}
+
+.booknow {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.booknow:hover {
+    background-color: #cdc4ff;
+}
+
+/*Set the border radius of all 4 corners of table*/
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:nth-last-child(1) td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:nth-last-child(1) td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
