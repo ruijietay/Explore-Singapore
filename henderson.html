@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="./css/W3.css" />
+    <link rel="stylesheet" href="./css/henderson.css" />
+    <title>Iconic Landmarks in Singapore</title>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7reycL3Tjzz72MkCtm4A3by9J43mAtko&callback=initMap"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/henderson.js"></script>
+</head>
+<body>
+    <main w3-include-html="header.html"></main>
+    <script>
+        //code for inserting navigation panel
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+
+    <section class="header">
+        <div>
+            <h1 class="big">Henderson Waves Bridge</h1>
+        </div>
+    </section>
+
+    <section class="section-wrap">
+        <h1>About</h1>
+        <p class="paragraph">
+            At 36 metres above ground, the Henderson Waves bridge is the highest pedestrian bridge in Singapore.
+            Completed in 2008, its wave-like shape has sent a fresh, modern look to the lush green
+            belt in the south of Singapore.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>Catch your wave? Why not talk a walk on it!</strong></h2>
+
+        <div class="view">
+            <figure>
+                <img class="viewimg" src="./media/jpg/henderson2.jpg" alt="Henderson Waves Bridge Wood" />
+                <figcaption>Source: www.visitsingapore.com</figcaption>
+                <img class="viewimg" src="./media/jpg/henderson3.jpg" alt="Henderson Waves Bridge Resting Area" />
+                <figcaption>Source: www.visitsingapore.com</figcaption>
+            </figure>
+        </div>
+
+        <p class="paragraph viewparagraph">
+            As the name suggests, the bridge mimics the undulating shape of a wave, curving and twisting along
+            its entire 274-metre length. Its magnificent architecture is made with curved ‘ribs’—slats of Balau wood,
+            a dense hardwood used in heavy construction and which is found only in Southeast Asia.
+        </p>
+        <p class="paragraph viewparagraph">
+            Its shape allows it to have hidden recesses and shell-like niches, where visitors can sit and observe
+            their surroundings. Because there’s privacy and room to rest, the bridge is a popular spot on weekends with
+            couples, families with children and joggers.
+        </p>
+        <p class="paragraph viewparagraph">
+            As dusk falls, stunning effects by light-emitting diode (LED) lighting populate the bridge from 7pm to 2am every night.
+            A must-see if you do visit this bridge!
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>Kill two birds with one stone</strong></h2>
+
+        <div class="view">
+            <figure>
+                <img class="viewimg" src="./media/jpg/henderson4.jpg" alt="Henderson Waves Bridge" />
+                <figcaption>Source: www.youtube.com</figcaption>
+            </figure>
+        </div>
+
+        <p class="paragraph viewparagraph">
+            The best way to explore the bridge which is part of the
+            <a class="links" href="http://www.visitsingapore.com/see-do-singapore/nature-wildlife/parks-gardens/the-southern-ridges/">Southern Ridges Walk</a>,
+            is to complete a five-kilometre hiking trail that takes you through three major parks: Kent Ridge Park, Telok Blangah Hill Park and
+            <a class="links" href="http://www.visitsingapore.com/see-do-singapore/nature-wildlife/parks-gardens/mount-faber/">Mount Faber Park.</a>
+            It is the latter two that Henderson Waves connects.
+        </p>
+
+        <p class="paragraph viewparagraph">
+            Aside from being able to observe a rich variety of tropical flora and fauna, a walk on the Ridges
+            also affords you some stunning views of the island. The walk of 5 kilometres is also a form of exercise!
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>How to get there</h1>
+        <div id="mapsection">
+            <h2><strong>Map of the general area</strong></h2>
+            <div id="map"></div>
+        </div>
+
+        <div class="paragraph viewparagraph">
+            <h2><strong>By Bus:</strong></h2>
+            <p>
+                Take bus 124, 131, 145, 176, 273, 408 
+                and alight at "Aft Telok Blangah Hts"(Bus Stop ID: 02171)
+            </p>
+
+            <h2><strong>By Train:</strong></h2>
+            <p>
+                Board the Circle Line and alight at Telok Blangah Station (CC28).
+            </p>
+
+            <h2><strong>By Cab:</strong></h2>
+            <p>
+                Address: Henderson Road, Singapore
+                Use code "tayr644ue" to enjoy SGD$3 off all Uber rides.
+            </p>
+
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>Opening Hours</h1>
+        <p class="paragraph">
+            The Henderson Waves Bridge is open 24 hours, but the LED lightning will only appear at night,
+            from 7:00PM to 2:00AM daily.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>Contact Us!</h1>
+        <h2>Do feel free to complete this form so as to allow us to improve your web experience</h2>
+        <div class="form-container">
+            <form>
+                <h3 id="fbtitle">Drop us a feedback</h3>
+
+                <div id="fbcredentials">
+                <input id="name" type="text" placeholder="Enter your name" required />
+
+                <input id="email" type="email" placeholder="Enter your email" required />
+                </div>
+
+                <div id="fbsubject">
+                <input id="subject" type="text" placeholder="Enter the subject" required />
+                </div>
+
+                <div id="fbcomments">
+                <textarea id="comments" rows="10" cols="30" placeholder="Your comments.." wrap="hard" required></textarea>
+                </div>
+
+                <input id="formbtn" type="submit" onclick="thankyou()" value="Submit" />
+
+            </form>
+        </div>
+    </section>
+
+    <hr />
+</body>
+</html>

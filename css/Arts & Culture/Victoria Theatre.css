@@ -9,8 +9,20 @@ html {
 
 /*Global*/
 .alignment {
-    max-width: 70%;
+    width: 1220px;
     margin: 0 auto;
+}
+
+html {
+    overflow-x: auto;
+}
+
+body {
+    min-width: 1vw;
+}
+
+.boldtext{
+    font-weight: bold;
 }
 
 /*Header*/
@@ -73,34 +85,110 @@ html {
     width: 40%;
     float: right;
     margin: 0;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
 }
 
-.description-subheader{
+    .description-image img {
+        width: 100%;
+    }
+
+    .description-image cite {
+        text-align: left;
+        font-size: 0.7em;
+    }
+
+.description-subheader {
     font-weight: bold;
     margin-top: 20px;
     text-align: left;
 }
 
-.description-image img {
-    width: 100%;
-}
-
-.description-image cite {
-    text-align: left;
-    font-size: 0.7em;
-}
-
 .section-left {
-    padding-right: 20px;
+    padding: 0 20px 0 0;
     width: 60%;
     float: left;
     clear: both;
     overflow: hidden;
 }
 
+.half {
+    clear: both;
+    overflow: hidden;
+}
+
+/*Events*/
+.ticket-button {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .ticket-button:hover {
+        color: #191970;
+    }
+
+.time-box {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.accordion {
+    background-color: #DEE7EF;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+    .active, .accordion:hover {
+        background-color: #39B7CD;
+    }
+
+.add-icon{
+    float: right;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #FAFAFA;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.events-panel-left {
+    margin: 0;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+    .events-panel-left > img {
+        width: 100%;
+    }
+
+    .events-panel-left > cite {
+        font-size: 10px;
+    }
+
+.events-panel-right {
+    margin: 0;
+    float: right;
+    width: 50%;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+
 /*Sidebar*/
-.sidebar-alignment-right{
+.sidebar-alignment-right {
     padding-right: 40px;
     width: 30%;
     float: right;
@@ -121,15 +209,15 @@ html {
     float: left;
 }
 
-.sidebar-description{
+.sidebar-description {
     margin: 0;
     width: 80%;
     float: right;
 }
 
-.sidebar-description > h3{
-    margin-top: 18px;
-}
+    .sidebar-description > h3 {
+        margin-top: 18px;
+    }
 
 .sidebar-hr {
     width: 110%;
@@ -139,12 +227,13 @@ html {
     clear: both;
 }
 
-.sidebar-link{
+.sidebar-link {
     text-decoration: none;
 }
-.sidebar-link:hover {
-    text-decoration: underline;
-}
+
+    .sidebar-link:hover {
+        text-decoration: underline;
+    }
 
 /*Map*/
 #map {
@@ -154,11 +243,4 @@ html {
     width: 100%;
     height: 400px;
     border-radius: 25px;
-}
-
-/*Form*/
-#form{
-    border: solid;
-    margin-top: 50px;
-    clear: both;
 }

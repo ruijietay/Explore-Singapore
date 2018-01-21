@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/W3.css">
+    <link rel="stylesheet" href="css/Arts & Culture/National Gallery.css" />
+    <link rel="icon" type="image/x-icon" href="media/png/logo/logotop.png" />
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDH9_0MnmPn1VVFF-d_qXim8mxrBEklXI&callback=initMap"></script>
+    <script src="js/National Gallery.js" defer></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ryan" />
+    <meta name="description" content="National Gallery Singapore" />
+    <title>National Gallery Singapore - Arts & Culture</title>
+</head>
+<body>
+    <main w3-include-html="header.html"></main>
+    <script>
+        //code for inserting navigation panel
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+
+    <!-- Header -->
+    <header id="title">
+        <h1 class="big">National Gallery Singapore</h1>
+    </header>
+
+    <!-- Description -->
+    <section class="alignment description-container" id="main-body">
+        <section class="description-alignment-left">
+            <!--About-->
+            <section id="about">
+                <h1 style="font-weight: bold">About</h1>
+
+                <!-- First Part -->
+                <div class="half">
+                    <div class="section-left">
+                        <p>
+                            The lastest addition into Singapore's art scene, the National Gallery Singapore has the world's
+                            largest collection of modern Singapore and Southeast Asian art. Situated in the heart of Singapore's
+                            city centre, the Gallery is housed within the City Hall and former Supreme Court which were redesigned
+                            into this award-winning venue.
+                        </p>
+                        <p>
+                            The National Gallery Singapore reflects Singapore's unique heritage and geographical location. It provides
+                            insights into the unique art, heritage and history of the region. Working with international museums, the Gallery
+                            positions Singapore as a regional and international hub for visual arts through the presentation of Southeast Asian
+                            art in the global context.
+                        </p>
+                    </div>
+                    <figure class="description-image">
+                        <img src="media/jpg/National Gallery(1).jpg" alt="National Gallery Singapore" />
+                        <cite>Photo by ©National Gallery Singapore</cite>
+                    </figure>
+                </div>
+
+                <!-- Second Part -->
+                <h3 class="description-subheader">Singapore and Southeast Asian art collection</h3>
+
+                <div class="half">
+                    <div class="section-left">
+                        <p>
+                            Featuring a comprehensive representation of Singapore art, the Gallery showcases more than 8,000 pieces of art from Singapore's
+                            National Collection. It is one of the world's largest public collection of Singapore and Southeast Asian modern art and aims to
+                            provide a unique experience of art and inspire international appreciation of Singapore's rich history and heritage.
+                        </p>
+                        <p>
+                            The National Gallery Singapore also provides a large variety of programmes such as guided tours, artist talks, conversations with
+                            curators and lecture series. Visitors will be able to gain deeper insights into the exhibition as well as experience the region’s
+                            very first dedicated art education centre, immersing themselves in a creative learning environment with a range of artful and
+                            active learning programmes and activities.
+                        </p>
+                    </div>
+                    <figure class="description-image">
+                        <img src="media/jpg/National Gallery Exhibition.jpg" alt="Victoria Concert Hall performance" />
+                        <cite>Photo by ©National Gallery Singapore</cite>
+                    </figure>
+                    <figure class="description-image">
+                        <img src="media/jpg/National Gallery Exhibition(1).jpg" alt="Victoria Concert Hall performance" />
+                        <cite>Photo by ©National Gallery Singapore</cite>
+                    </figure>
+                </div>
+
+                <!-- Video -->
+                <div class="video">
+                    <h3>Check out the National Gallery Singapore!</h3>
+                    <iframe src="https://www.youtube.com/embed/TA_l7kphVdA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!--Ticketing-->
+            <section>
+                <table>
+                    <caption>Ticket Prices</caption>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <th class="th-col" scope="col" colspan="2">Singaporeans and PRs</th>
+                        <th class="th-col" colspan="2">Non-Singaporeans</th>
+                        <th class="gallery-insiders">Gallery<br />Insiders</th>
+                        <th class="purchase">Purchase</th>
+                    </tr>
+                    <tr class="ticketing-medium">
+                        <td class="th-col-split">Standard</td>
+                        <td class="th-col-split">Concession</td>
+                        <td class="th-col-split">Standard</td>
+                        <td class="th-col-split">Concession</td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <th class="th-row" scope="row">General Admission</th>
+                        <td>Free</td>
+                        <td>Free</td>
+                        <td>$20</td>
+                        <td>$15</td>
+                        <td>-</td>
+                        <td><a class="book-button" target="_blank" href="https://tickets.nationalgallery.sg/web/Booking.do?contentCode=cngsga2016">BOOK NOW</a></td>
+                    </tr>
+                    <tr>
+                        <th class="th-row" scope="row">Special Exhibition<br /><span style="font-style: italic">Century of Light</span></th>
+                        <td>$15</td>
+                        <td>$10</td>
+                        <td>$25</td>
+                        <td>$20</td>
+                        <td>-</td>
+                        <td><a class="book-button" target="_blank" href="http://tickets.nationalgallery.sg/web/Booking.do?contentCode=cngscol2017">BOOK NOW</a></td>
+                    </tr>
+                    <tr class="exception">
+                        <td></td>
+                        <td class="ticketing-small" colspan="2">Includes complementary General Admission Ticket</td>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <th class="th-row" scope="row">All Access Pass<br /><span class="ticketing-small">(General Admission + Special Exhibition)</span></th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>$30</td>
+                        <td>$25</td>
+                        <td>Free</td>
+                        <td><a class="book-button" target="_blank" href="http://tickets.nationalgallery.sg/web/Booking.do?contentCode=cngsaap2017d">BOOK NOW</a></td>
+                    </tr>
+                </table>
+                <h4 style="margin-top: 40px; font-weight:bold;">
+                    Gallery Insider Membership Privilleges
+                </h4>
+                <p>
+                    Starting at $30 a year, Gallery Insiders enjoy free entry to <span style="text-decoration: underline">all exhibitions</span> for one year, access to prority lanes, invitations to exclusive
+                    Insider-only events, as well as enjoy discounts at the Gallery's shopping and dining options.
+                    <a class="learn-more" target="_blank" href="https://www.nationalgallery.sg/support/join/membership">Learn more about our membership programme here</a>
+                </p>
+                <a class="membership-button" target="_blank" href="http://tickets.nationalgallery.sg/web/Booking.do?contentCode=cngsms2016">Become an Insider Today</a>
+            </section>
+
+            <!-- Contact Us -->
+            <section>
+                <form class="form-container">
+                    <header class="form-header">
+                        <h1>Share your Feedback!</h1>
+                    </header>
+                    <div class="form-name">
+                        <input class="form-first" type="text" placeholder="First Name" required />
+                        <input class="form-last" type="text" placeholder="Last Name" />
+                    </div>
+                    <div class="form-contact">
+                        <input class="form-email" type="text" placeholder="E-mail Address" required />
+                    </div>
+                    <div class="form-message">
+                        <textarea placeholder="Your Feedback Here!" required></textarea>
+                    </div>
+                    <footer class="form-footer">
+                        <button class="form-button">Send Feedback</button>
+                    </footer>
+                </form>
+            </section>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar-alignment-right">
+            <section class="sidebar-info">
+                <div>
+                    <figure class="sidebar-icon">
+                        <img src="media/icons/location(green).png" />
+                    </figure>
+                    <div class="sidebar-description">
+                        <h3>National Gallery Singapore</h3>
+                        <p>1 St Andrew's Road, Singapore 178957</p>
+                    </div>
+                </div>
+
+                <hr class="sidebar-hr" />
+
+                <div>
+                    <figure class="sidebar-icon">
+                        <img src="media/icons/clock(green).png" />
+                    </figure>
+                    <div class="sidebar-description">
+                        <h3>Opening Hours</h3>
+                        <p>
+                            Sat - Thu: 10am – 7pm<br />
+                            Fri: 10am – 9pm
+                        </p>
+                        <p>Public Holidays and Eve of PH will follow the operating hours of the day it falls on.</p>
+                        <p>Admission ends 30 minutes before closing time.</p>
+                    </div>
+                </div>
+
+                <hr class="sidebar-hr" />
+
+                <div>
+                    <figure class="sidebar-icon">
+                        <img src="media/icons/grid-world(green).png" />
+                    </figure>
+                    <div class="sidebar-description">
+                        <h3><a class="sidebar-link" target="_blank" href="https://www.nationalgallery.sg/">Visit Official Website</a></h3>
+                    </div>
+                </div>
+            </section>
+
+            <div id="map"></div>
+        </aside>
+    </section>
+
+</body>
+</html>

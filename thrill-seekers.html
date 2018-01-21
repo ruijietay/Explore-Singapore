@@ -6,12 +6,14 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/thrill-seekers.css" />
+    <link rel="stylesheet" href="css/W3.css">
     <meta name="author" content="Musfirah" />
+    <link rel="icon" type="image/x-icon" href="media/png/logo/logotop.png" />
     <meta name="description" content="Thrill-Seekers" />
     <script src="js/thrill-seekers.js"></script>
-    <title>Thrill-Seekers</title>
+    <title>Thrill-Seekers - Tourist Attractions in Singapore</title>
 </head>
-<body>
+<body onload="todaydate()" id="top">
     <main w3-include-html="header.html"></main>
     <script>
         //code for inserting navigation panel
@@ -22,7 +24,53 @@
             <h1 class="big">Thrill Seekers</h1>
         </div>
     </section>
-    <!--hidden thingy-->
+    <!--POPUP FORM-->
+    <div id="overlay">
+        <div id="textonoverlay">
+            <button class="closebuttonpopup" onclick="turnoffoverlay()">Close</button>
+            <div>
+                <p class="totalordertext">Your Total Order Is:</p>
+                <p id="displayprice" class="totalordertext"></p>
+                <p class="proceedtext">Proceed by clicking the confirm button</p>
+                <button type="submit" class="button" id="confirmationbutton" onclick="turnoffoverlay(); thankYou()">Confirm Order</button><!--thankYou()is for validation $=0-->
+                <p id="thankyou"></p>
+            </div>
+        </div>
+    </div>
+    <!--end popup form-->
+    <!--another popup for signup-->
+    <div id="overlay1">
+        <div id="textonsignup">
+            <button class="closebuttonpopup1" onclick="turnoffoverlay1()">Close</button>
+            <div>
+                <p class="signuptitle">Sign Up</p>
+                <p class="signupcontent">Please fill in this form to sign up for our email newsletter.</p>
+                <hr />
+                <div>
+                    <form id="signupForm" onsubmit="alert('Thank you for signing up!')">
+                        <div>
+                            <label for="emailsignup">Email:</label>
+                            <input type="email" id="emailsignup" required class="inputwidth"/>
+                        </div>
+                        <div>
+                            <label for="passwordsignup">Password:</label>
+                            <input type="password" id="passwordsignup" maxlength="11" pattern="[0-9][a-z]{10}" class="inputwidth" placeholder="Password should contain a number first, followed by 10 alphabet" required/>
+                        </div>
+                        <div class="passwordinput">
+                            <input type="checkbox" id="togglepassword" onclick="myPassword()" />Show Password <!--myPassword() basically show password-->
+                        </div>
+                        <div>
+                            By creating an account, you are allowing us to send emails to you.
+                        </div>
+                        <div>
+                            <button type="submit" class="button">Sign Up</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of popup for signup-->
     <section>
         <p class="big2">Create <span>exciting memories</span><br />by having fun.</p>
         <p class="font1">
@@ -35,13 +83,78 @@
     <section>
         <!--USS--------------------------------------------------------------------------------------------------------------------------->
         <section class="thrilling">
-            <div class="title1"><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/explore" target="_blank">Universal Studios<br />Singapore</a></div>
+            <div class="title1">
+                <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/explore" target="_blank">Universal Studios<br />Singapore</a>
+            </div>
             <div class="inline">
+                <div>
+                    <!--TripAdvisor-->
+                    <!--<img src="media/png/tripadvisor.png" alt="tripadvisor" width="30" height="30"/><img src="media/png/fullstar.png" alt="fullstar" width="30" height="30" />-->
+                    <div class="location1">
+                        <img src="media/png/watchblue.png" alt="watchblue" width="40" height="40" class="watchblue" /><p class="subtitle">Opening Hours:</p>
+                        <p class="subcontent">10am - 7pm</p>
+                    </div>
+                    <div class="ratings">
+                        <p><a href="https://www.tripadvisor.com.sg/Attraction_Review-g294264-d2439664-Reviews-Universal_Studios_Singapore-Sentosa_Island.html" target="_blank" class="triprating">TripAdvisor Traveller Rating</a></p>
+                        <img src="media/png/tripadvisor.png" alt="tripadvisor" width="20" height="20" class="tripadvisor" />
+                        <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                        <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                        <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                        <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                        <img src="media/png/halfstar.png" alt="halfstar" width="10" height="10" class="stars2" />
+                    </div>
+                    <div class="location12">
+                        <img src="media/png/locationred.png" alt="location red" width="40" height="40" class="locationred" /><p class="subtitle">Universal Studios Singapore</p>
+                        <p class="subcontent">
+                            Resorts World Sentosa<br />
+                            8 Sentosa Gateway<br />
+                            Sentosa Island<br />
+                            Singapore 098269<br />
+                        </p>
+                        <div class="suggestedroute" onclick="showRoute()">
+                            Click here for suggested route.
+                            <div id="lastcontent" class="popuptext">
+                                <table>
+                                    <caption>Buses to take:</caption>
+                                    <tr>
+                                        <td>65</td>
+                                        <td>80</td>
+                                        <td>93</td>
+                                        <td>188</td>
+                                        <td>855</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>30</td>
+                                        <td>97</td>
+                                        <td>100</td>
+                                        <td>131</td>
+                                    </tr>
+                                    <tr>
+                                        <td>143</td>
+                                        <td>145</td>
+                                        <td>166</td>
+                                        <td class="darkertable"></td>
+                                        <td class="darkertable"></td>
+                                    </tr>
+                                </table>
+                                <p>
+                                    Aligt at <u>VivoCity</u> & board bus <u>RWS8</u> from bus stop <u>14141</u> at VivoCity
+                                    OR bus stop <u>14121</u> at Merrill Lynch, HarbourFront.
+                                    Alight at Resorts World Sentosa drop-off point.
+                                </p>
+                                <cite class="smallcite">
+                                    Referenced from<br />
+                                    https://www.rwsentosa.com/en/getting-here
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <img class="imgdes" src="media/jpg/thrilluss.jpg" alt="usspicture" title="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/explore" />
             </div>
             <div class="inline marginr">
                 <p class="font3">
-                    Opening Hours: <i>10AM - 7PM</i> (Opening hours are subject to change.)
                     Being the Southeast Asia's first and only Universal Studios theme park,
                     the park features various rides, attractions and shows in seven themed
                     zones-mainly the Sci-Fi City, New York, Hollywood, Ancient Egypt,
@@ -58,20 +171,20 @@
                     <tr>
                         <th rowspan="4" class="darkertable">Rides</th>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/battlestar-galactica">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/battlestar-galactica" target="_blank">
                                 Battlestar Galactica:<br />
                                 HUMAN vs.CYLON<sup>TM</sup>
                             </a>
                         </td>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/accelerator">Accelerator<sup>TM</sup></a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/accelerator" target="_blank">Accelerator<sup>TM</sup></a></td>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/transformers-the-ride-the-ultimate-3d-battle">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/transformers-the-ride-the-ultimate-3d-battle" target="_blank">
                                 TRANSFORMERS The Ride:<br />
                                 The Ultimate 3D Battle
                             </a>
                         </td>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/revenge-of-the-mummy">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/revenge-of-the-mummy" target="_blank">
                                 Revenge of
                                 <br />the Mummy<sup>TM</sup>
                             </a>
@@ -80,41 +193,41 @@
                     <tr>
 
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/jurassic-park-rapids-adventure">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/jurassic-park-rapids-adventure" target="_blank">
                                 Jurassic Park Rapids<br />
                                 Adventure<sup>TM</sup>
                             </a>
                         </td>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/sesame-street-spaghetti-space-chase">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/sesame-street-spaghetti-space-chase" target="_blank">
                                 Sesame Street Spaghetti<br />
                                 Space Chase
                             </a>
                         </td>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/treasure-hunters">Treasure Hunters<sup>TM</sup></a></td>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/amber-rock-climb">Amber Rock Climb<sup>TM</sup></a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/treasure-hunters" target="_blank">Treasure Hunters<sup>TM</sup></a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/amber-rock-climb" target="_blank">Amber Rock Climb<sup>TM</sup></a></td>
                     </tr>
                     <tr>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/canopy-flyer">Canopy Flyer<sup>TM</sup></a></td>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/dino-soarin">Dino-Soarin'<sup>TM</sup></a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/canopy-flyer" target="_blank">Canopy Flyer<sup>TM</sup></a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/dino-soarin" target="_blank">Dino-Soarin'<sup>TM</sup></a></td>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/puss-in-boots-giant-journey">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/puss-in-boots-giant-journey" target="_blank">
                                 Puss in Boots'<br />
                                 Giant Journey
                             </a>
                         </td>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/magic-potion-spin">Magic Potion Spin</a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/magic-potion-spin" target="_blank">Magic Potion Spin</a></td>
                     </tr>
                     <tr>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/enchanted-airways">Enchanted Airways</a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/enchanted-airways" target="_blank">Enchanted Airways</a></td>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/king-juliens-beach-party-go-round">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/king-juliens-beach-party-go-round" target="_blank">
                                 King Julien's Beach<br />
                                 Party-Go-Round
                             </a>
                         </td>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/madagascar-a-crate-adventure">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/rides/madagascar-a-crate-adventure" target="_blank">
                                 Madagascar:A<br />
                                 Crate Adventure
                             </a>
@@ -124,24 +237,24 @@
                     <tr>
                         <th rowspan="2" class="darkertable">Shows</th>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/plan-your-visit">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/plan-your-visit" target="_blank">
                                 Lake Hollywood<br />
                                 Spectacular<sup>TM</sup>
                             </a>
                         </td>
                         <td>
-                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/shows/lights-camera-action-by-steven-spielberg">
+                            <a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/shows/lights-camera-action-by-steven-spielberg" target="_blank">
                                 Lights,Camera,Action!<sup>TM</sup><br />
                                 Hosted by Steven Spielberg
                             </a>
                         </td>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/shows/waterworld">WaterWorld<sup>TM</sup></a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/shows/waterworld" target="_blank">WaterWorld<sup>TM</sup></a></td>
 
                     </tr>
                     <tr>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/shows/shrek-4-d-adventure">Shrek 4-D Adventure</a></td>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/shows/donkey-live">Donkey LIVE</a></td>
-                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/street-entertainment/sesame-street-shows">Sesame Street Shows</a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/shows/shrek-4-d-adventure" target="_blank">Shrek 4-D Adventure</a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/shows/donkey-live" target="_blank">Donkey LIVE</a></td>
+                        <td><a href="https://www.rwsentosa.com/en/attractions/universal-studios-singapore/things-to-do/street-entertainment/sesame-street-shows" target="_blank">Sesame Street Shows</a></td>
                     </tr>
                 </table>
                 <br />
@@ -164,12 +277,74 @@
             <div>
                 <hr class="cable" /><img id="ziplineperson" src="media/png/zipline-filled.png" alt="zipline" />
             </div>
-            <div class="title2"><a href="https://sg.megaadventure.com/" target="_blank">Mega Adventure<br />Park</a></div>
+            <div class="title2"><a href="https://sg.megaadventure.com/" target="_blank">Mega Adventure Park</a></div>
             <div class="margintop">
                 <!--LEAVE space between title and div-->
                 <div class="inline marginrr">
+                    <div class="moveleftabit">
+                        <div class="location1">
+                            <img src="media/png/watchblue.png" alt="watchblue" width="40" height="40" class="watchblue" /><p class="subtitle">Opening Hours:</p>
+                            <p class="subcontent">11am - 7pm</p>
+                        </div>
+                        <div class="ratings">
+                            <p><a href="https://www.tripadvisor.com.sg/Attraction_Review-g294264-d1758910-Reviews-Mega_Adventure_Park-Sentosa_Island.html" target="_blank" class="triprating">TripAdvisor Traveller Rating</a></p>
+                            <img src="media/png/tripadvisor.png" alt="tripadvisor" width="20" height="20" class="tripadvisor" />
+                            <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                            <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                            <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                            <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                            <img src="media/png/halfstar.png" alt="halfstar" width="10" height="10" class="stars2" />
+                        </div>
+                        <div class="location12">
+                            <img src="media/png/locationred.png" alt="location red" width="40" height="40" class="locationred" /><p class="subtitle">Mega Adventure - Singapore</p>
+                            <p class="subcontent">
+                                10A Siloso Beach Walk,<br />
+                                Singapore 099008<br />
+                            </p>
+                            <div class="suggestedroute" onclick="showRoute2()">
+                                <!--Show Route 2 for Mega Adv Park-->
+                                Click here for suggested route.
+                                <div id="lastcontent2" class="popuptext">
+                                    <table>
+                                        <caption>Route to take:</caption>
+                                        <tr>
+                                            <th colspan="2" class="darkertable">To Siloso Beach Counter</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="darkertable">By Sentosa Express</th>
+                                            <td>
+                                                Alight at Beach Station<br />
+                                                and take the Sentosa Beach Tram.<br />
+                                                Alight at the 3rd stop.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="darkertable">By Bus</th>
+                                            <td>
+                                                Take Sentosa Bus A &<br />
+                                                alight at Siloso Point.<br />
+                                                Walk along the beach until<br />
+                                                you see the Mega Adventure<br />
+                                                beach counter
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="darkertable">By Sentosa Beach Tram</th>
+                                            <td>
+                                                Alight at Mega Adventure<br />
+                                                Park stop.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <cite>
+                                        Referenced from<br />
+                                        https://www.sentosa.com.sg/explore/attractions/mega-adventure
+                                    </cite>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <p class="font3">
-                        Opening Hours: <i>11AM - 7PM</i> (Opening hours are subject to change.)<br /><br />
                         Suitable for the entire family, Mega Adventure Park is a place
                         where all adventure seekers meet.The Mega Adventure Park is
                         famous for its MegaZip. At 75m high, 450m long and heart pounding
@@ -183,6 +358,10 @@
                 </div>
                 <div class="inline">
                     <iframe width="500" height="350" src="https://www.youtube.com/embed/lRlSK2QqbhM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <cite class="videoframe">
+                        <br />Video taken from
+                        https://www.youtube.com/watch?v=lRlSK2QqbhM
+                    </cite>
                 </div>
                 <div class="megatable">
                     <table>
@@ -220,8 +399,8 @@
                             <td><img src="media/png/megawall-icon.png" alt="megawall" width="60" height="60" /></td>
                             <td>MegaWall</td>
                             <td>
-                                A monster wall with a height of 15m high
-                                reach the summit and abseil back down.
+                                A monster wall with a height of 15m high.
+                                Reach the summit and abseil back down.
                             </td>
                         </tr>
                         <tr>
@@ -247,10 +426,71 @@
         <div class="title3"><a href="https://www.rwsentosa.com/en/attractions/adventure-cove-waterpark" target="_blank">Adventure Cove<br />Waterpark</a></div>
         <div class="floating block">
             <img class="advcovpic" src="media/jpg/adventurecove.jpg" alt="adventure cove" title="https://www.rwsentosa.com/en/attractions/adventure-cove-waterpark" />
+            <div>
+                <div class="location1">
+                    <img src="media/png/watchblue.png" alt="watchblue" width="40" height="40" class="watchblue" /><p class="subtitle">Opening Hours:</p>
+                    <p class="subcontent">10am - 6pm</p>
+                </div>
+                <div class="ratings">
+                    <p><a href="https://www.tripadvisor.com.sg/Attraction_Review-g294264-d3747640-Reviews-Adventure_Cove_Waterpark-Sentosa_Island.html" target="_blank" class="triprating">TripAdvisor Traveller Rating</a></p>
+                    <img src="media/png/tripadvisor.png" alt="tripadvisor" width="20" height="20" class="tripadvisor" />
+                    <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                    <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                    <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                    <img src="media/png/fullstar.png" alt="fullstar" width="10" height="10" class="stars1" />
+                </div>
+                <div class="location12">
+                    <img src="media/png/locationred.png" alt="location red" width="40" height="40" class="locationred" /><p class="subtitle">Adventure Cove Waterpark</p>
+                    <p class="subcontent">
+                        Resorts World Sentosa<br />
+                        8 Sentosa Gateway<br />
+                        Sentosa Island<br />
+                        Singapore 098269<br />
+                    </p>
+                    <div class="suggestedroute" onclick="showRoute3()">
+                        Click here for suggested route.
+                        <div id="lastcontent3" class="popuptext">
+                            <table>
+                                <caption>Buses to take:</caption>
+                                <tr>
+                                    <td>65</td>
+                                    <td>80</td>
+                                    <td>93</td>
+                                    <td>188</td>
+                                    <td>855</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>30</td>
+                                    <td>97</td>
+                                    <td>100</td>
+                                    <td>131</td>
+                                </tr>
+                                <tr>
+                                    <td>143</td>
+                                    <td>145</td>
+                                    <td>166</td>
+                                    <td class="darkertable"></td>
+                                    <td class="darkertable"></td>
+                                </tr>
+                            </table>
+                            <p>
+                                Aligt at <u>VivoCity</u> & board bus <u>RWS8</u> from bus stop <u>14141</u> at VivoCity
+                                OR bus stop <u>14121</u> at Merrill Lynch, HarbourFront.
+                                Alight at Resorts World Sentosa drop-off point.
+                            </p>
+                            <cite class="smallcite">
+                                Referenced from<br />
+                                https://www.rwsentosa.com/en/getting-here
+                            </cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="advcovcontent gobottom">
             <p class="font3">
-                Opening Hours: <i>10AM - 6PM</i> (Opening hours are subject to change.)<br /><br />
                 Adventure Cove Waterpark is a famous attraction that
                 had integrated a waterpark and a sea aquarium together.
                 At Adventure Cove Waterpark,you can laze the day away
@@ -319,24 +559,22 @@
         </div>
         <section class="fillinform">
             <div class="purchaseform">
-                <form>
+                <form onsubmit="alert('Thank You for purchasing!')" id="myForm">
+                    <!--if validation successful and form submitted, alert-->
                     <fieldset class="firstfieldset">
                         <legend>Purchase Your Tickets</legend>
                         <div class="selectplace">
                             <p>Please select the place:</p>
-                            <input type="checkbox" name="Place" value="USS" id="ticketuss" required />Universal Studios Singapore
-                            <input type="checkbox" name="Place" value="Park" id="ticketpark" />Mega Adventure Park
-                            <input type="checkbox" name="Place" value="Waterpark" id="ticketwater" />Adventure Cove Waterpark
+                            <input type="checkbox" name="Place" value="USS" id="ticketuss" required onclick="choosenticket(); unchoosenticket();" />Universal Studios Singapore
+                            <input type="checkbox" name="Place" value="Park" id="ticketpark" required onclick="choosenticket(); unchoosenticket();" />Mega Adventure Park
+                            <input type="checkbox" name="Place" value="Waterpark" id="ticketwater" required onclick="choosenticket(); unchoosenticket();" />Adventure Cove Waterpark
                         </div>
                         <div class="dateofvisit">
                             <span>Date of visit:</span><br />
-                            <input type="date" name="DateVisit" placeholder="mm/dd/yy" /> <!--make min attribute to today-->
-                        </div>
-                        <div>
-                            <button class="button" id="confirmplace">Confirm Place</button>
+                            <input id="DateVisit" type="date" name="DateVisit" placeholder="dd/mm/yyyy" /> <!--make min attribute to today-->
                         </div>
                         <!--USS-->
-                        <div class="formtableuss">
+                        <div id="formtableuss" hidden>
                             <!--BY DEFAULT ALL TABLE HIDDEN UNLESS YOU CHECK-->
                             <table>
                                 <caption>Universal Studios Singapore</caption>
@@ -357,15 +595,15 @@
                                     </td>
                                     <td>
                                         $76<br />
-                                        <input type="number" min="1" max="100" name="1dayAdult" value="1" id="1dayAdult" />
+                                        <input type="number" min="1" max="100" name="1dayAdult" id="1dayAdult" />
                                     </td>
                                     <td>
                                         $56<br />
-                                        <input type="number" min="1" max="100" name="1dayChild" value="1" id="1dayChild" />
+                                        <input type="number" min="1" max="100" name="1dayChild" id="1dayChild" />
                                     </td>
                                     <td>
                                         $38<br />
-                                        <input type="number" min="1" max="100" name="1daySenior" value="1" id="1daySenior" />
+                                        <input type="number" min="1" max="100" name="1daySenior" id="1daySenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -378,11 +616,11 @@
                                     </td>
                                     <td>
                                         $72<br />
-                                        <input type="number" min="1" max="100" name="singaporean1dayAdult" value="1" id="singaporean1dayAdult" />
+                                        <input type="number" min="1" max="100" name="singaporean1dayAdult" id="singaporean1dayAdult" />
                                     </td>
                                     <td>
                                         $53<br />
-                                        <input type="number" min="1" max="100" name="singaporean1dayChild" value="1" id="singaporean1dayChild" />
+                                        <input type="number" min="1" max="100" name="singaporean1dayChild" id="singaporean1dayChild" />
                                     </td>
                                     <td>Not Available</td>
                                 </tr>
@@ -394,15 +632,15 @@
                                     </td>
                                     <td>
                                         $188<br />
-                                        <input type="number" min="1" max="100" name="annualpassAdult" value="1" id="annualpassAdult" />
+                                        <input type="number" min="1" max="100" name="annualpassAdult" id="annualpassAdult" />
                                     </td>
                                     <td>
                                         $158<br />
-                                        <input type="number" min="1" max="100" name="annualpassChild" value="1" id="annualpassChild" />
+                                        <input type="number" min="1" max="100" name="annualpassChild" id="annualpassChild" />
                                     </td>
                                     <td>
                                         $158<br />
-                                        <input type="number" min="1" max="100" name="annualpassSenior" value="1" id="annualpassSenior" />
+                                        <input type="number" min="1" max="100" name="annualpassSenior" id="annualpassSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -415,15 +653,15 @@
                                     </td>
                                     <td>
                                         $318<br />
-                                        <input type="number" min="1" max="100" name="annualpassExpAdult" value="1" id="annualpassExpAdult" />
+                                        <input type="number" min="1" max="100" name="annualpassExpAdult" id="annualpassExpAdult" />
                                     </td>
                                     <td>
                                         $288<br />
-                                        <input type="number" min="1" max="100" name="annualpassExpChild" value="1" id="annualpassExpChild" />
+                                        <input type="number" min="1" max="100" name="annualpassExpChild" id="annualpassExpChild" />
                                     </td>
                                     <td>
                                         $288<br />
-                                        <input type="number" min="1" max="100" name="annualpassExpSenior" value="1" id="annualpassExpSenior" />
+                                        <input type="number" min="1" max="100" name="annualpassExpSenior" id="annualpassExpSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -434,15 +672,15 @@
                                     </td>
                                     <td>
                                         $98<br />
-                                        <input type="number" min="1" max="100" name="seasonpassAdult" value="1" id="seasonpassAdult" />
+                                        <input type="number" min="1" max="100" name="seasonpassAdult" id="seasonpassAdult" />
                                     </td>
                                     <td>
                                         $88<br />
-                                        <input type="number" min="1" max="100" name="seasonpassChild" value="1" id="seasonpassChild" />
+                                        <input type="number" min="1" max="100" name="seasonpassChild" id="seasonpassChild" />
                                     </td>
                                     <td>
                                         $88<br />
-                                        <input type="number" min="1" max="100" name="seasonpassSenior" value="1" id="seasonpassSenior" />
+                                        <input type="number" min="1" max="100" name="seasonpassSenior" id="seasonpassSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -455,15 +693,15 @@
                                     </td>
                                     <td>
                                         $198<br />
-                                        <input type="number" min="1" max="100" name="seasonpassExpAdult" value="1" id="seasonpassExpAdult" />
+                                        <input type="number" min="1" max="100" name="seasonpassExpAdult" id="seasonpassExpAdult" />
                                     </td>
                                     <td>
                                         $188<br />
-                                        <input type="number" min="1" max="100" name="seasonpassExpChild" value="1" id="seasonpassExpChild" />
+                                        <input type="number" min="1" max="100" name="seasonpassExpChild" id="seasonpassExpChild" />
                                     </td>
                                     <td>
                                         $188<br />
-                                        <input type="number" min="1" max="100" name="seasonpassExpSenior" value="1" id="seasonpassExpSenior" />
+                                        <input type="number" min="1" max="100" name="seasonpassExpSenior" id="seasonpassExpSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -475,7 +713,7 @@
                                     </td>
                                     <td colspan="3">
                                         $88<br />
-                                        <input type="number" min="1" max="100" name="studentseasonpass" value="1" id="studentseasonpass" />
+                                        <input type="number" min="1" max="100" name="studentseasonpass" id="studentseasonpass" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -489,17 +727,21 @@
                                     </td>
                                     <td colspan="3">
                                         $188<br />
-                                        <input type="number" min="1" max="100" name="studentseasonpassExp" value="1" id="studentseasonpassExp" />
+                                        <input type="number" min="1" max="100" name="studentseasonpassExp" id="studentseasonpassExp" />
                                     </td>
                                 </tr>
                             </table>
                         </div>
                         <!--MegaAdvPark-->
-                        <div class="formtablemap">
+                        <div id="formtablemap" hidden>
                             <table>
                                 <caption>Mega Adventure Park</caption>
                                 <tr>
-                                    <td>Activity</td>
+                                    <td>
+                                        Activity<br />
+                                        (MegaWall currently<br />
+                                        not available)
+                                    </td>
                                     <td>Description</td>
                                     <td>Price</td>
                                 </tr>
@@ -508,7 +750,7 @@
                                     <td>450m Zipwire</td>
                                     <td>
                                         $50<br />
-                                        <input type="number" min="1" max="100" name="megazip" value="1" id="megazipTABLE" />
+                                        <input type="number" min="1" max="100" name="megazip" id="megazipTABLE" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -516,7 +758,7 @@
                                     <td>5m to 15m</td>
                                     <td>
                                         $45<br />
-                                        <input type="number" min="1" max="100" name="megaclimb" value="1" id="megaclimbTABLE" />
+                                        <input type="number" min="1" max="100" name="megaclimb" id="megaclimbTABLE" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -524,7 +766,7 @@
                                     <td>15m High</td>
                                     <td>
                                         $25<br />
-                                        <input type="number" min="1" max="100" name="megajump" value="1" id="megajumpTABLE" />
+                                        <input type="number" min="1" max="100" name="megajump" id="megajumpTABLE" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -532,13 +774,13 @@
                                     <td>Bungee Trampoline</td>
                                     <td>
                                         $15<br />
-                                        <input type="number" min="1" max="100" name="megabounce" value="1" id="megabounceTABLE" />
+                                        <input type="number" min="1" max="100" name="megabounce" id="megabounceTABLE" />
                                     </td>
                                 </tr>
                             </table>
                         </div>
                         <!--ADVENTURE COVE WATERPARK-->
-                        <div class="formtableacw">
+                        <div id="formtableacw" hidden>
                             <table>
                                 <caption>Adventure Cove Waterpark</caption>
                                 <tr>
@@ -556,15 +798,15 @@
                                     </td>
                                     <td>
                                         $38<br />
-                                        <input type="number" min="1" max="100" name="acwonedayticketAdult" value="1" id="acwonedayticketAdult" />
+                                        <input type="number" min="1" max="100" name="acwonedayticketAdult" id="acwonedayticketAdult" />
                                     </td>
                                     <td>
                                         $30<br />
-                                        <input type="number" min="1" max="100" name="acwonedayticketChild" value="1" id="acwonedayticketChild" />
+                                        <input type="number" min="1" max="100" name="acwonedayticketChild" id="acwonedayticketChild" />
                                     </td>
                                     <td>
                                         $30<br />
-                                        <input type="number" min="1" max="100" name="acwonedayticketSenior" value="1" id="acwonedayticketSenior" />
+                                        <input type="number" min="1" max="100" name="acwonedayticketSenior" id="acwonedayticketSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -576,15 +818,15 @@
                                     </td>
                                     <td>
                                         $32<br />
-                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketAdult" value="1" id="acwsingaporeonedayticketAdult" />
+                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketAdult" id="acwsingaporeonedayticketAdult" />
                                     </td>
                                     <td>
                                         $24<br />
-                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketChild" value="1" id="acwsingaporeonedayticketChild" />
+                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketChild" id="acwsingaporeonedayticketChild" />
                                     </td>
                                     <td>
                                         $24<br />
-                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketSenior" value="1" id="acwsingaporeonedayticketSenior" />
+                                        <input type="number" min="1" max="100" name="acwsingaporeonedayticketSenior" id="acwsingaporeonedayticketSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -595,15 +837,15 @@
                                     </td>
                                     <td>
                                         $98<br />
-                                        <input type="number" min="1" max="100" name="acwattractionsannualpassAdult" value="1" id="acwattractionsannualpassAdult" />
+                                        <input type="number" min="1" max="100" name="acwattractionsannualpassAdult" id="acwattractionsannualpassAdult" />
                                     </td>
                                     <td>
                                         $68<br />
-                                        <input type="number" min="1" max="100" name="acwattractionsannualpassChild" value="1" id="acwattractionsannualpassChild" />
+                                        <input type="number" min="1" max="100" name="acwattractionsannualpassChild" id="acwattractionsannualpassChild" />
                                     </td>
                                     <td>
                                         $68<br />
-                                        <input type="number" min="1" max="100" name="acwattractionsannualpassSenior" value="1" id="acwattractionsannualpassSenior" />
+                                        <input type="number" min="1" max="100" name="acwattractionsannualpassSenior" id="acwattractionsannualpassSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -613,16 +855,16 @@
                                         unlimited admissions.
                                     </td>
                                     <td>
-                                        $68
-                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassAdult" value="1" id="acwattractionsseasonpassAdult" />
+                                        $68<br />
+                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassAdult" id="acwattractionsseasonpassAdult" />
                                     </td>
                                     <td>
-                                        $58
-                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassChild" value="1" id="acwattractionsseasonpassChild" />
+                                        $58<br />
+                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassChild" id="acwattractionsseasonpassChild" />
                                     </td>
                                     <td>
-                                        $58
-                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassSenior" value="1" id="acwattractionsseasonpassSenior" />
+                                        $58<br />
+                                        <input type="number" min="1" max="100" name="acwattractionsseasonpassSenior" id="acwattractionsseasonpassSenior" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -634,7 +876,7 @@
                                     </td>
                                     <td colspan="3">
                                         $58<br />
-                                        <input type="number" min="1" max="100" name="acwattractionsstudentseasonpass" value="1" id="acwattractionsstudentseasonpass" />
+                                        <input type="number" min="1" max="100" name="acwattractionsstudentseasonpass" id="acwattractionsstudentseasonpass" />
                                     </td>
                                 </tr>
                             </table>
@@ -663,37 +905,118 @@
                             <!--Visa--><p class="pleasepay">Please select one payment method:</p>
                             <div class="visacard">
                                 <img src="media/png/visa.png" alt="visa" width="200" height="150" />
-                                <input type="radio" name="payment" value="visa" required/>
+                                <input type="radio" name="payment" value="visa" id="visapayment" required onclick="Visacard()" />
                             </div>
                             <div class="mastercard">
                                 <img src="media/png/mastercard.png" alt="mastercard" width="200" height="150" />
-                                <input type="radio" name="payment" value="mastercard" />
+                                <input type="radio" name="payment" value="mastercard" id="mastercardpayment" onclick="Mastercard()" />
                             </div>
                             <div class="cardinformation">
                                 <label for="cardno">Card No:*</label>
-                                <input type="number" maxlength="13" id="cardno" required />
+                                <input type="text" maxlength="16" id="cardno" placeholder="Enter your card number" required />
                                 <label for="cvv">CVV:*</label>
-                                <input type="number" maxlength="3" id="cvv" required />
+                                <input type="text" maxlength="3" placeholder="Enter cvv number" id="cvv" required />
                             </div>
-                            <div>
+                            <div class="expiry">
                                 <p>
                                     Expiry:
-                                    <input type="date" name="Date" placeholder="mm/dd/yy" />
+                                    <input type="date" id="expirydate" name="Date" placeholder="dd/mm/yyyy" required />
                                 </p><!--Later put attribute min to today's date-->
                             </div>
                         </div>
-                        <div>
+                        <!--<div class="totalprice">
                             <p>Total:</p>
                             <p id="totalprice"></p>
-                        </div>
-                        <div>
-                            <button id="confirmorder">Confirm Order</button>
+                        </div>-->
+                        <div class="lastbutton">
+                            <button type="button" class="button" id="confirmorder" onclick="haveoverlay();CalculateAllTickets();myForm()">Checkout</button><!--calculates all ticket and popup-->
                         </div>
                     </fieldset>
                 </form>
             </div>
         </section>
-
     </section>
+    <!--Extra attractions---------------------------------------------------------------------------------------------------------->
+    <section class="extraattractions">
+        <div class="otherattractionsdiv">
+            <p class="otherattractions">Other Attractions<br /> You May Like</p>
+            <hr />
+        </div>
+        <div class="alignmentattraction">
+            <img src="media/jpg/flyer.jpg" alt="Singapore Flyer" />
+            <div>
+                <p class="titleattraction">Singapore Flyer</p>
+                <hr />
+                <p class="textinextra">
+                    Standing just 2.6 metres behind the tallest ferris wheel in the world,
+                    get a bird's eye view of Singapore right in the heart of our tiny island.
+                </p>
+            </div>
+            <button type="button" class="button" onclick="location.href='iconic-landmarks.html'">Discover</button>
+        </div>
+        <div class="alignmentattraction">
+            <img src="media/jpg/GardensbyTheBay.jpg" alt="Gardens By The Bay" />
+            <div>
+                <p class="titleattraction">Gardens By The Bay</p>
+                <hr />
+                <p class="textinextra">
+                    Discover a whole new world of plants at Gardens by the Bay
+                    which features the world's largest glass greenhouse, the flower dome spanning over 1.28 hectares plants.
+                </p>
+            </div>
+            <button type="button" class="button" onclick="location.href='FloraAndFauna.html'">Discover</button>
+        </div>
+        <div class="alignmentattraction">
+            <img src="media/jpg/National Gallery(1).jpg" alt="National Gallery" />
+            <div>
+                <p class="titleattraction">National Gallery Singapore</p>
+                <hr />
+                <p class="textinextra">
+                    Situated in the heart of Singapore's city centre,
+                    National Gallery Singapore has the world's largest collection of modern Singapore and Southeast Asian art.
+                </p>
+            </div>
+            <button type="button" class="button" onclick="location.href='arts & culture.html'">Discover</button>
+        </div>
+    </section>
+    <!--Like what you've read?-->
+    <section class="like">
+        <div>
+            <div class="like1">
+                <img src="media/png/email.png" alt="email logo" width="30" height="30" />
+                <p class="likebig">Like what you've read?</p>
+            </div>
+            <div>
+                <p class="likesmall">Subscribe to our email newsletter!</p>
+            </div>
+            <div>
+                <button type="button" class="button" id="signup" onclick="haveoverlay1()">Sign Up</button>
+            </div>
+        </div>
+    </section>
+    <!--Contact Form------------------------------------------------------------------------------------------------------------->
+    <footer>
+        <section id="contact">
+            <div class="authorimage">
+                <img src="media/jpg/musfirah.jpg" alt="Photo of author" />
+            </div>
+            <div class="contentcontact">
+                <p>Meet the Author</p>
+                <p>Musfirah Wani</p>
+                <p>Musfirah is currently a Year 1 student pursuing a diploma in Information Security
+                & Forensics at Ngee Ann Polytechnic. An avid cat lover, she is keen in photography and designing. </p>
+                <p>Read more from <a href="https://musfirahwani.weebly.com/" target="_blank">Musfirah Wani</a></p>
+            </div>
+            <div class="smicons">
+                <a href="https://www.facebook.com/Musfirahw" target="_blank"><img src="media/png/socialmediaicon/facebook.png" alt="facebook" width="30" height="30" /></a>
+                <a href="https://www.instagram.com/musfirah.w/" target="_blank"><img src="media/png/socialmediaicon/instagram.png" alt="instagram" width="30" height="30"/></a>
+                <a href="https://www.linkedin.com/in/musfirah-wani-b38975141/" target="_blank"><img src="media/png/socialmediaicon/linkedin.png" alt="linked in" width="30" height="30"/></a>
+                <a href="mailto:musfirahwani@hotmail.com" target="_blank"><img src="media/png/socialmediaicon/emailicon.png" alt="email"  width="30" height="30"/></a>
+            </div>
+            <div class="toparrow">
+                <a href="#top"><img src="media/png/toparrow.png" alt="Go to Top" width="50" height="50" title="Go back to the top"/></a> 
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

@@ -5,12 +5,22 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/W3.css">
     <link rel="stylesheet" href="css/Arts & Culture/Victoria Theatre.css" />
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDH9_0MnmPn1VVFF-d_qXim8mxrBEklXI&callback=initMap">
-    </script>
+    <link rel="icon" type="image/x-icon" href="media/png/logo/logotop.png" />
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDH9_0MnmPn1VVFF-d_qXim8mxrBEklXI&callback=initMap"></script>
     <script src="js/Victoria Theatre.js" defer></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ryan" />
+    <meta name="description" content="Victoria Theatre & Concert Hall" />
     <title>Victoria Theatre & Concert Hall - Arts & Culture</title>
 </head>
 <body>
+    <main w3-include-html="header.html"></main>
+    <script>
+        //code for inserting navigation panel
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+
     <!-- Header -->
     <header id="title">
         <h1 class="big">Victoria Theatre & Concert Hall</h1>
@@ -19,63 +29,457 @@
     <!-- Description -->
     <section class="alignment description-container" id="main-body">
         <section class="description-alignment-left">
+            <!--About-->
             <section id="about">
                 <h1 style="font-weight: bold">About</h1>
 
-                <div class="section-left">
-                    <p>
-                        The Victoria Theatre & Victoria Concert Hall was established in 1862.
-                        It now remains as a national monument of Singapore and is one of Singapore's
-                        oldest performing arts venue. The building, containing a 614-seat Theatre and a
-                        673-seat Concert Hall, is located in the heart of Singapore's city centre.
-                    </p>
-                    <p>
-                        The Victoria Theatre & Concert Hall has played a role in Singapore's history for over 150 years.
-                        It continues to be an exciting platform, supporting the growth of Singapore's arts industry.
-                    </p>
+                <!-- First Part -->
+                <div class="half">
+                    <div class="section-left">
+                        <p>
+                            The Victoria Theatre & Victoria Concert Hall was established in 1862.
+                            It now remains as a national monument of Singapore and is one of Singapore's
+                            oldest performing arts venue. The building, containing a 614-seat Theatre and a
+                            673-seat Concert Hall, is located in the heart of Singapore's city centre.
+                        </p>
+                        <p>
+                            The Victoria Theatre & Concert Hall has played a role in Singapore's history for over 150 years.
+                            It continues to be an exciting platform, supporting the growth of Singapore's arts industry.
+                        </p>
+                    </div>
+                    <figure class="description-image">
+                        <img src="media/jpg/Victoria Theatre(2).jpg" alt="Victoria Theatre & Concert Hall" />
+                        <cite>Photo by https://goo.gl/rcnV1x</cite>
+                    </figure>
                 </div>
-                <figure class="description-image">
-                    <img src="media/jpg/Victoria Theatre(2).jpg" alt="Victoria Theatre & Concert Hall" />
-                    <cite>Image taken from https://goo.gl/rcnV1x</cite>
-                </figure>
 
-                <div class="section-left">
-                    <h3 class="description-subheader">Restored to its original neo-classical 1905 structure</h3>
+                <!-- Second Part -->
+                <h3 class="description-subheader">Restored to its original neo-classical 1905 structure</h3>
 
-                    <p>
-                        Having undergone a 4-year refurbishment in 2010 which totaled to an amount of $158 million,
-                        the Victoria Theatre & Victoria Concert Hall saw new state-of-the-art facilities and amenities.
-                        Additionally, two smaller rooms for music, dance and theatre rehearsals was added.
-                    </p>
+                <div class="half">
+                    <div class="section-left">
+                        <p>
+                            Having undergone a 4-year refurbishment in 2010 which totaled to an amount of $158 million,
+                            the Victoria Theatre & Victoria Concert Hall saw new state-of-the-art facilities and amenities.
+                            Additionally, two smaller rooms for music, dance and theatre rehearsals was added.
+                        </p>
+                    </div>
+                    <figure class="description-image">
+                        <img src="media/jpg/Victoria Theatre Inner.jpg" alt="Victoria Concert Hall performance" />
+                        <cite>Photo by Tay Rui-Jie</cite>
+                    </figure>
                 </div>
-                <figure class="description-image">
-                    <img src="media/jpg/Victoria Theatre Inner.jpg" alt="Victoria Concert Hall performance" />
-                    <cite>Photo by Tay Rui-Jie</cite>
-                </figure>
             </section>
 
-            <!-- Contact Us -->
-            <form id="form">
-                <header>Contact Us</header>
+            <!-- Events -->
+            <section>
+                <h1 style="font-weight: bold">Upcoming Events</h1>
 
-                <p>
-                    <label>Name:</label>
-                    <input type="text" placeholder="Enter name" />
-                </p>
-                <p>
-                    <label>Email: </label>
-                    <input type="email" name="Email" />
-                </p>
-                <p>
-                    <label>Message:</label>
-                    <textarea name="Message" rows="3" cols="30"></textarea>
-                </p>
+                <!--Section 1-->
+                <button class="accordion">re:Sound – Something Old, Something New<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/REsound.jpg" alt="re:Sound – Something Old, Something New" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Resound Collective Limited</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Thu, 25 Jan 2018<br />
+                            <span class="boldtext">Time: </span>8.15pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/cold0118">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
 
-                <p>
-                    <input name="Submit" type="submit" value="Submit" />
-                    <input name="Reset" type="reset" value="Reset" />
-                </p>
-            </form>
+                <!--Section 2-->
+                <button class="accordion">Apichatpong Weerasethakul’s FEVER ROOM<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/FEVERROOM.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>TheatreWorks (S) Ltd</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Thu, 25 - Sun, 28 Jan 2018<br />
+                            <span>
+                                <span class="boldtext time-box">Time: </span>
+                                <span class="time-box">
+                                    Thurs: 10pm<br />
+                                    Fri: 5pm, 7.30pm, 10pm<br />
+                                    Sat: 2.30pm, 5pm, 7.30pm, 10pm<br />
+                                    Sun: 12pm, 2.30pm, 5pm
+                                </span>
+                            </span><br />
+                            <span class="boldtext">Venue: </span>Victoria Theatre
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/cfever0118">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 3-->
+                <button class="accordion">SSO Discovering Music!: That’s Fantastic!<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/24-SEP-SSO-GO-FOURTH-WITH-BRAHMS.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Singapore Symphony Orchestra</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Sun, 28 Jan 2018<br />
+                            <span class="boldtext">Time: </span>4pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/cdiscover1801281600">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 4-->
+                <button class="accordion">KidsFest 2018: The Gruffalo’s Child<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/GRUFFALO-CHILD.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>ABA Productions Pte Ltd</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Thu, 8 - Sun, 11 Feb 2018<br />
+                            <span>
+                                <span class="boldtext time-box">Time: </span>
+                                <span class="time-box">
+                                    Thu: 5pm<br />
+                                    Sat: 3pm, 5pm, 7.15pm<br />
+                                    Sun: 10am, 12pm
+                                </span>
+                            </span><br />
+                            <span class="boldtext">Venue: </span>Victoria Theatre
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/ckidsfest2018b">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 5-->
+                <button class="accordion">KidsFest 2018: Dinosaur Zoo<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/DINOSAUR.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>ABA Productions Pte Ltd</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Fri, 9 - Sun, 11 Feb 2018<br />
+                            <span>
+                                <span class="boldtext time-box">Time: </span>
+                                <span class="time-box">
+                                    Fri: 5pm, 7.15pm<br />
+                                    Sat: 10am, 12pm<br />
+                                    Sun: 3pm, 5pm
+                                </span>
+                            </span><br />
+                            <span class="boldtext">Venue: </span>Victoria Theatre
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/ckidsfest2018a">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 6-->
+                <button class="accordion">VCH Presents: Gold 50 The King’s Singers<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/GOLD-50.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Singapore Symphony Orchestra</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Fri, 23 Feb 2018<br />
+                            <span class="boldtext">Time: </span>7.30pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/cvchp1802231930">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 7-->
+                <button class="accordion">VCH Presents: Gold 50: The King’s Singers with The Singapore Symphony Children’s Choir<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/23-24-FEB-SSO-WITH-KINGS-SINGERS.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Singapore Symphony Orchestra</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Sat, 24 Feb 2018<br />
+                            <span class="boldtext">Time: </span>7.30pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/cvchp1802241930">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 8-->
+                <button class="accordion">SSO Subscription Concert: A Is For Aiyah<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/2-MAR-SSO-MYSTERIES-OF-THE-MACABRE.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Singapore Symphony Orchestra</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Fri, 2 Mar 2018<br />
+                            <span class="boldtext">Time: </span>7.30pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/csub1803021930">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 9-->
+                <button class="accordion">The Father<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/PAPA-KAO.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Pangdemonium Theatre Company</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Fri, 2 - Sun, 18 Mar 2018<br />
+                            <span>
+                                <span class="boldtext time-box">Time: </span>
+                                <span class="time-box">
+                                    Tue-Fri: 8pm<br />
+                                    Sat: 3pm & 8pm<br />
+                                    Sun: 3pm<br />
+                                    Sun: 8pm (18 Mar 2018 only)
+                                </span>
+                            </span><br />
+                            <span class="boldtext">Venue: </span>Victoria Theatre
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/cfather0318">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 10-->
+                <button class="accordion">SSO Lunchtime Concert<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/8-MAR-SSO-LUNCHTIME-CONCERT.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Singapore Symphony Orchestra</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Thu, 8 Mar 2018<br />
+                            <span class="boldtext">Time: </span>12.30pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Free Admission
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 11-->
+                <button class="accordion">Darkness To Light<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/NTU.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>NTU CAC Choir</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Fri, 9 Mar 2018<br />
+                            <span class="boldtext">Time: </span>8pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available Through Organizer
+                        </p>
+                        <p>
+                            Email: CAC-CHOIR@E.NTU.EDU.SG
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 12-->
+                <button class="accordion">Musica Intimae: The Plain of Dreams 夢の広野<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/MUSICA-INTIMAE.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Vox Camerata</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Sun, 11 Mar 2018<br />
+                            <span class="boldtext">Time: </span>7pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At APACTIX
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="http://www.apactix.com/events/detail/musica-intimae-the-plain-of-dreams">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 13-->
+                <button class="accordion">SSO Concerts For Children: Summon The Superheroes<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/17-18-MAR-SSO-SUMMON-THE-SUPERHEROES.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Singapore Symphony Orchestra</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Sat, 17 - Sun, 18 Mar 2018<br />
+                            <span>
+                                <span class="boldtext time-box">Time: </span>
+                                <span class="time-box">
+                                    Sat, 2pm & 4pm<br />
+                                    Sun, 2pm
+                                </span>
+                            </span><br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/cchild1803181400">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+
+                <!--Section 14-->
+                <button class="accordion">Debussy 100th Anniversary Concert<img class="add-icon" src="media/icons/add.png" /></button>
+                <div class="panel">
+                    <figure class="events-panel-left">
+                        <img src="media/Victoria Theatre Events/DEBUSSY.jpg" alt="Apichatpong Weerasethakul’s FEVER ROOM" />
+                        <cite>Photo from https://www.vtvch.com/events/events-calendar/</cite>
+                    </figure>
+                    <section class="events-panel-right">
+                        <p>Yong Siew Toh Conservatory of Music</p>
+                        <p>
+                            <span class="boldtext">Date: </span>Sat, 24 Mar 2018<br />
+                            <span class="boldtext">Time: </span>7.30pm<br />
+                            <span class="boldtext">Venue: </span>Victoria Concert Hall
+                        </p>
+                        <p>
+                            <span class="boldtext">Ticketing Details:</span><br />
+                            Tickets Available At SISTIC
+                        </p>
+                        <p>
+                            <a class="ticket-button" target="_blank" href="https://www.sistic.com.sg/events/cyst0318d">
+                                <img src="media/icons/next-page.png" />
+                                Buy Tickets
+                            </a>
+                        </p>
+                    </section>
+                </div>
+            </section>
         </section>
 
         <!-- Sidebar -->
@@ -115,7 +519,7 @@
                 </div>
             </section>
 
-            <div id="map">Hello World</div>
+            <div id="map"></div>
         </aside>
     </section>
 

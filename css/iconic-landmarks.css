@@ -7,9 +7,9 @@ html {
     box-sizing: inherit;
 }
 
-body {
+/*body {
     background-color: lightblue;
-}
+}*/
 
 .header {
     background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/merlion-park.jpg);
@@ -76,11 +76,11 @@ body {
     margin-top: -10px;
 }
 
-.introduction+p {
-    font-size: 30px;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    .introduction + p {
+        font-size: 30px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
 #island {
     width: 80px;
@@ -134,11 +134,12 @@ hr {
     padding-top: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     margin: auto;
-    width: 850px;
+    width: 80%;
+    border-radius: 10px;
 }
 
 h2 {
-    width: 850px;
+    width: 80%;
     margin: auto;
     color: white;
     text-align: left;
@@ -147,6 +148,7 @@ h2 {
 
 .thumbnail {
     width: 100%;
+    border-radius: 10px;
 }
 
 h3 {
@@ -174,4 +176,8 @@ h3 {
     padding: 0;
     margin: 0;
     background-color: lightblue;
+}
+
+#align {
+    width: 80%;
 }

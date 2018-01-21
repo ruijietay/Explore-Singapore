@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="./css/W3.css" />
+    <link rel="stylesheet" href="./css/marinabay.css" />
+    <title>Iconic Landmarks in Singapore</title>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7reycL3Tjzz72MkCtm4A3by9J43mAtko&callback=initMap"></script>
+    <script defer src="./js/marinabay.js"></script>
+
+</head>
+<body>
+    <main w3-include-html="header.html"></main>
+    <script>
+        //code for inserting navigation panel
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+
+    <section class="header">
+        <div>
+            <h1 class="big">Marina Bay</h1>
+        </div>
+    </section>
+
+    <section class="section-wrap">
+        <h1>About</h1>
+        <p class="paragraph">
+            Positioned at the heart of Singapore, Marina Bay offers a slew of attractions one can visit in town.
+            Such attractions include the Marina Bay Sands Hotel, Arts Science Museum and the Fullerton Bay Hotel.
+            Do scroll down for more details on each attraction!
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>Marina Bay Sands Hotel</strong></h2>
+        <img class="image" src="./media/jpg/mbs_laser.jpg" />
+        <p class="attparagraph mbs">
+            The Marina Bay Sands Hotel is one of the most luxurious hotels in Singapore,
+            featuring an infinity pool blanketing the Central Business District (CBD) Area
+            on the 57th floor. Stunning lasers shows are also held frequently which would
+            put you in awe. Completed in 2010, the 3 towers facing the skyline is a go-to
+            spot for visitors in order to view Singapore's town area in its full glory.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>ArtScience Museum</strong></h2>
+        <img class="image" src="./media/jpg/asmnight.jpg" />
+        <p class="attparagraph asm">
+            Completed in 2011, the ArtScience Museum is the only museum in the world to bridge two cultural opposites,
+            Arts and Science. It is Singapore's largest private museum, designed to be iconic and eco-friendly at the same time.
+        </p>
+        <p class="attparagraph asm">
+            The lotus shaped museum serves as a distintive icon of Singapore's impressive architecture while funnelling rainwater
+            through to the centre atrium of the building as a waterfall into a reflecting pool. The rainwater will then be used to
+            power the building's restrooms. In addition, the roof can be transformed into an amphitheatre at night, enthralling
+            audiences with light and laser shows and fireworks with the city skyline in the background.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>Merlion Park</strong></h2>
+        <img class="image" src="./media/jpg/merlion-park3.jpg" />
+        <p class="attparagraph merlion">
+            The Merlion, a reimagining of a mermaid and a lion, is an unmissable Singapore attraction.
+            Half-fish and half-lion, the iconic Merlion resides at the waterfront Merlion Park.
+            The body which resembles a fish, symbolises Singapore's humble beginnings as a fishing village,
+            while its head represents Singapore's original name, Singapura, which means 'lion city' in Malay.
+            Standing at 8.6 metres and weighing in at 70 tonnes, this iconic attraction must not be missed!
+            Scattered around the island are other Merlion status - one in Sentosa, and another at Mount Faber.
+            Can you find them?
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap directions">
+        <h1>Directions</h1>
+        <p class="paragraph">
+        Here are the directions to the aforementioned locations. Do take note that they are relatively a stone's throw
+        away, so walking between these places would take you only around 10 minutes. However, directions for taking
+        the bus and Mass Rapid Transit (MRT) will be provided below.</p>
+
+        <div id="mapsection">
+            <h2><strong>Map of the general area</strong></h2>
+            <div id="map"></div>
+        </div>
+
+        <h2><strong>How to get there</strong></h2>
+        <p>
+            <table>
+                <tr>
+                    <th>Travel Method</th>
+                    <th>Directions</th>
+                    <th>Price</th>
+                    <th>Time Available</th>
+                    <th>Website/Application</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><strong>Bus</strong></td>
+                    <td>
+                        <strong>To MBS/ArtScience Museum:</strong><br />
+                        Board bus<br />
+                        <strong>
+                            97, 97e, 106, 133,
+                            502, 502A, 518, 518A
+                        </strong>
+                        and alight at "Marina Bay Sands Hotel" 
+                        <strong>(Bus stop ID: 03509)</strong>
+                    </td>
+                    <td rowspan="2">
+                        Click <a href="https://www.sbstransit.com.sg/transport/trpt_fares_adults.aspx">here</a>
+                        for bus prices
+                    </td>
+                    <td rowspan="2">
+                        Click <a href="https://www.sbstransit.com.sg/transport/trpt_bus_timetable.aspx">here</a>
+                        to search for first and last bus timings
+                    </td>
+                    <td rowspan="2">
+                        Alternatively, you could download an application called "Nestia" which tell you information about
+                        the next available bus.<br />
+                        <strong>Download it on: <br /></strong>
+                        <ul>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.nestia.living&hl=en">Google Play Store for Android</a>
+                                <br />
+                            </li>
+                            <li>
+                                <a href="https://itunes.apple.com/sg/app/nestia-news-4d-toto-bus-mrt/id985086368?mt=8">App Store for iOS</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>To Merlion Park:</strong><br />
+                        Board bus<br />
+                        <strong>
+                            171, 195, 56, 97, 106,
+                            961C, 75, 857, 77, 960,
+                            111, 36, 133, 961C, 700A,
+                            70M, 162M
+                        </strong>
+                        and alight at "The Esplanade"
+                        <strong>(Bus stop ID: 02061)</strong>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><strong>Mass Rapid Transit (MRT)</strong></td>
+                    <td>
+                        Nearest MRT to MBS: <strong>Bayfront MRT (CE1/DT16)</strong>
+                    </td>
+                    <td rowspan="2">
+                        Click <a href="https://mrt.sg/fare">here</a>
+                        to check MRT prices. Alternatively, you could
+                        check it at the General Ticketing Machine at any MRT station.
+                        A temporary pass will be given to board the MRT and S$0.10 will be
+                        refunded upon completion of your trip.
+                    </td>
+                    <td>
+                        Click <a href="http://journey.smrt.com.sg/journey/station_info/bayfront/first-and-last-train/">here</a>
+                        to search for first and last train timings at Bayfront (CE1/DT16)
+                    </td>
+                    <td rowspan="2">
+                        <ul>
+                            <li>
+                                Link to a <a href="https://www.transitlink.com.sg/images/eguide/mrt_sys_map.htm">MRT Map</a><br />
+                            </li>
+                            <li>
+                                Alternatively, you could download an application called "Nestia" which tell you information about
+                                the next available bus.
+                                <br />
+                                <strong>Download it on: <br /></strong>
+                                <ul>
+                                    <li>
+                                        <a href="https://play.google.com/store/apps/details?id=com.nestia.living&hl=en">Google Play Store for Android</a>
+                                        <br />
+                                    </li>
+                                    <li>
+                                        <a href="https://itunes.apple.com/sg/app/nestia-news-4d-toto-bus-mrt/id985086368?mt=8">App Store for iOS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Nearest MRT to Merlion Park:
+                        <strong>Raffles Place (EW14/NS26)</strong>
+                    </td>
+                    <td>
+                        Click <a href="http://journey.smrt.com.sg/journey/station_info/raffles-place/first-and-last-train/">here</a>
+                        to search for first and last train timings at Raffles Place (EW14/NS26)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">
+                        <strong>Uber/Grab/Taxi</strong>
+                    </td>
+                    <td>
+                        Address: <strong>Bayfront Avenue, 018956</strong>
+                    </td>
+                    <td rowspan="2">
+                        Varies depending on distance/timing.<br />
+                        Use code "tayr644ue" to enjoy S$3 off your first ride on Uber
+                    </td>
+                    <td rowspan="2">
+                        All-day
+                    </td>
+                    <td rowspan="2">
+                        <ul>
+                            <li>
+                                Uber on:<br />
+                                <a href="https://play.google.com/store/apps/details?id=com.ubercab&hl=en">Android</a>
+                                <a href="https://itunes.apple.com/sg/app/uber/id368677368?mt=8">iOS</a>
+                                <br />
+                            </li>
+                            <li>
+                                Grab on:<br />
+                                <a href="https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=en">Android</a>
+                                <a href="https://itunes.apple.com/us/app/grab-ride-hailing-app/id647268330?mt=8">iOS</a>
+                                <br />
+                            </li>
+                            <li>
+                                ComfortDelGro(Taxi booking application) on:<br />
+                                <a href="https://play.google.com/store/apps/details?id=com.codigo.comfort&hl=en">Android</a>
+                                <a href="https://itunes.apple.com/sg/app/comfortdelgro-taxi-booking-app/id954951647?mt=8">iOS</a>
+                                <br />
+                            </li>
+                        </ul>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Address: <strong>One Fullerton, 049213</strong>
+                    </td>
+                </tr>
+            </table>
+        </p>
+    </section>
+
+</body>
+</html>

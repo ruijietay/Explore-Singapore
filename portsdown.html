@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="./css/W3.css" />
+    <link rel="stylesheet" href="./css/portsdown.css" />
+    <title>Iconic Landmarks in Singapore</title>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7reycL3Tjzz72MkCtm4A3by9J43mAtko&callback=initMap"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/portsdown.js"></script>
+</head>
+<body onload="checkDate()">
+    <main w3-include-html="header.html"></main>
+    <script>
+        //code for inserting navigation panel
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+
+    <section class="header">
+        <div>
+            <h1 class="big">Portsdown Water Tank</h1>
+        </div>
+    </section>
+
+    <section class="section-wrap">
+        <h1>About</h1>
+
+        <div class="view">
+            <figure>
+                <img class="viewimg" src="./media/png/portsdown2.png" alt="Portsdown Water Tank" />
+                <figcaption>Source: www.mothership.sg</figcaption>
+
+                <img class="viewimg" src="./media/jpg/portsdown3.jpg" alt="Portsdown Water Tank" />
+                <figcaption>Source: www.mothership.sg</figcaption>
+            </figure>
+        </div>
+
+        <p class="paragraph viewparagraph">
+            A UFO looking water tank, the Portsdown Water Tank is located in the quiet neighbourhood of Portsdown Road and
+            is an old water tank that wouldn’t be out of place in American films.
+        </p>
+
+        <p class="paragraph viewparagraph">
+            If the water tank is not your thing, don’t worry because located along Portsdown Road are many indie cafes and bars. 
+            So, make sure you go with an empty stomach, especially since many of them and their dishes are very Instagram-worthy as well.
+        </p>
+    </section>
+
+</body>
+</html>

@@ -8,27 +8,36 @@ html {
 }
 
 /*Global*/
+html {
+    overflow-x: auto;
+}
+
+body {
+    min-width: 1vw;
+}
+
 .alignment {
     max-width: 70%;
     margin: 0 auto;
 }
+
 .translucent-box {
     background-color: rgba(222,231,239,0.7);
 }
+
 .section-header {
     font-size: 70px;
     color: mintcream;
 }
+
 .section-break-hr {
-    height: 3px;
+    height: 5px;
     width: 100%;
     padding: 0;
     margin: 0;
     border: 0;
     background-color: #DEE7EF;
     overflow: auto;
-}
-.grid-description {
 }
 
 #title {
@@ -60,13 +69,19 @@ html {
 }
 
 #description-header{
-    font-size: 50px;
+    width: 70%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.immerse {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #191970;
 }
 
 #description-hr {
-    width: 40%;
+    width: 35%;
     height: 2px;
     background-color: #191970;
     border: none;
@@ -79,8 +94,20 @@ html {
     font-size: 20px;
 }
 
-/*Arts Section*/
+/*Grid general*/
+.grid-section {
+    text-decoration: none;
+}
 
+    .grid-section:hover {
+        color: #191970
+    }
+
+.grid-description {
+    color: #000000 !important;
+}
+
+/*Arts Section*/
 #arts-section {
     background: linear-gradient(rgba(2, 45, 65, 0.5), rgba(0, 0, 0, 0.5)), url("../media/jpg/Museum-background.jpg") no-repeat fixed;
     background-size: 100%;
@@ -89,19 +116,19 @@ html {
     padding: 30px;
 }
 
-#arts-display{
+#arts-display {
     text-align: center;
 }
 
-.art-grid-title{
+.art-grid-title {
     height: 80px;
 }
 
-.grid{
+.grid {
     width: 100%;
 }
 
-div > p{
+.grid-section > p {
     text-align: justify;
 }
 
@@ -114,7 +141,7 @@ div > p{
     padding: 30px;
 }
 
-.culture-grid-title{
+.culture-grid-title {
     height: 50px;
 }
 
@@ -131,5 +158,28 @@ div > p{
         min-width: 500px;
         margin: 250px auto 200px auto;
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        overflow-x: auto;
+    }
+
+    body {
+        min-width: 1500px;
+    }
+
+    .big {
+        font-size: 100px;
+        font-family: serif;
+        letter-spacing: 20px;
+        border: 15px solid white;
+        width: -webkit-max-content;
+        width: auto;
+        min-width: 500px;
+        margin: 250px auto 200px auto;
+        padding: 20px;
+        font-weight: bold;
     }
 }

@@ -1,0 +1,129 @@
+﻿/*The Box Model Fix*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #ffede0;
+}
+
+.header {
+    background-image: linear-gradient(rgba(2, 45, 65, 0.7), rgba(0,0,0, 0.7)), url(../media/jpg/henderson1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+hr {
+    width: 850px;
+    background-color: black;
+    height: 3px;
+    margin: 50px auto;
+    clear: both;
+    border: 0;
+    padding: 0;
+}
+
+.big {
+    font-size: 100px;
+    font-family: serif;
+    letter-spacing: 20px;
+    border: 15px solid white;
+    width: 850px;
+    margin: 250px auto 200px auto;
+    padding: 20px;
+}
+
+.section-wrap {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.links {
+    color: saddlebrown;
+}
+
+.paragraph {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.viewparagraph {
+    width: 60%;
+    float: left;
+}
+
+.view {
+    width: 40%;
+    float: right;
+}
+
+.viewimg {
+    width: 100%;
+    border-radius: 25px;
+    padding: 0px;
+}
+
+figcaption {
+    padding-bottom: 20px;
+}
+
+#map {
+    height: 400px;
+    border-radius: 25px;
+}
+
+#mapsection {
+    float: right;
+    width: 40%;
+    padding: 0 0 30px 20px;
+}
+
+.form-container {
+    background-color: #ffd8bc;
+    border: 1px solid black;
+    border-spacing: 0;
+    border-radius: 10px;
+    width: 60%;
+}
+
+#fbtitle {
+    border-bottom: 1px solid black;
+    padding: 0;
+    margin: 0;
+}
+
+#name, #email, #subject, #comments {
+    background-color: #ffd8bc;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-decoration: none;
+}
+
+#comments {
+    resize: vertical;
+}
+
+*:focus {
+    outline: none;
+}
+
+#formbtn {
+    border: 0;
+    background-color: #ffd8bc;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+

@@ -1,28 +1,123 @@
 ﻿nav {
     background-color: #022D41;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     text-align: center;
-    z-index:1000;
+    z-index: 1000;
+    margin: 0 auto;
+    box-shadow: 0 2px 0 #023333;
 }
 
-    #header1 a {
-        padding: 25px;
-        margin-right: 20px;
-        margin-left: 20px;
-        background-color: #022D41;
-        display: inline-block;
-        color: #DEE7EF;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
-        z-index:1000;
-        position:relative;/*made this so that images dont go on top of the nav panel*/
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+.UL {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .UL .UL2 {
+        opacity: 0;
+        position: absolute;
+        top: 160%;
+        visibility: hidden;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
     }
 
-#header1 a:hover {
-    background-color: #1AA6B7;
+        .UL .UL2 .UL3 {
+            top: 0%;
+            left: 160%;
+        }
+
+        .UL .UL2 li:hover > .UL3 {
+            top: 0%;
+            left: 102%;
+            opacity: 1;
+            visibility: visible;
+        }
+
+    .UL li:hover > .UL2 {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+
+    .UL li {
+        float: left;
+        position: relative;
+    }
+
+    .UL .UL2 li {
+        float: none;
+    }
+
+    .UL li {
+        background-color: #022D41;
+        cursor: pointer;
+    }
+
+    .UL a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #022D41;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        color: #DEE7EF;
+        padding: 25px;
+        margin-top: 3px;
+        font-size: 20px;
+        z-index: 1000;
+        position: relative; /*made this so that images dont go on top of the nav panel*/
+        text-align: center;
+    }
+
+    .UL li:hover {
+        background-color: #1AA6B7;
+    }
+
+    .UL li a:hover {
+        background-color: #1AA6B7;
+    }
+
+.main-dropdown > li {
+    display: inline;
+    float: left;
+}
+
+.arts, .culture {
+    margin-top: 0 !important;
+    width: 99%;
+    margin-left: 3px;
+}
+
+.third-dropdown > li {
+    width: 100%;
+}
+
+.third-dropdown li > a {
+    margin: 0;
+}
+
+.dropBottom,
+.dropRight {
+    display: block;
+    box-shadow: inset 5px 0px 0px #FF9;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
+span.dropBottom {
+    box-shadow: inset 0px 5px 0px #FF9;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
