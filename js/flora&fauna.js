@@ -19,8 +19,5 @@ function showSlides() {
 function check_empty() {
     if (document.getElementById("iName").value == "" || document.getElementById("iEmail").value == "" || document.getElementById("iMessage").value == "") {
         alert("Fill All Fields !");
-    } else {
-        document.getElementById('form').submit();
-        alert("Form Submitted Successfully");
     }
 }

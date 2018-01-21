@@ -326,3 +326,214 @@ form {
     background: #DAECF3;
     text-align: center !important;
 }
+/*Like what you've read?------------------------------------------------------------------------------------------------------------*/
+
+.like {
+    background-color: #EEEEEE;
+    clear: both; /*clear float from above section*/
+    background-size: 100%;
+    background-attachment: fixed; 
+    padding: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+}
+.like1 img {
+    display: inline-block;
+}
+
+.like1 p {
+    display: inline-block;
+}
+
+.likebig {
+    color: #022D41;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.likesmall {
+    color: #A4A9AB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+/*overlay signup*/
+#textonsignup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    background-color: #DEE7EF; /*background color of the box*/
+}
+
+#overlay1 {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 1000; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.closebuttonpopup1 {
+    background-color: #DEE7EF;
+    text-decoration: underline;
+    border: none;
+    display: block;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-align: right;
+    margin-left: 80%;
+    margin-top: -5%;
+}
+
+    .closebuttonpopup1:hover {
+        color: white;
+        background-color: #DAECF3;
+        cursor: pointer;
+    }
+
+.signuptitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #022D41;
+    font-size: 30px;
+}
+
+.signupcontent {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+#signupForm {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+    #signupForm label {
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+
+    #signupForm .inputwidth {
+        width: 100%; /*make input field expand*/
+        padding: 10px;
+        background-color: #f1f1f1;
+        border: none;
+        color: gray;
+        margin-bottom: 10px;
+    }
+
+    #signupForm .passwordinput {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+/*Contact footer------------------------------------------------------------------------------------------------------------------------*/
+#contact {
+    background-color: #022D41;
+    clear: both; /*clear float if any section*/
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+}
+
+.contentcontact {
+    width: 600px;
+    display: block;
+    text-align: left;
+}
+
+.authorimage {
+    float: left;
+    margin-left: 10%;
+}
+
+    .authorimage img {
+        width: 250px;
+        height: 300px;
+        border-radius: 50%;
+        border: 5px solid #DEE7EF;
+    }
+
+.contentcontact {
+    display: inline-block;
+}
+
+    .contentcontact p:first-child {
+        color: #DEE7EF;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .contentcontact p:nth-of-type(2) {
+        color: #DEE7EF;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contentcontact p:nth-of-type(3) {
+        color: white;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contentcontact p:last-child {
+        color: #DEE7EF;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contentcontact a {
+        color: white;
+    }
+
+        .contentcontact a:hover {
+            color: #9CAAC6;
+        }
+
+.smicons {
+    display: inline-block;
+}
+
+    .smicons img {
+        background-color: black;
+        /*set a black background behind the social media icons */
+        margin-left: 5px;
+    }
+
+        .smicons img:hover {
+            background: #9CAAC6;
+            width: 25px;
+            height: 25px;
+        }
+
+.toparrow {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+    .toparrow img {
+        background-color: #9CAAC6;
+        border-radius: 50%;
+    }
+
+        .toparrow img:hover {
+            background-color: #DAECF3;
+            width: 45px;
+            height: 45px;
+        }
+/*end of contact footer------------------------------------------------------->*/
