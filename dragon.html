@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tay Rui-Jie" />
+    <meta name="description" content="The Dragon Playground" />
+
+    <link rel="icon" type="image/x-icon" href="media/png/logo/logotop.png" />
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="./css/W3.css" />
+    <link rel="stylesheet" href="./css/dragon.css" />
+    <title>Iconic Landmarks in Singapore</title>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7reycL3Tjzz72MkCtm4A3by9J43mAtko&callback=initMap"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/dragon.js"></script>
+</head>
+<body>
+    <main w3-include-html="header.html"></main>
+    <script>
+        //code for inserting navigation panel
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+
+    <section class="header">
+        <div>
+            <h1 class="big">The Dragon Playground</h1>
+        </div>
+    </section>
+
+    <section class="section-wrap">
+        <h1>About</h1>
+        <p class="paragraph">
+            The dragon-shaped sand-based playground used to be a popular design for playgrounds in Ang Mo Kio and Toa Payoh.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>A playground that reminiscent the 70's</strong></h2>
+
+        <div class="view">
+            <figure>
+                <img class="viewimg" src="./media/jpg/dragon3.jpg" alt="Toa Payoh Dragon Playground" />
+                <figcaption>Source: www.abusymom.wordpress.com</figcaption>
+
+                <img class="viewimg" src="./media/jpg/dragon1.jpg" alt="Singapore Flyer at night" />
+                <figcaption>Source: www.photojournalist-tgh.tv</figcaption>
+            </figure>
+        </div>
+
+        <p class="paragraph viewparagraph">
+            The dragon-shaped sand-based playground used to be a popular design for playgrounds in Ang Mo Kio and Toa Payoh.
+        </p>
+
+        <p class="paragraph viewparagraph">
+            After 1993, they were phased out due to safety concerns and it is believed that this Dragon Playground of Toa Payoh
+            (located at Blk 28 Toa Payoh Lorong 6) is the only one of its kinds (sand-based) left in Singapore (The other two are laid with rubber mats).
+        </p>
+
+        <p class="paragraph viewparagraph">
+            The dragon playground was designed in 1979 by Housing and  Development Board’s (HDB) in-house designer Khor Ean Ghee (born 1935), 
+            who got his inspiration from the Oriental dragon commonly seen among the Chinese community in Singapore.
+        </p>
+
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>How to get there</h1>
+        <div id="mapsection">
+            <h2><strong>Map of the general area</strong></h2>
+            <div id="map"></div>
+        </div>
+
+        <div class="paragraph viewparagraph">
+            <h2><strong>By Bus:</strong></h2>
+            <p>
+                Take bus 8, 26, 31, 57, 59,
+                90, 142, 235, 238, 506 and alight
+                at "Opp Toa Payoh Stadium" (Bus Stop ID: 52329)
+            </p>
+
+            <h2><strong>By Train:</strong></h2>
+            <p>
+                Board the North South Line and alight at Toa Payoh Station (NS19).
+            </p>
+
+            <h2><strong>By Cab:</strong></h2>
+            <p>
+                Address: 28 Lorong 6 Toa Payoh, 310028.
+                Use code "tayr644ue" to enjoy SGD$3 off all Uber rides.
+            </p>
+
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>Opening Hours</h1>
+        <p class="paragraph">
+            The Dragon Playground is open 24/7, but it is highly advisable not to visit this attraction
+            at night due to safety concerns as there would be little to no light source.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>Contact Us!</h1>
+        <h2>Do feel free to complete this form so as to allow us to improve your web experience</h2>
+        <div class="form-container">
+            <form>
+                <h3 id="fbtitle">Drop us a feedback</h3>
+
+                <div id="fbcredentials">
+                    <input id="name" type="text" placeholder="Enter your name" required />
+
+                    <input id="email" type="email" placeholder="Enter your email" required />
+                </div>
+
+                <div id="fbsubject">
+                    <input id="subject" type="text" placeholder="Enter the subject" required />
+                </div>
+
+                <div id="fbcomments">
+                    <textarea id="comments" rows="10" cols="30" placeholder="Your comments.." wrap="hard" required></textarea>
+                </div>
+
+                <input id="formbtn" type="submit" onclick="thankyou()" value="Submit" />
+
+            </form>
+        </div>
+    </section>
+
+    <hr />
+
+    <!--Like what you've read?-->
+    <section class="like">
+        <div>
+            <div class="like1">
+                <img src="media/png/email.png" alt="email logo" width="30" height="25" />
+                <p class="likebig">Like what you've read?</p>
+            </div>
+            <div>
+                <p class="likesmall">Subscribe to our email newsletter!</p>
+            </div>
+            <div>
+                <button type="button" class="button" id="signup" onclick="haveoverlay1()">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- popup for signup-->
+    <div id="overlay1">
+        <div id="textonsignup">
+            <button class="closebuttonpopup1" onclick="turnoffoverlay1()">Close</button>
+            <div>
+                <p class="signuptitle">Sign Up</p>
+                <p class="signupcontent">Please fill in this form to sign up for our email newsletter.</p>
+                <hr />
+                <div>
+                    <form id="signupForm" onsubmit="alert('Thank you for signing up!')">
+                        <div>
+                            <label for="emailsignup">Email:</label>
+                            <input type="email" id="emailsignup" required class="inputwidth" />
+                        </div>
+                        <div>
+                            <label for="passwordsignup">Password:</label>
+                            <input type="password" id="passwordsignup" maxlength="11" pattern="[0-9][a-z]{10}" class="inputwidth" placeholder="Password should contain a number first, followed by 10 alphabet" required />
+                        </div>
+                        <div class="passwordinput">
+                            <input type="checkbox" id="togglepassword" onclick="myPassword()" />Show Password <!--myPassword() basically show password-->
+                        </div>
+                        <div>
+                            By creating an account, you are allowing us to send emails to you.
+                        </div>
+                        <div>
+                            <button type="submit" class="button">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Form------------------------------------------------------------------------------------------------------------->
+    <footer>
+        <section id="contact">
+            <div class="authorimage">
+                <img src="media/jpg/Ruijie.jpg" alt="Photo of author" />
+            </div>
+            <div class="contentcontact">
+                <p>Meet the Author</p>
+                <p>Tay Rui-Jie</p>
+                <p>
+                    Rui-Jie is currently a Year 1 student pursuing a diploma in Information Security
+                    & Forensics at Ngee Ann Polytechnic. Finding a keen interest in technology, he
+                    constantly keeps up with technology-related news. Some of his hobbies include PC building
+                    as well as photography.
+                </p>
+                <p>Read more from <a href="https://sites.google.com/view/hiitsruijie/home" target="_blank">Tay Rui-Jie</a></p>
+            </div>
+            <div class="social-media">
+                <div class="smicons">
+                    <a href="https://www.instagram.com/ruijie___/" target="_blank"><img src="media/png/socialmediaicon/instagram.png" alt="instagram" width="30" height="30" /></a>
+                    <a href="https://www.linkedin.com/in/tay-rui-jie-954a77141/" target="_blank"><img src="media/png/socialmediaicon/linkedin.png" alt="linked in" width="30" height="30" /></a>
+                    <a href="mailto:tayruij@gmail.com" target="_blank"><img src="media/png/socialmediaicon/emailicon.png" alt="email" width="30" height="30" /></a>
+                </div>
+                <div class="toparrow">
+                    <a href="#top"><img src="media/png/toparrow.png" alt="Go to Top" width="50" height="50" title="Go back to the top" /></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

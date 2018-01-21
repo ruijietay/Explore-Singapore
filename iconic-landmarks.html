@@ -4,8 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tay Rui-Jie" />
+    <meta name="description" content="Iconic/Exotic Landmarks in Singapore" />
+
+    <link rel="icon" type="image/x-icon" href="media/png/logo/logotop.png" />
 
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="./js/iconic-landmarks.js"></script>
 
     <link rel="stylesheet" href="./css/W3.css" />
     <link rel="stylesheet" href="./css/iconic-landmarks.css" />
@@ -132,7 +137,9 @@
             </div>
 
             <div class="w3-third">
-                <img class="thumbnail" src="./media/jpg/railway.jpg" alt="Bukit Timah Railway" />
+                <a href="railway.html">
+                    <img class="thumbnail" src="./media/jpg/railway.jpg" alt="Bukit Timah Railway" />
+                </a>
                 <h3>Bukit Timah Railway Station</h3>
                 <p class="thumbdesc">
                     The Bukit Timah Railway station is a heritage gallery that offers a glimpse into Singapore's past with Malaysia.
@@ -141,7 +148,9 @@
             </div>
 
             <div class="w3-third">
-                <img class="thumbnail" src="./media/jpg/dragon.jpg" alt="Dragon Playground" />
+                <a href="dragon.html">
+                    <img class="thumbnail" src="./media/jpg/dragon.jpg" alt="Dragon Playground" />
+                </a>
                 <h3>Dragon Playground</h3>
                 <p class="thumbdesc">
                     Take a look at what life was like before the internet revolution. Playgrounds of such designs were the epitome of happiness
@@ -151,6 +160,85 @@
         </div>
 
     </section>
+
+    <!--Like what you've read?-->
+    <section class="like">
+        <div>
+            <div class="like1">
+                <img src="media/png/email.png" alt="email logo" width="30" height="25" />
+                <p class="likebig">Like what you've read?</p>
+            </div>
+            <div>
+                <p class="likesmall">Subscribe to our email newsletter!</p>
+            </div>
+            <div>
+                <button type="button" class="button" id="signup" onclick="haveoverlay1()">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- popup for signup-->
+    <div id="overlay1">
+        <div id="textonsignup">
+            <button class="closebuttonpopup1" onclick="turnoffoverlay1()">Close</button>
+            <div>
+                <p class="signuptitle">Sign Up</p>
+                <p class="signupcontent">Please fill in this form to sign up for our email newsletter.</p>
+                <hr />
+                <div>
+                    <form id="signupForm" onsubmit="alert('Thank you for signing up!')">
+                        <div>
+                            <label for="emailsignup">Email:</label>
+                            <input type="email" id="emailsignup" required class="inputwidth" />
+                        </div>
+                        <div>
+                            <label for="passwordsignup">Password:</label>
+                            <input type="password" id="passwordsignup" maxlength="11" pattern="[0-9][a-z]{10}" class="inputwidth" placeholder="Password should contain a number first, followed by 10 alphabet" required />
+                        </div>
+                        <div class="passwordinput">
+                            <input type="checkbox" id="togglepassword" onclick="myPassword()" />Show Password <!--myPassword() basically show password-->
+                        </div>
+                        <div>
+                            By creating an account, you are allowing us to send emails to you.
+                        </div>
+                        <div>
+                            <button type="submit" class="button">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Form------------------------------------------------------------------------------------------------------------->
+    <footer>
+        <section id="contact">
+            <div class="authorimage">
+                <img src="media/jpg/Ruijie.jpg" alt="Photo of author" />
+            </div>
+            <div class="contentcontact">
+                <p>Meet the Author</p>
+                <p>Tay Rui-Jie</p>
+                <p>
+                    Rui-Jie is currently a Year 1 student pursuing a diploma in Information Security
+                    & Forensics at Ngee Ann Polytechnic. Finding a keen interest in technology, he 
+                    constantly keeps up with technology-related news. Some of his hobbies include PC building
+                    as well as photography.
+                </p>
+                <p>Read more from <a href="https://sites.google.com/view/hiitsruijie/home" target="_blank">Tay Rui-Jie</a></p>
+            </div>
+            <div class="social-media">
+                <div class="smicons">
+                    <a href="https://www.instagram.com/ruijie___/" target="_blank"><img src="media/png/socialmediaicon/instagram.png" alt="instagram" width="30" height="30" /></a>
+                    <a href="https://www.linkedin.com/in/tay-rui-jie-954a77141/" target="_blank"><img src="media/png/socialmediaicon/linkedin.png" alt="linked in" width="30" height="30" /></a>
+                    <a href="mailto:tayruij@gmail.com" target="_blank"><img src="media/png/socialmediaicon/emailicon.png" alt="email" width="30" height="30" /></a>
+                </div>
+                <div class="toparrow">
+                    <a href="#top"><img src="media/png/toparrow.png" alt="Go to Top" width="50" height="50" title="Go back to the top" /></a>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
 

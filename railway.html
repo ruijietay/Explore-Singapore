@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tay Rui-Jie" />
+    <meta name="description" content="Bukit Timah Railway" />
+
+    <link rel="icon" type="image/x-icon" href="media/png/logo/logotop.png" />
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" href="./css/W3.css" />
+    <link rel="stylesheet" href="./css/railway.css" />
+    <title>Iconic Landmarks in Singapore</title>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7reycL3Tjzz72MkCtm4A3by9J43mAtko&callback=initMap"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/railway.js"></script>
+</head>
+<body>
+    <main w3-include-html="header.html"></main>
+    <script>
+        //code for inserting navigation panel
+        w3.includeHTML(); //this calls out the w3school method to be included in the index.html page.
+    </script>
+
+    <section class="header">
+        <div>
+            <h1 class="big">Bukit Timah Railway</h1>
+        </div>
+    </section>
+
+    <section class="section-wrap">
+        <h1>About</h1>
+        <p class="paragraph">
+            The frenzy that ensued the Bukit Timah Railway after reports of it closing down has since died down, with the place being thrust out of the public eye. 
+            Even though the railway track is no longer in use, it still exists as a sentimental reminder of Singapore's railway history and heritage.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h2><strong>Explore Singapore's History at Bukit Timah Railway</strong></h2>
+
+        <div class="view">
+            <figure>
+                <img class="viewimg" src="./media/jpg/railway1.jpg" alt="Bukit Timah Railway" />
+                <figcaption>Source: Tay Rui-Jie</figcaption>
+
+                <img class="viewimg" src="./media/jpg/railway2.jpg" alt="Bukit Timah Railway" />
+                <figcaption>Source: Tay Rui-Jie</figcaption>
+            </figure>
+        </div>
+
+        <p class="paragraph viewparagraph">
+            Bukit Timah Railway Station was a railway station owned by Keretapi Tanah Melayu (KTM), the main railway operator in Malaysia.
+            It opened on the now defunct Tank Road mainline in 1903 and was rebuilt on the current Singapore-Johor Bahru KTM Inter-city mainline in 1932.
+            This was until the Jurong Line shut down and it was a crossing loop station in the late 1940s until closure. The station was a freight interchange
+            for the currently inoperative Jurong Line from 1965 to the early 1990s.
+        </p>
+
+        <p class="paragraph viewparagraph">
+            On 1st July 2011, the line closed following a historic land-swap agreement between the Singapore and Malaysia governments which saw rail service
+            between Woodlands and Tanjong Pagar cease. Most of the tracks were removed, but there are still a few places with tracks left for the interested
+            explorers to visit. Once a crossing loop station and signalling control house, the Bukit Timah Railway Station (now known as Bukit Timah Railway Corridor)
+            is now part of Singapore's Nature Society and URA's Rail Corridor project.
+        </p>
+
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>Directions</h1>
+        <div id="mapsection">
+            <h2><strong>Map of the general area</strong></h2>
+            <div id="map"></div>
+        </div>
+
+        <div class="paragraph viewparagraph">
+            <h2><strong>By Bus:</strong></h2>
+            <p>
+                Take bus 66, 67, 74, 77, 151, 154, 157, 170,
+                170A, 171, 174, 852, 961, 961C, 970
+                and alight at "King Albert Park Stn"(Bus Stop ID: 42051)
+            </p>
+
+            <h2><strong>By Train:</strong></h2>
+            <p>
+                Board the Downtown Line and alight at King Albert Park Station (DT6).
+            </p>
+
+            <h2><strong>By Cab:</strong></h2>
+            <p>
+                Address: 1 Bukit Timah Railway Station, Singapore 599938.
+                Use code "tayr644ue" to enjoy SGD$3 off all Uber rides.
+            </p>
+
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>Opening Hours</h1>
+        <p class="paragraph">
+            The Bukit Timah Railway Station is open 24/7, but it is highly advisable not to visit this attraction
+            at night due to safety concerns as there would be little to no light source.
+        </p>
+    </section>
+
+    <hr />
+
+    <section class="section-wrap">
+        <h1>Contact Us!</h1>
+        <h2>Do feel free to complete this form so as to allow us to improve your web experience</h2>
+        <div class="form-container">
+            <form>
+                <h3 id="fbtitle">Drop us a feedback</h3>
+
+                <div id="fbcredentials">
+                    <input id="name" type="text" placeholder="Enter your name" required />
+
+                    <input id="email" type="email" placeholder="Enter your email" required />
+                </div>
+
+                <div id="fbsubject">
+                    <input id="subject" type="text" placeholder="Enter the subject" required />
+                </div>
+
+                <div id="fbcomments">
+                    <textarea id="comments" rows="10" cols="30" placeholder="Your comments.." wrap="hard" required></textarea>
+                </div>
+
+                <input id="formbtn" type="submit" onclick="thankyou()" value="Submit" />
+
+            </form>
+        </div>
+    </section>
+
+    <hr />
+
+    <!--Like what you've read?-->
+    <section class="like">
+        <div>
+            <div class="like1">
+                <img src="media/png/email.png" alt="email logo" width="30" height="25" />
+                <p class="likebig">Like what you've read?</p>
+            </div>
+            <div>
+                <p class="likesmall">Subscribe to our email newsletter!</p>
+            </div>
+            <div>
+                <button type="button" class="button" id="signup" onclick="haveoverlay1()">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- popup for signup-->
+    <div id="overlay1">
+        <div id="textonsignup">
+            <button class="closebuttonpopup1" onclick="turnoffoverlay1()">Close</button>
+            <div>
+                <p class="signuptitle">Sign Up</p>
+                <p class="signupcontent">Please fill in this form to sign up for our email newsletter.</p>
+                <hr />
+                <div>
+                    <form id="signupForm" onsubmit="alert('Thank you for signing up!')">
+                        <div>
+                            <label for="emailsignup">Email:</label>
+                            <input type="email" id="emailsignup" required class="inputwidth" />
+                        </div>
+                        <div>
+                            <label for="passwordsignup">Password:</label>
+                            <input type="password" id="passwordsignup" maxlength="11" pattern="[0-9][a-z]{10}" class="inputwidth" placeholder="Password should contain a number first, followed by 10 alphabet" required />
+                        </div>
+                        <div class="passwordinput">
+                            <input type="checkbox" id="togglepassword" onclick="myPassword()" />Show Password <!--myPassword() basically show password-->
+                        </div>
+                        <div>
+                            By creating an account, you are allowing us to send emails to you.
+                        </div>
+                        <div>
+                            <button type="submit" class="button">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Form------------------------------------------------------------------------------------------------------------->
+    <footer>
+        <section id="contact">
+            <div class="authorimage">
+                <img src="media/jpg/Ruijie.jpg" alt="Photo of author" />
+            </div>
+            <div class="contentcontact">
+                <p>Meet the Author</p>
+                <p>Tay Rui-Jie</p>
+                <p>
+                    Rui-Jie is currently a Year 1 student pursuing a diploma in Information Security
+                    & Forensics at Ngee Ann Polytechnic. Finding a keen interest in technology, he
+                    constantly keeps up with technology-related news. Some of his hobbies include PC building
+                    as well as photography.
+                </p>
+                <p>Read more from <a href="https://sites.google.com/view/hiitsruijie/home" target="_blank">Tay Rui-Jie</a></p>
+            </div>
+            <div class="social-media">
+                <div class="smicons">
+                    <a href="https://www.instagram.com/ruijie___/" target="_blank"><img src="media/png/socialmediaicon/instagram.png" alt="instagram" width="30" height="30" /></a>
+                    <a href="https://www.linkedin.com/in/tay-rui-jie-954a77141/" target="_blank"><img src="media/png/socialmediaicon/linkedin.png" alt="linked in" width="30" height="30" /></a>
+                    <a href="mailto:tayruij@gmail.com" target="_blank"><img src="media/png/socialmediaicon/emailicon.png" alt="email" width="30" height="30" /></a>
+                </div>
+                <div class="toparrow">
+                    <a href="#top"><img src="media/png/toparrow.png" alt="Go to Top" width="50" height="50" title="Go back to the top" /></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
