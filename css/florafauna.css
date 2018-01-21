@@ -327,17 +327,17 @@ form {
     text-align: center !important;
 }
 /*Like what you've read?------------------------------------------------------------------------------------------------------------*/
-
 .like {
     background-color: #EEEEEE;
     clear: both; /*clear float from above section*/
     background-size: 100%;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     padding: 20px;
     margin-left: -10px;
     margin-right: -10px;
     text-align: center;
 }
+
 .like1 img {
     display: inline-block;
 }
@@ -396,11 +396,11 @@ form {
     margin-top: -5%;
 }
 
-    .closebuttonpopup1:hover {
-        color: white;
-        background-color: #DAECF3;
-        cursor: pointer;
-    }
+.closebuttonpopup1:hover {
+    color: white;
+    background-color: #DAECF3;
+    cursor: pointer;
+}
 
 .signuptitle {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
