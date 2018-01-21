@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: #f3e8ff;
+    background-color: #eaffeb;
 }
 
 .header {
@@ -52,4 +52,25 @@ hr {
     clear: both;
     border: 0;
     padding: 0;
+}
+
+.viewparagraph {
+    width: 60%;
+    float: left;
+    padding-right: 20px;
+}
+
+.view {
+    width: 40%;
+    float: right;
+}
+
+.viewimg {
+    width: 100%;
+    border-radius: 25px;
+    padding: 0px;
+}
+
+figcaption {
+    padding-bottom: 20px;
 }
