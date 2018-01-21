@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/florafauna.css" />
+    <script src="js/flora&fauna.js" defer></script>
+    <title>Contact Us</title>
+
+</head>
+<body>
+    <form id=" form">
+        <fieldset name="Contact-info">
+            <legend>Contact:</legend>
+            <label for="iName">Name:</label>
+            <input id="iName" name="Name" type="text" autocomplete="Name" required />
+            <br /><br />
+            <label for="telephone">Phone #:</label>
+            <input type="tel" id="telephone" name="Phone" size="8" pattern="[689]\d{7}" required />
+            <br /><br />
+            <label for="iEmail">Email:</label>
+            <input type="email" name="Email" size="50" placeholder="Enter email addresses" required />
+            <br /><br />
+            <label for="iMessage">Message:</label>
+            <textarea id="iMessage" rows="2" cols="30" name="Message" autocomplete="on" required></textarea>
+            <br /><br />
+            </fieldset>
+        <p>
+            <!--<input type="submit" value="Submit" />--> <button type="submit" onclick="check_empty()">
+                Submit
+            </button>
+            <!--<input type="Reset" value="Reset" />--> <button type="reset">
+                Reset
+            </button>
+        </p>
+</form>
+</body>
+</html>

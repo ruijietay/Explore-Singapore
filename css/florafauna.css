@@ -62,7 +62,7 @@
 .subheading{
     font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align:center;
+    text-align:center !important;
     padding: 5px;
 }
 #flower {
@@ -206,14 +206,17 @@ div.desc {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #9CAAC6;
     margin: -15px;
-}
+} 
+
 /* For Table */
 table {
-    border-spacing: 80 px;
+    border-spacing: 80px;
     text-align: center;
     table-layout: fixed;
     border: 1px solid black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    margin-top: 60px;
 }
 
 table, th, td {
@@ -223,4 +226,103 @@ table, th, td {
 
 th, td {
     padding: 10px;
+}
+.box {
+    background-color: rgba(254,87,207,0.31);
+    width: 500px;
+    margin: auto;
+}
+.column {
+    float: left; 
+    width: 33.33%;
+    text-align:left;
+    border: 3px;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;   
+}
+.place {
+    font-size: 30px;
+    line-height: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1AA6B7;
+    text-align: center;
+    font-weight: normal !important;
+}
+.txt1 {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal !important;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 950px;
+    position: relative;
+    margin:auto;
+    margin-top: 50px;
+
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#transport {
+    background-image: url(../media/jpg/transport-bg.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 50px;
+    margin-left: -10px;
+    margin-right: -20px;
+    min-width: 950px;
+    color: rebeccapurple;
+}
+
+#closing {
+    background-image: url(../media/jpg/ref-bg.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 50px;
+    margin-left: -10px;
+    margin-right: -20px;
+    min-width: 950px;
+    color: rebeccapurple;
+}
+.ref-info{
+    text-align:left;
+    color: black !Important; 
+    font-size: 20px;
+    font-weight: bold;
+}
+.button {
+    background-color: #ff848b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+form {
+    background: #DAECF3;
+    text-align: center !important;
 }
