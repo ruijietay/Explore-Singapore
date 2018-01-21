@@ -332,10 +332,11 @@ form {
     clear: both; /*clear float from above section*/
     background-size: 100%;
     background-attachment: fixed;
-    padding: 20px;
+    padding: 50px;
     margin-left: -10px;
     margin-right: -10px;
     text-align: center;
+    min-width: 950px;
 }
 
 .like1 img {
@@ -449,6 +450,7 @@ form {
     margin-left: -10px;
     margin-right: -10px;
     text-align: center;
+    min-width:950px;
 }
 
 .contentcontact {
