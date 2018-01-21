@@ -8,6 +8,7 @@ html {
 }
 
 /*Global*/
+
 .alignment {
     max-width: 70%;
     margin: 0 auto;
@@ -141,5 +142,28 @@ html {
         min-width: 500px;
         margin: 250px auto 200px auto;
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        overflow-x: auto;
+    }
+
+    body {
+        min-width: 1500px;
+    }
+
+    .big {
+        font-size: 100px;
+        font-family: serif;
+        letter-spacing: 20px;
+        border: 15px solid white;
+        width: -webkit-max-content;
+        width: auto;
+        min-width: 500px;
+        margin: 250px auto 200px auto;
+        padding: 20px;
+        font-weight: bold;
     }
 }
