@@ -504,3 +504,24 @@ body {
     ::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
+
+@media (max-width:1140px){
+    .social-media {
+        width: auto;
+        float: none;
+        margin-top: 0;
+    }
+
+    .authorimage {
+        display: inline-block;
+        width: auto;
+        float: none;
+        margin: 0;
+    }
+
+    .contentcontact {
+        display: inline-block;
+        width: auto;
+        float: none;
+    }
+}
