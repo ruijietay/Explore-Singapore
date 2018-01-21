@@ -35,12 +35,12 @@ function initMap() {
         '<p>Standing at 165 metres, this giant observation wheel offers 360-degree city views of Singapore and parts of Malaysia and Indonesia on a clear day.</p>' + '</div>'
 
     //Create new window for information (flyerinfo)
-    var flyerwindow = new google.maps.InfoWindow(), flyer;
+    var flyerwindow = new google.maps.InfoWindow(), flyermarker;
 
-    google.maps.event.addListener(flyermarker, 'click', (function (flyer) {
+    google.maps.event.addListener(flyermarker, 'click', (function (flyermarker) {
         return function () {
-            marinabaywindow.setContent(marinabayinfo);
-            marinabaywindow.open(map, flyermarker);
+            flyerwindow.setContent(flyerinfo);
+            flyerwindow.open(map, flyermarker);
         }
     })(flyermarker));
 
