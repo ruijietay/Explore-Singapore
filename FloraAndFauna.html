@@ -6,7 +6,9 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="css/florafauna.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="js/flora&fauna.js" defer></script>
+    <meta name="author" content="Pamela" />
+    <meta name="description" content="Flora & Fauna" />
+     <script src="js/flora&fauna.js" defer></script>
     <link rel="icon" type="image/x-icon" href="media/png/logo/logotop.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flora & Fauna</title>
@@ -21,6 +23,37 @@
             <h1 class="big">Flora & Fauna</h1>
         </div>
     </section>
+    <div id="overlay1">
+        <div id="textonsignup">
+            <button class="closebuttonpopup1" onclick="turnoffoverlay1()">Close</button>
+            <div>
+                <p class="signuptitle">Sign Up</p>
+                <p class="signupcontent">Please fill in this form to sign up for our email newsletter.</p>
+                <hr />
+                <div>
+                    <form id="signupForm" onsubmit="alert('Thank you for signing up!')">
+                        <div>
+                            <label for="emailsignup">Email:</label>
+                            <input type="email" id="emailsignup" required class="inputwidth" />
+                        </div>
+                        <div>
+                            <label for="passwordsignup">Password:</label>
+                            <input type="password" id="passwordsignup" maxlength="11" pattern="[0-9][a-z]{10}" class="inputwidth" placeholder="Password should contain a number first, followed by 10 alphabet" required />
+                        </div>
+                        <div class="passwordinput">
+                            <input type="checkbox" id="togglepassword" onclick="myPassword()" />Show Password <!--myPassword() basically show password-->
+                        </div>
+                        <div>
+                            By creating an account, you are allowing us to send emails to you.
+                        </div>
+                        <div>
+                            <button type="submit" class="button">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="intro">
         <h2 class="heading">Spend time connecting with nature</h2>
         <p id="description">Nature lovers fret not! With Singapore being a garden city, you will be able to explore <br />
