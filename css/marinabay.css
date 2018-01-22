@@ -16,6 +16,7 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     text-align: center;
+    background-size: cover;r
     color: white;
     padding: 20px;
 }
@@ -34,6 +35,7 @@ h2 {
     letter-spacing: 20px;
     border: 15px solid white;
     width: 850px;
+    min-width: 500px;
     margin: 250px auto 200px auto;
     padding: 20px;
 }
